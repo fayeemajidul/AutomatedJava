@@ -1,35 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f92c4f22-212b-4234-8bfb-397f64dec625" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/.profile" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/hs_err_pid3348.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/replay_pid3348.log" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/src/main/java/org/example/AppiumEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/src/main/java/org/example/AppiumEnvironment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/src/main/java/org/example/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/src/main/java/org/example/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/target/classes/org/example/AppiumEnvironment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/target/classes/org/example/AppiumEnvironment.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/target/classes/org/example/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/target/classes/org/example/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/target/classes/org/example/EndToEndApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../day1/AppiumEnvironmentConfig/target/classes/org/example/EndToEndApp.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day4/AppiumIOS/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/AppiumIOS/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/src/main/java/org/example/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/src/main/java/org/example/BaseTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/src/main/java/org/example/IOStest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/src/main/java/org/example/IOStest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/target/classes/org/example/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/target/classes/org/example/BaseTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/target/classes/org/example/IOStest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../day4/AppiumIOS/IOSTest/target/classes/org/example/IOStest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/InitializeDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/InitializeDrive.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/global.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/Resources/InitializeDrive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/Resources/InitializeDrive.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/Resources/ScreenShot.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/Resources/ScreenShot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/WebImplementation/POMstructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/WebImplementation/POMstructure.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/testng.xml" afterDir="false" />
-    </list>
+    <list default="true" id="f92c4f22-212b-4234-8bfb-397f64dec625" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,14 +21,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -66,6 +38,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672692323325</updated>
       <workItem from="1672692324563" duration="49000" />
+      <workItem from="1672855517774" duration="36000" />
     </task>
     <servers />
   </component>
