@@ -11,6 +11,7 @@ Future course work to have a better edge in the market:
 ---> JavaScript, C#
 ---> SOAPui: API backend services.
 ---> Better hands on approach with SQL querying.
+---> MicroProcessors
 
 
 Remember to review everything that you learn so you integrate everything and not forget.
