@@ -18,17 +18,16 @@ public class Day0{
         int num1 = num.nextInt(0,100);
         int num2 = num.nextInt(0,100);
         int addition = num1 + num2;
+        int subtraction;
         if(num1 > num2){
-            int subtraction = num1 - num2;
+            subtraction = num1 - num2;
         }else{
-            int subtraction = num2 - num1;
+            subtraction = num2 - num1;
         }
-        if(num1==0 || num2== 0){
-            System.out.println("Can't divide by 0");
-        }else{
-            int Division = num1/num2;
-        }   
-         
+        double division = ((double)num1/num2);
+        int multiplication = num1 * num2;
+        System.out.println(" Addition: " + addition + "\n Subtraction: " + (subtraction) + "\n Division: "  + division + "\n Multiplication: " + multiplication );
+        System.out.println(num1 + "and" + num2);
     }
     public static void main(String[] arg){
         //System.out.println("Testing out Java environment, Hello World!");
