@@ -29,12 +29,32 @@ public class Day0{
         System.out.println(" Addition: " + addition + "\n Subtraction: " + (subtraction) + "\n Division: "  + division + "\n Multiplication: " + multiplication );
         System.out.println(num1 + "and" + num2);
     }
+    public static void Expressions(int mySecondNumber, int myThirdNumber){
+        int Sum = mySecondNumber + myThirdNumber;
+        System.out.println(Sum);
+    }
+    public static void PrimitiveTypes(){
+        /** Primitive Data Types: [Data Manipulation]
+         * Short
+         * Long
+         * Int
+         * Boolean
+         * String
+         * Float
+         * Double
+         * Byte
+         */
+
+        
+    }
+
     public static void main(String[] arg){
         //System.out.println("Testing out Java environment, Hello World!");
         //System.out.println("Hello, Fayeem Mooktadeer, congraulations on Day 0");
 
         // --- Variables ----//
-        learningVariables();
+        //learningVariables();
+        Expressions(12,6);
         
     }
 }
