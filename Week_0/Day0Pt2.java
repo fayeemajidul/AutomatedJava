@@ -28,8 +28,18 @@ public class Day0Pt2{
         short myMaxShortValue = Short.MAX_VALUE;
         System.out.println("My Max Short Value: " + myMaxShortValue + "\nMy Min Short Value: " + myMinShortValue);
     }
+
+    public static void floatingPoint(){
+        //FloatingPointNumbers & Doubles Lesson:
+        int myIntValue = 5/2;
+        float myFloatValue = 5f/2f;
+        double myDoubleValue = 5d/2d; //It only gets rounded bc it thinks it's an integer. [Cast It]
+        System.out.println("Integer: " + myIntValue + "\nFloat: " + myFloatValue + "\nDouble: " + myDoubleValue);
+
+    }
     public static void main(String[] arg){
         PrimitiveTypes();
         //escapeSequences();
+        floatingPoint();
     }
 }
