@@ -33,20 +33,6 @@ public class Day0{
         int Sum = mySecondNumber + myThirdNumber;
         System.out.println(Sum);
     }
-    public static void PrimitiveTypes(){
-        /** Primitive Data Types: [Data Manipulation]
-         * Short
-         * Long
-         * Int
-         * Boolean
-         * String
-         * Float
-         * Double
-         * Byte
-         */
-
-        
-    }
 
     public static void main(String[] arg){
         //System.out.println("Testing out Java environment, Hello World!");
@@ -54,7 +40,7 @@ public class Day0{
 
         // --- Variables ----//
         //learningVariables();
-        Expressions(12,6);
+        //Expressions(12,6);
         
     }
 }
