@@ -53,11 +53,23 @@ public class Day0Pt2{
         String incomeRaised = orangesSatisified? "You've reached the quota for this Month.":"You have not reached the Quota for this month.";
         System.out.println(incomeRaised);
     }
+    public static void challengeOperator(){
+        double valueOne = 20.00d;
+        double valueTwo = 80.00d;
+        double productValues = (double)((valueOne + valueTwo) * 100);
+        double remainder = (productValues % 40.00d);
+        boolean isZero = (remainder == 0)? true:false;
+        System.out.println(isZero);
+        if(remainder != 0){
+            System.out.println("got some remainder");
+        }
+    }
     public static void main(String[] arg){
         //PrimitiveTypes();
         //escapeSequences();
         //floatingPoint();
         //KiloChallenge(200);
-        farmerMarket();
+        //farmerMarket();
+        challengeOperator();
     }
 }
