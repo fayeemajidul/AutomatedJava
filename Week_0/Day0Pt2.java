@@ -37,9 +37,14 @@ public class Day0Pt2{
         System.out.println("Integer: " + myIntValue + "\nFloat: " + myFloatValue + "\nDouble: " + myDoubleValue);
 
     }
+    public static void KiloChallenge(int pounds){
+        double Kilograms = (double)(pounds*.45359237);
+        System.out.println(Kilograms + " KG");
+    }
     public static void main(String[] arg){
-        PrimitiveTypes();
+        //PrimitiveTypes();
         //escapeSequences();
-        floatingPoint();
+        //floatingPoint();
+        KiloChallenge(200);
     }
 }
