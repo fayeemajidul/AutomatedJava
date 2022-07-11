@@ -1,3 +1,4 @@
+import java.util.Random;
 public class Day0Pt2{
     //Instance Field
     public Day0Pt2(){} // Constructor class
@@ -41,10 +42,22 @@ public class Day0Pt2{
         double Kilograms = (double)(pounds*.45359237);
         System.out.println(Kilograms + " KG");
     }
+    public static void farmerMarket(){
+        Random rand  = new Random();
+        boolean orangesSatisified = false;
+        int numberOfOranges = rand.nextInt(0,100);
+        System.out.println(numberOfOranges);
+        if(numberOfOranges >= 25){
+            orangesSatisified = true;
+        }
+        String incomeRaised = orangesSatisified? "You've reached the quota for this Month.":"You have not reached the Quota for this month.";
+        System.out.println(incomeRaised);
+    }
     public static void main(String[] arg){
         //PrimitiveTypes();
         //escapeSequences();
         //floatingPoint();
-        KiloChallenge(200);
+        //KiloChallenge(200);
+        farmerMarket();
     }
 }

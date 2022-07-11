@@ -45,14 +45,14 @@ public class practice{
         Scanner value1 = new Scanner(System.in);
         System.out.println("Enter in your first value.");
         int inputOne = value1.nextInt();
-        //value1.close();
+        value1.close();
         return inputOne;
     }
     public static int valueTwo(){
         Scanner value2 = new Scanner(System.in);
         System.out.println("Enter in your second value.");
         int inputTwo = value2.nextInt();
-        //value2.close();
+        value2.close();
         return inputTwo;
     }
     public static void masterCalculator(){
