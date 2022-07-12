@@ -14,7 +14,10 @@ public class Day1{
         //System.out.println(isLeapYear(2400));
 
         /** Challenge 5 Output */
-        System.out.println(areEqualByThreeDEcimalPlaces(-3.123, 3.123));
+        // System.out.println(areEqualByThreeDEcimalPlaces(-3.123, 3.123));
+
+        /** Challenge 6 Output */
+        System.out.println(hasEqualSum(1, -1, 0));
     }
     public static void printMegaBytesAndKiloBytes(int kiloBytes){
         /** CHALLENGE 2
@@ -65,6 +68,14 @@ public class Day1{
         num2 = (int)((num2)*1000);
         boolean isEqual = (num1 == num2)? true:false;
         if(isEqual){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public static boolean hasEqualSum(int num1, int num2, int sum){
+        boolean isSum = ((num1 + num2) == sum)? true:false;
+        if(isSum){
             return true;
         }else{
             return false;
