@@ -20,7 +20,15 @@ public class Day1{
         //System.out.println(hasEqualSum(1, -1, 0));
 
         /**Challenge 7 Output */
-        System.out.println(hasTeen(22, 23, 34));
+        // System.out.println(hasTeen(22, 23, 34));
+
+        /* METHOD OVERLOADING */
+        // calculateScore("Fayeem", 100);
+        // calculateScore(75);
+        int centimeterCalculated = (int) calcFeetAndInchesToCentimeters(5, 8);
+        calcFeetAndInchesToCentimeters(centimeterCalculated);
+        calcFeetAndInchesToCentimeters(100);
+
     }
     public static void printMegaBytesAndKiloBytes(int kiloBytes){
         /** CHALLENGE 2
@@ -88,10 +96,44 @@ public class Day1{
         }
     }
     public static boolean hasTeen(int teenOne, int teenTwo,int teenThree){
+        /** Challenge 7: Has Teen */
         if((teenOne >= 13 && teenOne <= 19) || (teenTwo >= 13 && teenTwo <= 19) ||(teenThree >= 13 && teenThree <= 19)){
             return true;
         }else{
             return false;
         }
+    }
+    public static int calculateScore(String playerName, int score){
+        System.out.println("player " + playerName + " scored " + score + " points");
+        return score * 1000;
+    }
+    public static int calculateScore(int score){
+        System.out.println("player " + "Unnamed Player scored " + score + " points");
+        return score * 1000; 
+    }
+    public static int calculateScore(){
+        System.out.println("No player, no player score ");
+        return 0;
+    }
+    public static double calcFeetAndInchesToCentimeters(int feet, int inch){
+        boolean isFeet = (feet >= 0)? true:false;
+        boolean isInches = (inch >=0 && inch <=12)? true:false;
+        if(isFeet || isInches){
+            double totalCenti = (feet*12)*2.54;
+            totalCenti += (inch*2.54);
+            System.out.println(feet + " feet " + inch + " inch " + totalCenti + " centimeters");
+            return totalCenti;
+        }
+        return -1;
+    }
+    public static double calcFeetAndInchesToCentimeters(int inch){
+        boolean isInches = (inch >=0)? true:false;
+        if(isInches){
+            int feet = (int)(inch/12);
+            int remainingInches = (int)inch%12;
+            System.out.println(inch + " inches:  " + feet + " feet & " + remainingInches + " inch");
+            return calcFeetAndInchesToCentimeters(feet, inch);
+        }
+        return -1;
     }
 }
