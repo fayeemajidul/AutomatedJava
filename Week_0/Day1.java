@@ -17,7 +17,10 @@ public class Day1{
         // System.out.println(areEqualByThreeDEcimalPlaces(-3.123, 3.123));
 
         /** Challenge 6 Output */
-        System.out.println(hasEqualSum(1, -1, 0));
+        //System.out.println(hasEqualSum(1, -1, 0));
+
+        /**Challenge 7 Output */
+        System.out.println(hasTeen(22, 23, 34));
     }
     public static void printMegaBytesAndKiloBytes(int kiloBytes){
         /** CHALLENGE 2
@@ -46,6 +49,7 @@ public class Day1{
     }
 
     public static boolean isLeapYear(int year){
+        //** Challenge 4: input year, tells you if it's a leap */
         if(year >= 1 && year <= 9999){
             if(year%4 == 0){
                 if(year%100==0){
@@ -64,6 +68,7 @@ public class Day1{
         return false;
     }
     public static boolean areEqualByThreeDEcimalPlaces(double num1, double num2){
+        /** Challenge 5: Equal 3 decimals to see if true/false */
         num1 = (int)((num1)*1000);
         num2 = (int)((num2)*1000);
         boolean isEqual = (num1 == num2)? true:false;
@@ -74,8 +79,16 @@ public class Day1{
         }
     }
     public static boolean hasEqualSum(int num1, int num2, int sum){
+        /** Challenge 6: Sum Verifier */
         boolean isSum = ((num1 + num2) == sum)? true:false;
         if(isSum){
+            return true;
+        }else{
+            return false;
+        }
+    }
+    public static boolean hasTeen(int teenOne, int teenTwo,int teenThree){
+        if((teenOne >= 13 && teenOne <= 19) || (teenTwo >= 13 && teenTwo <= 19) ||(teenThree >= 13 && teenThree <= 19)){
             return true;
         }else{
             return false;
