@@ -19,6 +19,9 @@ public class Day1_2{
        printEqual(1, 1, 2);
        printEqual(-1, -1, -1);
        printEqual(1, 2, 3);
+
+       /* Challenge 11 */
+       System.out.println(isCatPlaying(false, 35));
     }
     /**__________________________________ */
     /** !!!!!!! MAIN METHOD ABOVE !!!!!!! */
@@ -52,6 +55,16 @@ public class Day1_2{
         }else{
             System.out.println("Neither all are equal or different");
         }
+    }
+    public static boolean isCatPlaying(boolean summer, int temperature){
+        if(temperature >= 25 && temperature <= 35){
+            return true;
+        }else if(summer){
+            if(temperature >=25 && temperature <=45){
+                return true;
+            }
+        }
+        return false;
     }
 }
 
