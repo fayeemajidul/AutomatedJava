@@ -14,7 +14,7 @@ public class Day1{
         //System.out.println(isLeapYear(2400));
 
         /** Challenge 5 Output */
-
+        System.out.println(areEqualByThreeDEcimalPlaces(-3.123, 3.123));
     }
     public static void printMegaBytesAndKiloBytes(int kiloBytes){
         /** CHALLENGE 2
@@ -59,5 +59,15 @@ public class Day1{
             }
         }
         return false;
+    }
+    public static boolean areEqualByThreeDEcimalPlaces(double num1, double num2){
+        num1 = (int)((num1)*1000);
+        num2 = (int)((num2)*1000);
+        boolean isEqual = (num1 == num2)? true:false;
+        if(isEqual){
+            return true;
+        }else{
+            return false;
+        }
     }
 }
