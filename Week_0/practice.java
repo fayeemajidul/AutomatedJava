@@ -75,5 +75,6 @@ public class practice{
         }else{
             System.out.println("Invalid Operation");
         }
+        /** Learned Escape Sequences + Conditional Thinking +  Terinary Operators*/
     }
 }
