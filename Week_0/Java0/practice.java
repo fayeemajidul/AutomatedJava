@@ -3,7 +3,8 @@ public class practice{
     //Instance Field:
     public practice(){}// Constructor Class
     public static void main(String[] args){
-        masterCalculator();
+        isPrime(10);
+        //masterCalculator();
     }
     public static int addition(int valueOne, int valueTwo){
         int additionSum = (valueOne + valueTwo);
@@ -76,5 +77,22 @@ public class practice{
             System.out.println("Invalid Operation");
         }
         /** Learned Escape Sequences + Conditional Thinking +  Terinary Operators*/
+    }
+    /** CHALLENGE */
+    public static boolean isPrime(int n) {
+
+        if(n == 1) {
+            return false;
+        }
+
+        for(int i=2; i <= n/2; i++) {
+            System.out.println("Looping " +i);
+            if(n % i == 0) {
+                return false;
+            }
+        }
+        System.out.println("n" + "is a prime number");
+        return true;
+
     }
 }

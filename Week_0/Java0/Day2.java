@@ -4,7 +4,14 @@ public class Day2{
     public static void main(String[] args){
         //learningSwitch(45);
         //charSwitch('A');
-        printDayOfTheWeek(2);
+        //printDayOfTheWeek(2);
+        // for(int i = 2; i <= 8; i++){
+        //     System.out.println(calculateInterest(10000.0, i));
+        // }
+        for(int i = 8; i > 1; i--){
+            System.out.println(calculateInterest(10000.0, i));
+        }
+
 
     }
     public static void learningSwitch(int switchValue){
@@ -64,5 +71,45 @@ public class Day2{
             default:
                 System.out.println("Invalid Day");
         }
+    }
+    public static void printNumberInWord(int num){
+        switch(num){
+            case 0:
+                System.out.println("Zero");
+                break;
+            case 1:
+                System.out.println("One");
+                break;
+            case 2:
+                System.out.println("Two");
+                break;
+            case 3:
+                System.out.println("Three");
+                break;
+            case 4:
+                System.out.println("Four");
+                break;
+            case 5:
+                System.out.println("Five");
+                break;
+            case 6:
+                System.out.println("Six");
+                break;
+            case 7:
+                System.out.println("Seven");
+                break;
+            case 8:
+                System.out.println("Eight");
+                break;
+            case 9:
+                System.out.println("Nine");
+                break;
+            default:
+                System.out.println("Other");
+                break;
+        }
+    }
+    public static double calculateInterest(double amount, double InterestRate){
+        return (amount * (InterestRate/100));
     }
 }
