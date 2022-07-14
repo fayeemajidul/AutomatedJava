@@ -3,7 +3,7 @@ public class Day3{
     public Day3(){} //Constructor Class:
     public static void main(String[] arg){
         //sumLoop();
-        System.out.println(sumOdd(1, 20));
+        System.out.println(sumOdd(13, 13));
     }
     
     public static void sumLoop(){
@@ -30,7 +30,10 @@ public class Day3{
     }
     public static int sumOdd(int start, int end){
         int sumOfOddNums = 0;
-        if(start > 0 && end > 0 && end > start){
+        if(start < 0 || end < 0){
+            return -1;
+        }
+        if(start > 0 && end > 0){
             for(start = start; start <= end; start++){
                 if(isOdd(start)){
                     sumOfOddNums += start;
