@@ -41,7 +41,100 @@ public class Day4{
         reverseNumber = reverseNumber/10;
         System.out.println(reverseNumber);
     }
+    public static int sumFirstAndLastDigit(int number){
+        int firstDigLastDig = 0;
+        if(number < 0 ){
+            return -1;
+        }
+        while(number > 0){
+            int extractedNum = number%10;
+            firstDigLastDig += extractedNum;
+            number/=100;
+        }
+        return firstDigLastDig;
+    }
+    public static void getEvenDigitSum(int number){
+        int evenNumberSum = 0;
+        if(number < 0){
+            System.out.println("Number is less than 0, can't evaulate");
+        }
+        while(number > 0){
+            if(number % 2 == 0){
+                //Extract digit from num
+                int extractedDig = number % 10;
+                evenNumberSum += extractedDig;
+            }
+            number /= 10;
+            //Create Condition First that extracts the Even Numbers
+        }
+        System.out.println(evenNumberSum);
+    }
+    /** Method That Reverses the Number */
+    public static int reversedNumber(int regularNum){
+        if(regularNum < 10){
+            return -1;
+        }
+        int reverseNum = 0;
+        while(regularNum > 0){
+            //extractNum
+            int digit = regularNum % 10;
+            reverseNum += digit;
+            reverseNum *= 10;
+            regularNum/=10;
+        }
+        reverseNum/=10;
+        return(reverseNum);
+    }
+    public static void numberToWords(int number){
+        int reversedNumber = reversedNumber(number);
+        //523
+        int storeDigits = 0;
+        String numberParser = ""; //Blank String
+        while (reversedNumber > 0){
+            //take last digit = it to Extract Digit = Store Digit
+
+            int extractDig = (reversedNumber%10);
+            storeDigits += extractDig;
+            if(storeDigits == 0){
+                numberParser += " Zero ";
+            }else if(storeDigits == 1){
+                numberParser += " One ";
+            }else if(storeDigits == 2){
+                numberParser += " Two ";
+            }else if(storeDigits == 3){
+                numberParser += " Three ";
+            }else if(storeDigits == 4){
+                numberParser += " Four ";
+            }else if(storeDigits == 5){
+                numberParser += " Five ";
+            }else if(storeDigits == 6){
+                numberParser += " Six ";
+            }else if(storeDigits == 7){
+                numberParser += " Seven ";
+            }else if(storeDigits == 8){
+                numberParser += " Eight ";
+            }else if(storeDigits == 9){
+                numberParser += " Nine ";
+            }
+            storeDigits *= 0;
+            reversedNumber/=10;
+
+
+            // storeDigits *= .1;
+            // number/=10;
+            //storeDigits/=10;
+        }
+        System.out.println(numberParser);
+    }
+
+    /* Number to Words */
     public static void main(String[] args){
-        isPalindrome(31737182);
+        //System.out.println(sumFirstAndLastDigit(212));
+        // getEvenDigitSum(252);
+        // getEvenDigitSum(123456789);
+        // getEvenDigitSum(-22);
+        numberToWords(2131412);
+        
+        
     }
 }
