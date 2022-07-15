@@ -1,13 +1,6 @@
 public class Day3{
     //Instance Field:
     public Day3(){} //Constructor Class:
-    public static void main(String[] arg){
-        //sumLoop();
-        //System.out.println(sumOdd(13, 13));
-        //whileLooping();
-        //System.out.println(isEvenNumber(6));
-        rangeOfEvenNumbers(4, 20);
-    }
     
     public static void sumLoop(){
         /** Prints Sum of #'s divisible by 3&5 */
@@ -71,5 +64,29 @@ public class Day3{
             }
             evenNumbersFound ++; 
         }
+    }
+    public static int sumDigits(int number){
+        /** __________________________ */
+        //Convert this in to a do-while loop when you come back from the gym.
+        /** __________________________ */
+        if(number < 10){
+            return -1;
+        }
+        int sum = 0;
+        while(number > 0){
+            int digit = number % 10;
+            sum += (digit);
+            //For Small Numbers
+            number/=10;
+        }
+        return sum;
+    }
+    public static void main(String[] arg){
+        //sumLoop();
+        //System.out.println(sumOdd(13, 13));
+        //whileLooping();
+        //System.out.println(isEvenNumber(6));
+        //rangeOfEvenNumbers(4, 20);
+        System.out.println(sumDigits(121));
     }
 }
