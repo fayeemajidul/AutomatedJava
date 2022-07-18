@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Day0{
     //Instance Variables:
     public Day0(){} //Constructor Class
@@ -70,13 +71,28 @@ public class Day0{
         }
         return -1;
     }
+    public static void userInput(){
+        Scanner userInput = new Scanner(System.in);
+        System.out.println("Hello user enter name");
+        String name = userInput.nextLine();
+        System.out.println("Hello " + name);
+        userInput.close();
 
-    // public static void highestPrime(int number){
-    //     //int highestPrime = 0;
+    }
+    public static void sumOfUserInput(){ 
+        int sumOfNumbers = 0;
+        Scanner userEntry = new Scanner(System.in);
 
-    // }
+        for(int i = 0; i <10; i++){
+            System.out.println("Please enter the number");
+            Integer numberEntered = userEntry.nextInt();
+            sumOfNumbers += numberEntered;
+        }
+        System.out.println(sumOfNumbers);
+    }
 
     public static void main(String[] args){
-        allFactors(217);
+        //allFactors(217);
+        sumOfUserInput();
     }
 }
