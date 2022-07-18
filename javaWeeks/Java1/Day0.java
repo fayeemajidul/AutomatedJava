@@ -16,46 +16,38 @@ public class Day0{
         reverseNum/=10;
         return reverseNum;
     }
-    public static void numToLetters(int number){
-        //She might be coming to see me in NEW YORK LETS FUCKING GOOOOO WOOO <3 !!!! 
-        String letters = "";
-        int extractedDig = 0;
-        int reverseNumber = reverseNumber(number);
-        // System.out.println(reverseNumber);
-        while(number > 0){
-            int digit = (reverseNumber%10);
-            extractedDig += digit;
-            if(extractedDig == 0){
-                letters += " Zero ";
-            }else if(extractedDig == 1){
-                letters += " One ";
-            }else if(extractedDig == 2){
-                letters += " Two ";
-            }else if(extractedDig == 3){
-                letters += " Three ";
-            }else if(extractedDig == 4){
-                letters += " Four ";
-            }else if(extractedDig == 5){
-                letters += " Five ";
-            }else if(extractedDig == 6){
-                letters += " Six ";
-            }else if(extractedDig == 7){
-                letters += " Seven ";
-            }else if(extractedDig == 8){
-                letters += " Eight ";
-            }else if(extractedDig == 9){
-                letters += " Nine ";
-            }
-            // extractedDig *= 0;
-            number/=10;
+    public static void parsingStringValues(){
+        //Java has classes that let you  go from one datatype to another
+        String playerDayAge = "20131";
+        int playerAccountAge = Integer.parseInt(playerDayAge);
+        System.out.println("Player has spent " + playerAccountAge + " days on the game"); 
 
-            System.out.println(letters);
+        int UNACCOUNTEDDAYS = 365;
+        playerAccountAge += UNACCOUNTEDDAYS;
+        System.out.println("With unaccounted days, the player has spent " + playerAccountAge + " days on the game"); 
 
+    }
+    public static boolean canPack(int bigCount, int smallCount, int goal){
+        if(bigCount < 0 || smallCount < 0 || goal < 0){
+            return false;
         }
+        //Setting Converstions:
+        int kgBig = bigCount * 5;
+        int totalKG = (kgBig + smallCount);
+        //
+        if(goal % totalKG == 0){
+            return true;
+        }else if(goal % totalKG > 0 && smallCount == 0){
+            return false;
+        }else if(goal % totalKG > 0 && goal % smallCount > 0){
+            return true;
+        }else if(goal % totalKG < 0 || goal % totalKG > 0){
+            return false;
+        }
+        return false;
     }
 
-
     public static void main(String[] args){
-        numToLetters(412);
+        System.out.println(canPack(-3,2,12));
     }
 }
