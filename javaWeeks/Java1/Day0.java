@@ -46,8 +46,37 @@ public class Day0{
         }
         return false;
     }
+    public static boolean isPrime(int n){
+        if(n == 1){
+            return false;
+        }
+
+        for(int i = 2; i <= n/2; i++){
+            if(n % i == 0){
+                return false;
+            }
+        }
+        return true;
+    }
+    public static int allFactors(int number){
+        for(int i = 1; i < number; i++){
+           if(number%i==0){
+            boolean primeNumberVerify = isPrime(i);
+            if(primeNumberVerify){
+                System.out.println("the number " + i + " is both prime and a factor");
+                //Create code that compares both values and spits out higher value:
+                }
+            }
+        }
+        return -1;
+    }
+
+    // public static void highestPrime(int number){
+    //     //int highestPrime = 0;
+
+    // }
 
     public static void main(String[] args){
-        System.out.println(canPack(-3,2,12));
+        allFactors(217);
     }
 }
