@@ -134,7 +134,5 @@ public class Day4{
         // getEvenDigitSum(123456789);
         // getEvenDigitSum(-22);
         numberToWords(2131412);
-        
-        
     }
 }
