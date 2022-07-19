@@ -89,6 +89,7 @@ public class Day0{
             sumOfNumbers += numberEntered;
         }
         System.out.println(sumOfNumbers);
+        userEntry.close();
     }
 
     public static void main(String[] args){
@@ -96,3 +97,5 @@ public class Day0{
         sumOfUserInput();
     }
 }
+
+//Finished Loops Officially Going on to Classes:
