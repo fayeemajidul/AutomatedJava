@@ -6,9 +6,18 @@ public class Car{
     private String engine;
     private String color;
 
-    //Mutator Variable: Object gets initialized and passes its argument into String model to update value of String.
+    // (Getter) Mutator Class: Object gets initialized and passes its argument into String model to update value of String.
+    public void setModel(String model){
+        String validModel = model.toLowerCase();
+        if(validModel.equals("aventador")){
+            this.model = model;
+        }else{
+            this.model = "unknown";
+        }
+    }
 
-    public void getModel(String model){ 
-        this.model = model;
+    // (Setter) you can return value of Object initialized for the Variable
+    public String getModel(){
+        return this.model;
     }
 }

@@ -5,12 +5,9 @@ public class javaMain{
     public javaMain(){}// constructor variable
     public static void main(String[] args){
         //Initialized Object #1
-        Point p1 = new Point();
-        p1.x = 13;
-        p1.y = 10;
-        Point p2 = new Point();
-        p2.x = 3;
-        p2.y = 12;
+        Point point1 = new Point();
+        point1.setXandY(10, 12);
+        System.out.println(point1.getNewCoordinates());
         //------------------------------------
         // -- initialized Object -- //
         // p1.Translate(31, 21);
@@ -18,9 +15,11 @@ public class javaMain{
         // System.out.println("distance from orgin = " + p1.distanceFromZero());
         // System.out.println(p2.distanceFromZero());
         //------------------------------------
-        
+
         //Initialized Object #2
-        Car Lamborghini = new Car();
-        Lamborghini.getModel("Aventador");
+        // Car Lamborghini = new Car();
+        // Lamborghini.setModel("Aventador");
+        // System.out.println( "Model is an "+ Lamborghini.getModel());
+
     }
 }
