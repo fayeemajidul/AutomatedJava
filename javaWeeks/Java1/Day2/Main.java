@@ -26,5 +26,10 @@ public class Main{
         // Albert.setAge(15);
         // System.out.println(fayeem.isTeen());
         // System.out.println(Albert.isTeen());
+
+        //Object 3: Net calorie 
+        myCaloriePal profile1 = new myCaloriePal();
+        profile1.setProfileStats("Fayeem", "Mooktadeer", 169, 5.8, 20);
+        profile1.getProfileStates();
     }
 }
