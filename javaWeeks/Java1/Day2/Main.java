@@ -35,5 +35,13 @@ public class Main{
         //Object 4: Bank Account
         //BankAccount monies = new BankAccount();
 
+        //Object 5: ID Card:
+        // IDcard studentID = new IDcard(1231, "Fayeem", "Mooktadeer", "12341 Maing Street");
+        // System.out.println(studentID.firstName);
+
+        //Object 6: Vip Customer:
+        VipCustomer Sayeem = new VipCustomer("Sayeem", 25000, "shadhossainboss@gmail.com");
+        System.out.println("Shadidul's Credit Limit is: " + Sayeem.getCreditLimit());
+
     }
 }
