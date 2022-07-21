@@ -28,8 +28,12 @@ public class Main{
         // System.out.println(Albert.isTeen());
 
         //Object 3: Net calorie 
-        myCaloriePal profile1 = new myCaloriePal();
-        profile1.setProfileStats("Fayeem", "Mooktadeer", 169, 5.8, 20);
-        profile1.getProfileStates();
+        // myCaloriePal profile1 = new myCaloriePal();
+        // profile1.setProfileStats("Fayeem", "Mooktadeer", 169, 5.8, 20);
+        // profile1.getProfileStates();
+
+        //Object 4: Bank Account
+        //BankAccount monies = new BankAccount();
+
     }
 }
