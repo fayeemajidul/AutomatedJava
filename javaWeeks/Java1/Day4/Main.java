@@ -6,6 +6,6 @@ public class Main{
         dog.eat();
         dog.run();
         dog.walk();
-
+        Fish fish = new Fish("Nemo", 1, 10, 12, 2, 4);
     }
 }

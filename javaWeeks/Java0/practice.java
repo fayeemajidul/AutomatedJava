@@ -3,8 +3,8 @@ public class practice{
     //Instance Field:
     public practice(){}// Constructor Class
     public static void main(String[] args){
-        //isPrime(99999);
-        testingAllLoops();
+        System.out.println(isPrime(21));
+        //testingAllLoops();
         //masterCalculator();
     }
     public static int addition(int valueOne, int valueTwo){
