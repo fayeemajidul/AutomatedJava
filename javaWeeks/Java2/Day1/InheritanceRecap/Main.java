@@ -10,9 +10,7 @@ public class Main{
         Monitor monitor = new Monitor("27inch beast", "Acer", 27, new Resolution(2540, 1440));
         Motherboad theMotherBoard = new Motherboad("BJ-200", "Asus", 4, 6, "v2.44");
         PC thePC = new PC(theCase, monitor, theMotherBoard);
-        thePC.getMonitor().drawPixelAt(1500, 1200, "red");
-        thePC.getMotherboad().loadProgram("Loading Windows 10 on your computer");
-        thePC.getCase().pressPowerButton();
+        thePC.Power();
 
     }
 }
