@@ -13,15 +13,13 @@ public class PC {
     //Has a relationship doesn't need to stem from the parent class.
 
     //Is-a-relationship Directly stems from the parent class.
-
-    public Case getCase(){
-        return theCase;
+    public void Power(){
+        //Draw a powerbutton using the Case Method Call:
+        theCase.pressPowerButton();
+        drawLogo();
     }
-    public Monitor getMonitor(){
-        return monitor;
+    private void drawLogo(){
+        //Fancy Graphics
+        monitor.drawPixelAt(1200, 50, "red");
     }
-    public Motherboad getMotherboad(){
-        return motherboard;
-    }
-    
 }
