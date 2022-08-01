@@ -3,28 +3,35 @@ import java.util.Random;
 public class Attack{
     //Should use energy as a form of move stability:
     //If energy is < 0
-    private int strength; private int energy;
-    public Attack(int strength, int energy){
+    private int strength; private int energy; private Health health;
+    public Attack(int strength, int energy, Health health){
         this.strength = strength;
         this.energy = energy;
         }
+    
+    //Instance Methods:
+
     public Random RandomFunction(){
         Random rand = new Random();
         return rand;
     }
     public void specialMove1(){
+        int hunger = health.getHunger();
+        hunger -= 20;
         energy -=10;
         double criticalDamage = energyFunction();
         energyFunction();
-        double attackDamage = RandomFunction().nextInt(0,100) * criticalDamage;
-        System.out.println("Pokemon used Special Move 1, it had a damage of " + attackDamage);
+        double strength = RandomFunction().nextInt(0,100) * criticalDamage;
+        System.out.println("Pokemon used Special Move 1, it had a damage of " + strength);
     }
     public void specialMove2(){
+        int hunger = health.getHunger();
+        hunger -= 20;
         energy -=20;
         double criticalDamage = energyFunction();
         energyFunction();
-        double attackDamage = RandomFunction().nextInt(0,100) * criticalDamage;
-        System.out.println("Pokemon used Special Move 2, it had a damage of " + attackDamage);
+        double strength = RandomFunction().nextInt(0,100) * criticalDamage;
+        System.out.println("Pokemon used Special Move 2, it had a damage of " + strength);
     }
     public double energyFunction(){
         if(energy >= 85){

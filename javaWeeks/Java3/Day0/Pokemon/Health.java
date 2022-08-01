@@ -3,10 +3,12 @@ public class Health {
     //Health Function controls the game: 
     //Hunger Adds to health, its the feed function
     //
-    private int health = 100; private int hunger;
+    private int health = 100; private int hunger = 100;
 
     //Default Constructor:
     public Health(){}
+
+    // Instance Methods:
     public void feedFunction(){
         if(hunger <= 100){
             System.out.println("Can't feed Pokemon, your pokemon is already Full");
@@ -17,6 +19,13 @@ public class Health {
             }
         }
     }
+    public void feedMove(){
+        if(hunger < 100){
+            System.out.println("You Chose To Feed Your Pokemon!");
+            int differenceBetweenHunger = 100 - hunger;
+            hunger += differenceBetweenHunger;
+        }
+    }
     public void death(){
         //There should be two ways to die
         //1 Form hunger and one from Health
@@ -25,5 +34,12 @@ public class Health {
         }else if(health == 0){
             System.out.println("Your Pokemon has died from Battle");
         }
+    }
+    //Getters:
+    public int getHealth() {
+        return health;
+    }
+    public int getHunger() {
+        return hunger;
     }
 }
