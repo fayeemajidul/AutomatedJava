@@ -1,3 +1,4 @@
+package Pokemon;
 public class Health {
     //Instance Field:
     //Health Function controls the game: 
