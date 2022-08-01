@@ -21,6 +21,7 @@ public class Attack{
             System.exit(0);
         }else{
             int hunger = health.getHunger();
+            System.out.println(hunger);
             hunger -= 20;
             energy -=10;
             double criticalDamage = energyFunction();
@@ -35,6 +36,7 @@ public class Attack{
         }
         else{
             int hunger = health.getHunger();
+            System.out.println(hunger);
             hunger -= 20;
             energy -=25;
             double criticalDamage = energyFunction();
@@ -47,12 +49,13 @@ public class Attack{
     public void specialMove3(){
         int hunger = health.getHunger();
         int healthBar = health.getHealth();
+        System.out.println(healthBar);
         health.feedMove();
         healthBar += 10;
         energy +=20;
         System.out.println("Pokemon used Special Move 3\nYour hunger is now: " + hunger + "\nYour energy is: " + energy);
     }
-    
+
     public boolean energyDepleted(){
         /** Stops Program if energy = 0 */
         boolean energyDepleted = false;
@@ -75,5 +78,14 @@ public class Attack{
             return criticalDamage;
         }
         return -1;
+    }
+    public int getEnergy() {
+        return energy;
+    }
+    public Health getHealth() {
+        return health;
+    }
+    public int getStrength() {
+        return strength;
     }
 }
