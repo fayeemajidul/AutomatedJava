@@ -53,8 +53,6 @@ public class Attack{
         System.out.println("Pokemon used Special Move 3\nYour hunger is now: " + hunger + "\nYour energy is: " + energy);
     }
     
-    I just want to be with you but you dont want to be with me anymore.
-
     public boolean energyDepleted(){
         /** Stops Program if energy = 0 */
         boolean energyDepleted = false;
