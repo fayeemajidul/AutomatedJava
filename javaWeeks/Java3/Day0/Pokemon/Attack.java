@@ -7,6 +7,7 @@ public class Attack{
     public Attack(int strength, int energy, Health health){
         this.strength = strength;
         this.energy = energy;
+        this.health = health;
         }
     
     //Instance Methods:
@@ -16,33 +17,57 @@ public class Attack{
         return rand;
     }
     public void specialMove1(){
-        int hunger = health.getHunger();
-        hunger -= 20;
-        energy -=10;
-        double criticalDamage = energyFunction();
-        energyFunction();
-        double strength = RandomFunction().nextInt(0,100) * criticalDamage;
-        System.out.println("Pokemon used Special Move 1, it had a damage of " + strength);
+        if(energyDepleted() && health.getHunger() < 5){
+            System.exit(0);
+        }else{
+            int hunger = health.getHunger();
+            hunger -= 20;
+            energy -=10;
+            double criticalDamage = energyFunction();
+            energyFunction();
+            double strength = RandomFunction().nextInt(0,100) * criticalDamage;
+            System.out.println("Pokemon used Special Move 1, Move 1 had a damage of " + strength);
+        }
     }
     public void specialMove2(){
-        int hunger = health.getHunger();
-        hunger -= 20;
-        energy -=25;
-        double criticalDamage = energyFunction();
-        energyFunction();
-        double strength = RandomFunction().nextInt(20,100) * criticalDamage;
-        System.out.println("Pokemon used Special Move 2, it had a damage of " + strength);
+        if(energyDepleted() && health.getHunger() < 5){
+            System.exit(0);
+        }
+        else{
+            int hunger = health.getHunger();
+            hunger -= 20;
+            energy -=25;
+            double criticalDamage = energyFunction();
+            energyFunction();
+            double strength = RandomFunction().nextInt(20,100) * criticalDamage;
+            System.out.println("Pokemon used Special Move 2, Move 2 had a damage of " + strength);
+        }
     }
+
     public void specialMove3(){
         int hunger = health.getHunger();
         int healthBar = health.getHealth();
         health.feedMove();
         healthBar += 10;
         energy +=20;
-        System.out.println("Pokemon used Special Move 3");
+        System.out.println("Pokemon used Special Move 3\nYour hunger is now: " + hunger + "\nYour energy is: " + energy);
+    }
+    
+    I just want to be with you but you dont want to be with me anymore.
+
+    public boolean energyDepleted(){
+        /** Stops Program if energy = 0 */
+        boolean energyDepleted = false;
+        if(energy < 5){
+            System.out.println("Your Pokemon has Fainted");
+            energyDepleted = true;
+            return energyDepleted;
+        }
+        return energyDepleted;
     }
 
     public double energyFunction(){
+        /** Function Creates Critical Damage Returns it and Adds it to Damage Function */
         if(energy >= 85){
             //Create an attack critical bonus of 10%
             double criticalDamage  = 1.10;
@@ -54,8 +79,3 @@ public class Attack{
         return -1;
     }
 }
-
-
-//Finished Attack Function Just need to add a hunger component to increase Energy:
-//In order to do that I need to play with the Health function:
-//Work on health function after break health shoudl directly affect the energy function in this file

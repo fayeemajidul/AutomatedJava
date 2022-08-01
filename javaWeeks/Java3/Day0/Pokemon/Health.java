@@ -14,7 +14,8 @@ public class Health {
             System.out.println("Can't feed Pokemon, your pokemon is already Full");
         }if(health < 20){
             while(health < 20){
-                health--;
+                //This should decrease every round by 5
+                health-=5;
                 death();
             }
         }

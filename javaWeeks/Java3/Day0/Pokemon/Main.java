@@ -5,7 +5,7 @@ public class Main{
 
     public static void main(String[] args) {
         Health health = new Health();
-        Attack attack = new Attack(100, 20);
-        attack.specialMove1();
+        Attack attack = new Attack(100, 20, health);
+        attack.specialMove3();
     }
 }
