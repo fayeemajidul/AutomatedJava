@@ -10,6 +10,8 @@ public class Car{
     public Car(int cylinder, String name){
         this.cylinder = cylinder;
         this.name = name;
+        this.engine = true;
+        this.wheels = 4;
     }
     //Instance Methods:
     public void startEngine(){
@@ -27,5 +29,11 @@ public class Car{
     }
     public String getName() {
         return name;
+    }
+    public int getWheels() {
+        return wheels;
+    }
+    public boolean getEngine(){
+        return engine;
     }
 }
