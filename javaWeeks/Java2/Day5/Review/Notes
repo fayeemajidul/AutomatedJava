@@ -1,13 +1,23 @@
-We will be reviewing what we have learned so far. The things we have learned thus far from Section 4 all the way to Section 7
----> Methods, All types of Methods:
----> Method Overloading
-
 --->Classes and Constructors / OOPS
     ---> Creating Constructors:
+        ---> public <Class Name>(){}  // Initializes fields of instances rather then accessing mutators to change values within the Mutator Method
     ---> Classes
+        --> Serves as blueprints to create different instances/objects of that data type
+            objectData objectName = new objectName(); // Constructor to intializes data into the object
+
     ---> Has/A relationship
+        --> Composition relationship
     ---> Is/A relationship
+        --> this is a inhertiance relationship where characteristic of super class gets inheritated into the sub class. Parent/child relationship
     ---> Method overriding 
+        --> Subclass Methods add onto super class methods as an extension.
+
     ---> Static vs Instance Methods? What is the key concept behind the idea
+        --> Static methods are fixed methods of data that are accessible to all Instance Methods,  whereas instance methods are unique data to the instance.
+
     ---> This VS Super
+        --> this. is used in the constructor to refer to the constructor to add default values
+        --> Super refers back to the super class
+
     ---> Private method Accessor
+        --> form of encapuslation that protects data from exploitability / clients aren't able to access the irrelevant inner parts of the function.
