@@ -22,6 +22,16 @@ public class Main{
         }
                 
     }
+    public static int forLoops(int playerHealth){
+        for(int i = 1; i <= 100; i++){
+            playerHealth -= 10;
+        }
+        System.out.println("This will use the same code, but take different application");
+        if(playerHealth == 0 || playerHealth < 0){
+            System.out.println("Player has died inside");
+        }
+        return playerHealth;
+    }
     public static void forLoops(){
         for(int i = 1; i <= 10; i++){
             System.out.println("Iteration number: " + i);
@@ -32,7 +42,7 @@ public class Main{
         // System.out.println("Testing the environment");
         // System.out.println(loopRecorder());
         // whileLoops(124);
-        forLoops();
+        forLoops(100);
 
     }
 }
