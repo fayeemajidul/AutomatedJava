@@ -9,7 +9,13 @@ public class Main{
         fiveguys.addHamburgerAddition2("Bacon", 3.00);
         fiveguys.addHamburgerAddition3("Tomato", .50);
         fiveguys.addHamburgerAddition4("Cheese", 1.00);
-        System.out.println(fiveguys.itemizeHamburger());
+        fiveguys.itemizeHamburger();
 
+        // HealthyBurger healthyBurger = new HealthyBurger("Pickles", 12.0);
+        // healthyBurger.addHamburgerAddition1("Pickles", 2.0);
+        // healthyBurger.itemizeHamburger();
+        DeluxeBurger delux = new DeluxeBurger();
+        delux.addHamburgerAddition2("PPpoop", 0.102);
+        delux.itemizeHamburger();
     }
 }
