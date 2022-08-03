@@ -22,5 +22,14 @@ public class Main{
             System.out.println(myArrayVariable[i]);
         }
         getAverage();
+        String [] fruits = {"Apple" , "Banana" , "Pear" , "Pomegrante"};
+        String [] ripeFruits = new String [10];
+        ripeFruits[1] = "Banana";
+        ripeFruits[0] = "Apple";
+        ripeFruits[3] = "Heart Break";
+        ripeFruits[4] = "Why don't you love me";
+        ripeFruits[5] = "I will develop great habits to change myself ";
+
+        System.out.println(ripeFruits[0] +  " " + ripeFruits[1] +  " " + ripeFruits[3]);
     }
 }
