@@ -1,3 +1,6 @@
+/** Fully Didn't understand why my code worked, so review it */
+
+
 import java.util.Arrays;
 import java.util.Scanner;
 public class ValueTypes{
@@ -25,7 +28,6 @@ public class ValueTypes{
 
         //This array has five elements, who's contents aren't saved yet.
         int [] array = readElements(5);
-
         findMin(array);
     }
     //This method initializes an empty erray with user inputted elements.
@@ -44,25 +46,51 @@ public class ValueTypes{
         return arrayInput;
     }
 
+    // public static int [] findMin(int [] array){
+    //     int [] arrayOfAscendingOrder  = Arrays.copyOf(array, array.length);
+    //     int [] minValue = new int [1];
+    //     //Coding Logic
+    //     boolean untilFalse = true;
+    //     int minValueCycle;
+    //     while(untilFalse){
+    //         untilFalse = false;
+    //         for(int i = 0; i < arrayOfAscendingOrder.length-1; i++){
+    //             if(arrayOfAscendingOrder[i] > arrayOfAscendingOrder[i+1]){
+    //                 minValueCycle = arrayOfAscendingOrder[i];
+    //                 arrayOfAscendingOrder[i] = arrayOfAscendingOrder[i+1];
+    //                 arrayOfAscendingOrder[i+1] = minValueCycle;
+    //                 untilFalse = true;
+    //             }
+    //         }
+    //     }
+    //     minValue[0] = arrayOfAscendingOrder[0];
+    //     System.out.println(Arrays.toString(minValue));
+    //     return minValue;
+    // }
     public static int [] findMin(int [] array){
-        int [] arrayOfAscendingOrder  = Arrays.copyOf(array, array.length);
-        int [] minValue = new int [1];
+        int [] elementsInArray  = Arrays.copyOf(array, array.length);
         //Coding Logic
-        boolean untilFalse = true;
-        int minValueCycle;
-        while(untilFalse){
-            untilFalse = false;
-            for(int i = 0; i < arrayOfAscendingOrder.length-1; i++){
-                if(arrayOfAscendingOrder[i] > arrayOfAscendingOrder[i+1]){
-                    minValueCycle = arrayOfAscendingOrder[i];
-                    arrayOfAscendingOrder[i] = arrayOfAscendingOrder[i+1];
-                    arrayOfAscendingOrder[i+1] = minValueCycle;
-                    untilFalse = true;
-                }
+            int MaxIndex = elementsInArray.length - 1;
+            int halfLength = elementsInArray.length/2;
+
+            for(int i = 0; i < elementsInArray.length - 1; i++){
+                int temp = elementsInArray[i];
+                elementsInArray[i] = elementsInArray[MaxIndex-1];
+                elementsInArray[MaxIndex - 1] = temp;
             }
-        }
-        minValue[0] = arrayOfAscendingOrder[0];
-        System.out.println(Arrays.toString(minValue));
-        return minValue;
+
+            // elementsInArray[elementsInArray.length -1] = elementsInArray[0];
+
+        /**
+         * Index #0 = Index #1
+         * Index #1 = Index #2
+         * Index #2 = Index #3
+         * Index #3 = Index #4
+         * i = i+1
+         * 
+         */
+
+        System.out.println(Arrays.toString(elementsInArray));
+        return elementsInArray;
     }
 }
