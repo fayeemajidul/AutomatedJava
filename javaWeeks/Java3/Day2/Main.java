@@ -10,6 +10,7 @@ public class Main{
         Scanner userNum = new Scanner(System.in);
         int [] numberArray = new int [numbers];
         System.out.println("Enter Numbers: \r");
+        userNum.close();
 
         for(int i = 0; i < numbers; i++){
             numberArray[i] = userNum.nextInt();
