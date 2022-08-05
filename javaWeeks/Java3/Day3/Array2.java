@@ -31,7 +31,17 @@ public class Array2 {
         }
         return array;
     }
+    public static void partTwo(int [] array){
+        System.out.println(array.length/2);
+        for(int i = 0; i < array.length/2; i++){
+            int temp = array[i];
+            array[i] = array[(array.length - 1) - i];
+            array[(array.length - 1) - i] = temp;
+        }
+    }
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(reversedArray(4)));
+        int [] array = {1,2,3,4};
+        partTwo(array);
+        System.out.println(Arrays.toString(array));
     }
 }
