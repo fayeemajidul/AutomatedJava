@@ -10,7 +10,7 @@ public class arrayP1 {
 
     public void printGroceryList(){
         /** Prints Grocery Item */
-        System.out.println("You have " + groceryList.size() + "items in your grocery list");
+        System.out.println("You have " + groceryList.size() + " items in your grocery list");
         for(int i = 0; i < groceryList.size(); i++){
             System.out.println((i+1) + ". " + groceryList.get(i));
         }
@@ -27,8 +27,15 @@ public class arrayP1 {
         groceryList.remove(position);
         System.out.println("You have removed " + itemRemoved);
     }
+    public boolean findItemInList(String item){
+        boolean foundItem = groceryList.contains(item);
+        int position = groceryList.indexOf(item);
+        if(foundItem){
+            System.out.println(position + ". " + item + " exists in the grocery list");
+        }
+        return foundItem;
+    }
     public static void main(String[] args) {
-        
     }
 
 }
