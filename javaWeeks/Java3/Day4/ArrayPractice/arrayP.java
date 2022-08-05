@@ -1,5 +1,4 @@
 import java.util.ArrayList;
-import java.util.Arrays;
 
 public class arrayP{
     //Instance Field:
@@ -15,6 +14,7 @@ public class arrayP{
 
         names.remove(1);
         String myLovedOne = names.get(1);
+        System.out.println(myLovedOne);
 
         // for(int i = 0; i < names.size(); i++){
         //     names.set(i, myLovedOne);
