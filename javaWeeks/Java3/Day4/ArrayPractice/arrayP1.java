@@ -7,6 +7,9 @@ public class arrayP1 {
         /* Adds Item to Array List */
         groceryList.add("groceryItem");
     }
+    public ArrayList<String> getGroceryList() {
+        return groceryList;
+    }
 
     public void printGroceryList(){
         /** Prints Grocery Item */
@@ -15,17 +18,23 @@ public class arrayP1 {
             System.out.println((i+1) + ". " + groceryList.get(i));
         }
     }
-
-    public void modifyGroceryItem(int itemPosition, String itemReplace){
-        groceryList.set(itemPosition, itemReplace);
-        //Line has a Plus one since we started from 1 instead of Zero.
-        System.out.println("Grocery item " + itemPosition+1 + " has been modified");
-    
+    public void modifyGroceryItem(String currentItem, String newItem){
+        int position = findItem(currentItem);
+        if(position >= 0){
+            modifyGroceryItem(position, newItem);
+        }
     }
-    public void removeItem(int position){
-        String itemRemoved = groceryList.get(position);
+    private void modifyGroceryItem(int itemPosition, String itemReplace){
+        groceryList.set(itemPosition, itemReplace);
+    }
+    public void removeItem(String item){
+        int positon = findItem(item);
+        if(positon >= 1){
+            removeItem(positon);
+        }
+    }
+    private void removeItem(int position){
         groceryList.remove(position);
-        System.out.println("You have removed " + itemRemoved);
     }
     public boolean findItemInList(String item){
         boolean foundItem = groceryList.contains(item);
@@ -35,7 +44,12 @@ public class arrayP1 {
         }
         return foundItem;
     }
+    public int findItem(String item){
+        int position = groceryList.indexOf(item);
+        return position;
+    }
     public static void main(String[] args) {
+
     }
 
 }

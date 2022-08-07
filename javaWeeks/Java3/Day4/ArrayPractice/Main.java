@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main {
@@ -33,8 +34,10 @@ public class Main {
                     searchForItem();
                     break;
                 case 6:
-                    quit = true;
-                    break;
+                    processArrayList();
+                case 7:
+                quit = true;
+                break; 
             }
         }
     }
@@ -54,17 +57,16 @@ public class Main {
         groceryList.addGroceryItems(scan.nextLine());
     }
     public static void modifyItem(){
-        System.out.println("Enter item number: ");
-        int getPosition = scan.nextInt();
-        scan.nextLine();
-        System.out.println("Enter the item to replace: ");
+        System.out.println("Current item number: ");
+        String getPosition = scan.nextLine();
+        System.out.println("Enter the new item num: ");
         String getNewItem = (scan.nextLine());
-        groceryList.modifyGroceryItem(getPosition -1 , getNewItem);
+        groceryList.modifyGroceryItem(getPosition, getNewItem);
     }
     public static void removeItem(){
-        System.out.println("Enter the item number you would like to remove");
-        int itemNumber = scan.nextInt();
-        groceryList.removeItem(itemNumber - 1);
+        System.out.println("Enter the item  you would like to remove");
+        String itemName = scan.nextLine();
+        groceryList.removeItem(itemName);
     }
     public static void searchForItem(){
         System.out.println("Item to search for: ");
@@ -74,6 +76,22 @@ public class Main {
         }else{
             System.out.println(searchItem + " is not in the shopping list");
         }
+    }
+    public static void processArrayList(){
+        //Duplicate Array list
+        ArrayList <String> newArray =  new ArrayList<>();
+        //Copy array list through a getter from the class.
+        newArray.addAll(groceryList.getGroceryList());
+
+        //Duplicates through the file: Java Short cut.
+        ArrayList <String> nextArray = new ArrayList<>(groceryList.getGroceryList());
+
+        //Convert from Array to regular Array list:
+        String[] myArray = new String[groceryList.getGroceryList().size()];
+
+        myArray = groceryList.getGroceryList().toArray(myArray);
+
+        System.out.println(nextArray);
     }
 
 }
