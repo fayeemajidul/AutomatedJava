@@ -18,6 +18,16 @@ public class unboxing{
 
     //Main method
     public static void main(String[] args) {
+        boolean value = true;
+
+        //Unboxing:
+        ArrayList <Boolean> movedOn = new ArrayList<Boolean>();
+        for(int i = 0; i < movedOn.size(); i++){
+            Boolean setTrue = movedOn.get(i);
+            movedOn.set(i, setTrue);
+            System.out.println(i + " = "   + movedOn.get(i)); 
+        }
+
         String [] namesInClass = new String [3];
         int [] gradeAverage = new int [2];
         ArrayList <gradeAverage> average = new ArrayList<gradeAverage>();
@@ -69,19 +79,30 @@ public class unboxing{
         //     System.out.println(i + " == " + value);
         // }
 
-        ArrayList <Double> newDoubles = new ArrayList<Double>();
-        //Autoboxing:
-        for(double dbl = 0.0; dbl <= 10.00; dbl += 0.5 ){
-            newDoubles.add(dbl);
-        }
-        //unboxing:
-        for(int i = 0; i < newDoubles.size(); i++){
-            double value = newDoubles.get(i);
-            System.out.println(i + " == " + value);
-        }
+        // ArrayList <Double> newDoubles = new ArrayList<Double>();
+        // //Autoboxing:
+        // for(double dbl = 0.0; dbl <= 10.00; dbl += 0.5 ){
+        //     newDoubles.add(dbl);
+        // }
+        // //unboxing:
+        // for(int i = 0; i < newDoubles.size(); i++){
+        //     double value = newDoubles.get(i);
+        //     System.out.println(i + " == " + value);
+        // }
 
         //Practicing
+        ArrayList <Integer> zahmed = new ArrayList <Integer>();
+        for(int i = 0; i < zahmed.size(); i++){
+            zahmed.add(i);
+        }
+        for(int i = 0; i < zahmed.size(); i++){
+            int z = zahmed.get(i);
+            System.out.println(i + " == " + z);
+        }
+
+
     }
+
 
     //Review Concepts of Autoboxing and Unboxing:
 }
