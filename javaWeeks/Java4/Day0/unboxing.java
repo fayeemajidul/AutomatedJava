@@ -18,7 +18,6 @@ public class unboxing{
 
     //Main method
     public static void main(String[] args) {
-        boolean value = true;
 
         //Unboxing:
         ArrayList <Boolean> movedOn = new ArrayList<Boolean>();
@@ -63,7 +62,6 @@ public class unboxing{
         }
         //Java shorthands this code
         Integer myIntValue = 56; //Java does hard work for you
-        int myInt = myIntValue; // Java unboxes for you as well, doeshardwork.
 
         //.valueOf();
         //myInt.intValue();
