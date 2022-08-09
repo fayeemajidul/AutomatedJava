@@ -1,5 +1,3 @@
-package BankingChallenge;
-
 import java.util.ArrayList;
 
 public class Branch {
