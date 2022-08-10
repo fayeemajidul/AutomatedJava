@@ -50,12 +50,12 @@ public class Demo {
     }
     public static void visit(LinkedList <String> cities){
         Scanner scanner = new Scanner(System.in);
-        boolean quit = false;
+        boolean quit = true;
+        boolean goingForward = true;
         ListIterator <String> listIteratior = cities.listIterator();
 
         if(cities.isEmpty()){
             System.out.println("No cities in the iternerary");
-            return;
         } else {
             System.out.println("Now visiting " + listIteratior.next()); 
             printMenu();
@@ -69,19 +69,32 @@ public class Demo {
                 quit = true;
 
                 case 1:
+                if(!goingForward){
+                    if(listIteratior.hasNext()){
+                        listIteratior.next();
+                    }
+                    goingForward = true;
+                }
                 if(listIteratior.hasNext()){
                     System.out.println("Now visiting"  + listIteratior.next());
                 }else{
                     System.out.println("You've reached the end of the list");
+                    goingForward = false;
                 }
+                goingForward = false;
                 break;
 
                 case 2:
+                    if(listIteratior.hasPrevious()){
+                        listIteratior.previous();
+                    }
                     if(listIteratior.hasPrevious()){
                         System.out.println("Now visiting" + listIteratior.previous());
                     }
                     else{
                         System.out.println("We are at the start of the list");
+                        //only can go forward.
+                        goingForward = true;
                     }
                     break;
 
@@ -90,7 +103,10 @@ public class Demo {
                     break;
             }
         }
+        scanner.close();
+
     }
+
     public static void printMenu(){
         System.out.println("Available Actions: 0 -- to quit, 1 -- go to next city, 2 --- go to previous city, 3 -- print menu options");
     }
