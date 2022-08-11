@@ -24,12 +24,18 @@ public class Customer {
             //Add this 
             bookList.add(new Books(bookName, authorName, bookNumber));
         }
+        return false;
     }
-
     //Find Book Function:
-    /** Should be able to access the Array and find the book with j the name of the  */
-
-
-
+    public Books findBook(String bookName){
+        for(Books checkBook : this.bookList){
+            if(checkBook.getBookName().equals(bookName)){
+                return checkBook;
+            }
+        }
+        return null;
+    }
+    
 
 }
+//highfrequency codin
