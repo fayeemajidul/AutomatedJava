@@ -1,7 +1,7 @@
-class Interface2 implements Itelephone{
+class InterfacePrac implements Itelephone{
     //We need to implement the methods:
     private String myNumber; private boolean isRinging;
-    public Interface2(String myNumber){
+    public InterfacePrac(String myNumber){
         this.myNumber = myNumber;
     }
     /** INTERFACES:
@@ -15,7 +15,7 @@ class Interface2 implements Itelephone{
     }
 
     @Override
-    public void dial(String myNumber){
+    public void dial(int myNumber){
         System.out.println("Dialing " + myNumber);
     }
 
