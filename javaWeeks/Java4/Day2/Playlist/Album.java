@@ -39,7 +39,7 @@ public class Album{
 
         //if the songs are within the range. Add the song to the list.
 
-        if((index > 0) && (index <= this.        songs.size())){
+        if((index > 0) && (index <= this.songs.size())){
             playList.add(this.songs.get(index));
             return true;
         }
