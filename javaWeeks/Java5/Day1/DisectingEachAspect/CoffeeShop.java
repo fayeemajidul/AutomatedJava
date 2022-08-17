@@ -14,8 +14,7 @@ public abstract class CoffeeShop{
 
     //What do all Coffee Shops share?
     abstract double coffeePrice();
-    abstract int totalPriceOfCoffee();
-    abstract ArrayList customerOrder();
+    abstract ArrayList <String> customerOrder();
     abstract void foodMenu();
 
 
