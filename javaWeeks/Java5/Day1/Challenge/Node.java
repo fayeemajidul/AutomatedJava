@@ -1,62 +1,46 @@
 public class Node extends ListItem{
-    //Instance Field:
-    public Node(Value value){
-        super(values);
+
+    public Node(Object value) {
+        super(value);
     }
 
     @Override
-    protected void next() {
-        
-        
+    ListItem next() {
+        return this.rightLink;
     }
 
     @Override
-    protected void setNext() {
-        // TODO Auto-generated method stub
-        
+    ListItem setNext(ListItem item) {
+        this.rightLink = item;
+        return this.rightLink;
     }
 
     @Override
-    protected void previous() {
-        // TODO Auto-generated method stub
-        
+    ListItem previous() {
+        return this.leftLink;
     }
 
     @Override
-    protected void setPrevious() {
-        // TODO Auto-generated method stub
-        
+    ListItem setPrevious(ListItem item) {
+        //Points to left link.
+        this.leftLink = item;
+        return this.leftLink;
     }
 
     @Override
-    protected void compareTo() {
-        // TODO Auto-generated method stub
-        
+    int compareTo(ListItem item) {
+        /** Confused by this method: */
+        if(item != null){
+            return (((String) super.getValue()).compareTo((String) item.getValue()));
+        }else{
+            return -1;
+        }
     }
-
-    @Override
-    protected Value getValue() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-
-    @Override
-    protected Value setValue() {
-        // TODO Auto-generated method stub
-        return null;
-    }
-    
 }
 
-
-
-
-//         -  next(), takes no parameters and returns the ListItem to its right.
-
-//         -  setNext(), takes a ListItem and sets it as its rightLink, then it returns rightLink.
-
-//         -  previous(), takes no parameters and returns the ListItem to its left.
-
-//         -  setPrevious(), takes a ListItem and sets it as its leftLink, then it returns leftLink.
-
-//         -  compareTo(), takes a ListItem and compares it to the ListItem that called this method. Use value from ListItem for comparison. If this value is greater than the value that was passed in, then it should return a number greater than zero. If vice versa, then it should return a number less than zero, and zero if equal.
+interface NodeList{
+    ListItem getRoot();
+    boolean addItem(ListItem item);
+    boolean removeItem(ListItem item);
+    void traverse(ListItem root);
+}

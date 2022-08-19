@@ -1,7 +1,6 @@
-import java.util.List;
 public abstract class ListItem {
-    protected List rightLink = null;
-    protected List leftLink = null;
+    protected ListItem rightLink = null;
+    protected ListItem leftLink = null;
     protected Object value;
 
     public ListItem(Object value){
