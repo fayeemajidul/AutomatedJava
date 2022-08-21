@@ -5,32 +5,36 @@ import java.util.Scanner;
 public class TryExcept{
     public TryExcept(){}
     public static void main(String[] args) {
-        int result = divide();
-        System.out.println(result);
+        //Single Catch Exceptions, pretty cool.
+        try{
+            int result = divide();
+            System.out.println(result);
+        }catch(ArithmeticException | NoSuchElementException e){
+            System.out.println(e.toString());
+            System.out.println("Unable to perform division");
+        }
     }
     private static int divide(){
         int x;
-        int y;
+        int y; 
 
         //Try and Catch are basically ways for you to capture the Mistake: Throw is something you can do output text on the console.
-        
-        try{
+        // try{
             x = getInt();
             y = getInt();
-        }catch(NoSuchElementException e){
-            throw new ArithmeticException("No Suitable input");
-        }
-        System.out.println("X is :" + x + "\nY is: " + y);
-        try{
+            System.out.println("X is :" + x + "\nY is: " + y);
             return x/y;
-        }catch(ArithmeticException e){
-            throw new ArithmeticException("Attempt to divide by 0");
-        }
+
+        // }catch(NoSuchElementException e){
+        //     throw new NoSuchElementException("No Suitable input");
+        // }catch(ArithmeticException e){
+        //     throw new ArithmeticException("Attempt to divide by 0");
+        // }
     }
     private static int getInt(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Please enter integer");
-        scanner.close();
+        // scanner.close();
         while(true){
             try{
                 return scanner.nextInt();

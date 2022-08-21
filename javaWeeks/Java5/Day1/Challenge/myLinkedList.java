@@ -38,6 +38,20 @@ public class myLinkedList implements NodeList {
                     newItem.setPrevious(currentItem);
                     return true;
                 }
+            } else if(comparison > 0){
+                if(currentItem.previous() != null){
+                    currentItem.previous().setNext(newItem);
+                    newItem.setPrevious(currentItem.previous());
+                    newItem.setNext(currentItem);
+                    currentItem.setPrevious(newItem);
+                }else{
+                    //This is the root //Establishing nodes
+                    newItem.setNext(this.root);
+                    this.root.setPrevious(newItem);
+                    this.root = newItem;
+                    System.out.println(newItem.getValue() +  "Is already addes");
+                    return false;
+                }
             }
 
         }
