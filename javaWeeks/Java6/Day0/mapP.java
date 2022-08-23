@@ -30,8 +30,13 @@ public class mapP{
         System.out.println(languages.get("Python")); // Returns the value when inputting the key.
         System.out.println(languages.get("Lisp"));
         Set <String> languageContent = languages.keySet();
-
+        System.out.println("==============================");
         //Loop Through the Contents:
+
+        languages.remove("Lisp");
+        languages.replace("Basic", "I want to become my best self and align myself with my virtues");
+
+        System.out.println(languages.get("Basic"));
         for(String language : languageContent){
             System.out.println("Language: " + language);
         }
