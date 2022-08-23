@@ -9,6 +9,8 @@ public class Location {
         this.locationID = locationID;
         this.description = description;
         this.exits = new HashMap<String, Integer>();
+        this.exits.put("Q", 0);
+        
     }
     //Instance Methods:
     public String getDescription() {
@@ -25,6 +27,7 @@ public class Location {
     //Ability to Add the exit:
     public void addExit(String direction, int location){
         exits.put(direction, location);
+        
     }
 
 }

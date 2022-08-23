@@ -1,7 +1,6 @@
-import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 public class mapP{
     public mapP(){}
@@ -17,8 +16,21 @@ public class mapP{
         Set <String> typeOfFruit = Fruits.keySet();
         System.out.println(typeOfFruit); // Returns it into a list.
     }
+    public static void practiceWithStringManip(){
+        /** Your Regex is telling the computer where to split. */
+        String [] lyricsOfASong = "Loving you till the end like XYZ".split(" ");
+        for(String lyric: lyricsOfASong){
+            System.out.println(lyric);
+        }
+
+        String [] splittingFruits = "Apple Banana Pineapple Pomegrante Dragonfruit Grapes Pears Peach Oranges".split(" ");
+        for(String fruits : splittingFruits){
+            System.out.println(fruits);
+        }
+    }
 
     public static void main(String[] args) {
+        practiceWithStringManip();
         Map <String, String> languages = new HashMap<>();
         languages.put("Java", "OOP platform");
         languages.put("Python","object oriented programming language");
@@ -41,11 +53,11 @@ public class mapP{
             System.out.println("Language: " + language);
         }
 
-        // Collection <String> definitions = languages.values();
-        // for(String defin : definitions){
-        //     System.out.println("Definition: " + definitions);
-        // }
-        
+        Collection <String> definitions = languages.values();
+        for(String defin : definitions){
+            System.out.println("Definition: " + defin + definitions);
+        }
+
     }
         
 }
