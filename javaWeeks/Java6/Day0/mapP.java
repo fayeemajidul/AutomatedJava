@@ -1,3 +1,4 @@
+import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -28,6 +29,17 @@ public class mapP{
         //You need to get the values with get method.
         System.out.println(languages.get("Python")); // Returns the value when inputting the key.
         System.out.println(languages.get("Lisp"));
+        Set <String> languageContent = languages.keySet();
+
+        //Loop Through the Contents:
+        for(String language : languageContent){
+            System.out.println("Language: " + language);
+        }
+
+        // Collection <String> definitions = languages.values();
+        // for(String defin : definitions){
+        //     System.out.println("Definition: " + definitions);
+        // }
         
     }
         
