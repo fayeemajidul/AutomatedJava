@@ -24,9 +24,11 @@ public class mapP{
         languages.put("Algol", "Algorithmic Langauge");
         languages.put("Basic", "Beginners Instruction code");
         languages.put("Lisp", "Therein lies madness");
+        languages.put("Lisp", "I miss Zairah");
         //You need to get the values with get method.
         System.out.println(languages.get("Python")); // Returns the value when inputting the key.
-
+        System.out.println(languages.get("Lisp"));
+        
     }
         
 }
