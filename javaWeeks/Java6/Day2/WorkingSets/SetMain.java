@@ -1,11 +1,16 @@
 import java.util.HashSet;
 import java.util.Set;
-import java.lang.reflect.Array;
 import java.util.*;
 
 public class SetMain{
     //Instance Field:
     public SetMain(){}
+    private static void printSet(Set <String> set){
+        for(String s: set){
+            System.out.print(s + " " );
+        }
+        System.out.println();
+    }
     public static void main(String[] args) {
         Set <Integer> squares = new HashSet<>();
         Set <Integer> cubes = new HashSet<>();
@@ -45,6 +50,16 @@ public class SetMain{
         nature.addAll(Arrays.asList(NatureWords));
         String [] divineWords = {"to", "err", "is", "human", "to","forgive", "divine"};
         nature.addAll(Arrays.asList(divineWords));
+
+        System.out.println("Nature - Divine:");
+        Set<String> diff1 = new HashSet<>(nature);
+        diff1.remove(nature);
+        printSet(diff1);
+
+        System.out.println("Divine - Nature:");
+        Set <String> diff2 = new HashSet<>(divine);
+        diff2.remove(divine);
+        printSet(diff2);
         
     }
 }
