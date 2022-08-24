@@ -27,6 +27,10 @@ public class Main{
         solarSystem.put(tempMoon.getName(), tempMoon);
         temp.addMoon(tempMoon);
 
+        tempMoon = new HeavenlyBody("Europa", 43);
+        solarSystem.put(tempMoon.getName(), tempMoon);
+        temp.addMoon(tempMoon);
+
         //Print out:
         System.out.println("Planets");
         for(HeavenlyBody planet: planets){
@@ -37,5 +41,25 @@ public class Main{
         for(HeavenlyBody jupiterMoon : body.getSatellites()){
             System.out.println("\t" + jupiterMoon.getName());
         }
+        //Operation: Union  -- groups all sets together w/ unique values.
+        Set <HeavenlyBody> moons = new HashSet<>();
+        for(HeavenlyBody planet : planets){
+            moons.addAll(planet.getSatellites());
+        }
+        System.out.println("All Moons");
+        for(HeavenlyBody moon: moons){
+            System.out.println("\t" + moon.getName());
+        }
+        HeavenlyBody pluto = new HeavenlyBody("Pluto", 842);
+        Object o = new Object();
+        o.equals(o);
+        "pluto".equals("");
+
+
     }
 }
+
+/* if your set uses an object within the set then you have to
+ * Override methods: 
+ * If two objects compare equal, then they must have the same hash code. Other wise one object will be duplicated since they have unique hashcodes.
+ */
