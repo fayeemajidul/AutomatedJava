@@ -1,0 +1,5 @@
+Why are sets used?
+    ** Sets are used for organizational purposes.
+    We divide and categorize everything: from playlists + to files.
+    Are just a collection of elements. Sets are just well defined and easy to access.
+    Sets are able to put items in a container and grab them
