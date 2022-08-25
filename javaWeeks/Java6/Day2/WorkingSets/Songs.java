@@ -1,14 +1,14 @@
 import java.util.HashSet;
 import java.util.*;
 
-public class SetPrac{
+public class Songs{
     //INSTANCE FIELD:
     String playlistName;
     Set <String> songSet;
 
     //Creating a PlayList:
 
-    public SetPrac(String playlistName){
+    public Songs(String playlistName){
         this.playlistName = playlistName;
         songSet = new HashSet<>();
     }
@@ -23,8 +23,7 @@ public class SetPrac{
         return new HashSet<>();
     }
 
-    public void addSongs(){
-        songSet.add("Adding a Song");
-
+    public void addSongs(String songName){
+        songSet.add(songName);
     }
 }
