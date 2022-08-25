@@ -51,23 +51,22 @@ public class SetMain{
         String [] divineWords = {"to", "err", "is", "human", "to","forgive", "divine"};
         nature.addAll(Arrays.asList(divineWords));
 
-        // System.out.println("Nature - Divine:");
-        // Set<String> diff1 = new HashSet<>(nature);
-        // diff1.remove(nature);
-        // printSet(diff1);
+        System.out.println("Nature - Divine:");
+        Set<String> diff1 = new HashSet<>(nature);
+        System.out.println(nature);
+        printSet(diff1);
 
-        // System.out.println("Divine - Nature:");
-        // Set <String> diff2 = new HashSet<>(divine);
-        // diff2.remove(divine);
-        // printSet(diff2);
+        System.out.println("Divine - Nature:");
+        Set <String> diff2 = new HashSet<>(divine);
+        printSet(diff2);
 
-        // Set <String> unionTest = new HashSet<>(nature);
-        // unionTest.addAll(divine);
-        // Set <String> intersectionTest = new HashSet<>(nature);
-        // intersectionTest.retainAll(divine);
-        // System.out.println("Symmetric Difference");
-        // unionTest.removeAll(intersectionTest);
-        // printSet(unionTest);
+        Set <String> unionTest = new HashSet<>(nature);
+        unionTest.addAll(divine);
+        Set <String> intersectionTest = new HashSet<>(nature);
+        intersectionTest.retainAll(divine);
+        System.out.println("Symmetric Difference");
+        unionTest.removeAll(intersectionTest);
+        printSet(unionTest);
         
         /* Review Bulk Operators
          * Retain All

@@ -22,8 +22,13 @@ public class Songs{
         //Secures our data.
         return new HashSet<>();
     }
-
+    public void removeSong(String songName){
+        songSet.remove(songName);
+    }
     public void addSongs(String songName){
         songSet.add(songName);
+    }
+    public void clearPlaylist(){
+        songSet.clear();
     }
 }
