@@ -29,7 +29,8 @@ public final class HeavenlyBody{
     ////////////// SO WE DONT HAVE DUPLICATE SETS
     @Override
     public int hashCode(){
-        return super.hashCode();
+        //System.out.println("Hashcode Called");
+        return this.name.hashCode() + 57;
     }
 
     @Override
