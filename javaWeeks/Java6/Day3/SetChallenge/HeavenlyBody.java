@@ -1,7 +1,7 @@
 import java.util.HashSet;
 import java.util.Set;
 
-public class HeavenlyBody {
+public abstract class HeavenlyBody {
     private final String name;
     private final double orbitalPeriod;
     private final Set<HeavenlyBody> satellites;
@@ -39,8 +39,10 @@ public class HeavenlyBody {
     public double getOrbitalPeriod() {
         return orbitalPeriod;
     }
-
-    public boolean addMoon(HeavenlyBody moon) {
+    public BodyTypes getBodyType() {
+        return bodyType;
+    }
+    public boolean addSatellite(HeavenlyBody moon) {
         return this.satellites.add(moon);
     }
 
@@ -50,24 +52,29 @@ public class HeavenlyBody {
 
 
     @Override
-    public boolean equals(Object obj) {
+    //We do final so we wont have to account for subclasses.
+    public final boolean equals(Object obj) {
         if(this == obj) {
             return true;
         }
-
-        System.out.println("obj.getClass() is " + obj.getClass());
-        System.out.println("this.getClass() is " + this.getClass());
-        if ((obj == null) || (obj.getClass() != this.getClass())) {
-            return false;
+        if(obj instanceof HeavenlyBody){
+            HeavenlyBody theObject = (HeavenlyBody) obj;
+            if(this.name.equals(theObject.getName())){
+                return this.bodyType == theObject.getBodyType();
+            }
         }
-
         String objName = ((HeavenlyBody) obj).getName();
-        return this.name.equals(objName);
+        return false;
     }
 
     @Override
     public int hashCode() {
         System.out.println("hashcode called");
-        return this.name.hashCode() + 57;
+        return this.name.hashCode() + 57 + this.bodyType.hashCode();
+    }
+
+    @Override
+    public String toString(){
+        return this.name + ":" + this.bodyType + ", " + this.orbitalPeriod;
     }
 }
