@@ -1,3 +1,11 @@
+import java.util.*;
+    /*
+     * Complete the 'findMedian' function below.
+     *
+     * The function is expected to return an INTEGER.
+     * The function accepts INTEGER_ARRAY arr as parameter.
+     */
+
 
 
 public class fibonacci{
@@ -30,10 +38,15 @@ public class fibonacci{
         }
         System.out.println(storeNum);
 
+
     }
     
     public static void main(String[] args) {
-        sequencing();
-        addIntegers(100001);
+        ArrayList<Integer> arr = new ArrayList<Integer>();
+        arr.add(10);
+        arr.add(3);
+
+        // sequencing();
+        // addIntegers(100001);
     }
 }
