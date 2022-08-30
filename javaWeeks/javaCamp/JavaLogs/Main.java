@@ -20,6 +20,7 @@ public class Main{
     }
     public static void main(String[] args) {
         System.out.println("Just uplaoding the logs");
+        System.out.println("Sick Day");
         
     }
 }
