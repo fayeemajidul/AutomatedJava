@@ -21,8 +21,7 @@ public final class App implements WebDriver {
     private App() {
     }
     public static void main(String[] args) {
-        linkXPath();
-
+        flightTest();
     }
 
 //Syntax for Css Selector:
@@ -71,8 +70,21 @@ public final class App implements WebDriver {
         driving.findElement(By.className("btn-primary")).click();
 
         //driving.quit();
+    }
+
+    public static void flightTest(){
+        //Syntax for Xpath: //<TagName>[@attribute = 'value']
+        /* Testing the flights. */
+        System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+        driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).sendKeys("Port Blair");
+        driver.findElement(By.cssSelector("input.select_CTXT valid")).click();
+        driver.findElement(By.xpath("//a[@value = 'DAC']")).click();
 
 
+        //driver.quit();
 
     }
 
