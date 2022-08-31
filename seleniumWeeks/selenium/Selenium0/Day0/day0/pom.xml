@@ -27,12 +27,6 @@
       <artifactId>selenium-java</artifactId>
       <version>4.4.0</version>
     </dependency>
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <version>${junit.version}</version>
-      <scope>test</scope>
-    </dependency>
   </dependencies>
   <build>
     <plugins>
@@ -78,6 +72,7 @@
           <skip>${skipTests}</skip>
         </configuration>
         <executions>
+
         </executions>
       </plugin>
       <plugin>
