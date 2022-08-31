@@ -21,7 +21,7 @@ public final class App implements WebDriver {
     private App() {
     }
     public static void main(String[] args) {
-        flightTest();
+        instagramSignup();
     }
 
 //Syntax for Css Selector:
@@ -81,11 +81,18 @@ public final class App implements WebDriver {
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
         driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).sendKeys("Port Blair");
         driver.findElement(By.cssSelector("input.select_CTXT valid")).click();
-        driver.findElement(By.xpath("//a[@value = 'DAC']")).click();
-
-
+        driver.findElement(By.className("select_CTXT")).click();
+        driver.findElement(By.linkText("Bangkok (BKK)")).click();
         //driver.quit();
 
+    }
+
+    public static void instagramSignup(){
+
+        System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        driver.get("https://www.instagram.com/accounts/emailsignup/");
+        driver.findElement(By.className("_2hvTZ")).click();
     }
 
     @Override
