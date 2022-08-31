@@ -37,8 +37,8 @@ public class Titan implements fundamental {
     }
 
     @Override
-    public int name() {
-        return 0;
+    public String name() {
+        return null;
     }
     
 }

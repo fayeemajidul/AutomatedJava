@@ -6,5 +6,11 @@ public class attackOnTitanWorld{
         this.titans = titans;
         this.humen = humen;
     }
+    public Human getHumen() {
+        return humen;
+    }
+    public Titan getTitans() {
+        return titans;
+    }
 
 }

@@ -3,5 +3,5 @@ public interface fundamental {
     public int health();
     public int attack();
     public int defend();
-    public int name();
+    public String name();
 }
