@@ -11,9 +11,21 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 /**
  * Types of Locators:
  *ID, XPATH, CSS Selector, Name, Tag Name, Link Text, Partial Link Text
+ Verification: CSSselector + XPath:
+ $() for Css, $x() for Xpath.
+
+ General Thumb of thumb choose unique Elements
  */
 
- //Syntax for Css Selector:
+public final class App implements WebDriver {
+    private App() {
+    }
+    public static void main(String[] args) {
+        linkXPath();
+
+    }
+
+//Syntax for Css Selector:
  /* By (Class Name) -> tagname.classname 
   * By (ID) -> tagname#id -> input#inputUsername
 
@@ -27,14 +39,13 @@ import org.openqa.selenium.firefox.FirefoxDriver;
     To Check for Unique Elements on a webpage, you can do $('CssSelector') --> to check if the element is unique.
 
  */
-
-public final class App implements WebDriver {
-    private App() {
-    }
-    public static void main(String[] args) {
-        //Setting up the System first.
+    public static void cssSelectorPath(){
+        
+        //Initializing Web Driver.
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver" );
         WebDriver driver = new FirefoxDriver();
+
+        //Calling Web Methods:
         driver.get("https://sso.teachable.com/secure/9521/identity/login/password");
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         driver.findElement(By.id("email")).sendKeys("fayeemf@gmail.com");
@@ -42,10 +53,29 @@ public final class App implements WebDriver {
         driver.findElement(By.className("btn-primary")).click();
         System.out.println(driver.findElement(By.cssSelector("div.bodySmall")).getText());
 
-        //driver.quit();
+    }
+
+    public static void linkXPath(){
+        //Just enter in the text in the <a> tag, nothing too complicated.
+        //Syntax for Xpath: //<TagName>[@attribute = 'value']
+
+        System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver" );
+        WebDriver driving = new FirefoxDriver();
+        driving.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driving.get("https://sso.teachable.com/secure/9521/identity/login/password");
+        driving.findElement(By.linkText("Sign Up")).click();
+        driving.findElement(By.xpath("//input[@id = 'user_name']")).sendKeys("John Doe");
+        driving.findElement(By.xpath("//input[@id = 'user_email']")).sendKeys("johndoe@gmail.com");
+        driving.findElement(By.className("password")).sendKeys("Johndoe123");
+        driving.findElement(By.xpath("//input[@type = 'checkbox']")).click();
+        driving.findElement(By.className("btn-primary")).click();
+
+        //driving.quit();
+
 
 
     }
+
     @Override
     public void get(String url) {
         
