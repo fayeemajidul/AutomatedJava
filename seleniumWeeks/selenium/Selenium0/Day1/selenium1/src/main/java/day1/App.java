@@ -7,8 +7,6 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
-
 /**
  * Types of Locators:
  *ID, XPATH, CSS Selector, Name, Tag Name, Link Text, Partial Link Text
@@ -139,7 +137,6 @@ public final class App implements WebDriver {
             try {
                 Thread.sleep(2400);
             } catch (InterruptedException e1) {
-                // TODO Auto-generated catch block
                 e1.printStackTrace();
             }
             //Assert.assertEquals(driver.findElement(By.id("legalTextRow")).getText(), "By creating an account, you agree to Amazon's Conditions of Use and Privacy Notice.");
