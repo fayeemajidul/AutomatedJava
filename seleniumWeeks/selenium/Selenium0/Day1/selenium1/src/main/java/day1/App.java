@@ -71,7 +71,8 @@ public final class App implements WebDriver {
 
         //driving.quit();
     }
-
+    //Implicit Waits for objects to show on the page
+    //Thread waits for the program to execute.
     public static void flightTest(){
         //Syntax for Xpath: //<TagName>[@attribute = 'value']
         /* Testing the flights. */
@@ -84,18 +85,17 @@ public final class App implements WebDriver {
         driver.findElement(By.className("select_CTXT")).click();
         driver.findElement(By.linkText("Bangkok (BKK)")).click();
         //driver.quit();
-
     }
     //  (//option[@value='Sep'])[1]
     //  option[value='Sep']
-
-
-
-
-
-
     //  *** 3: Tagname[attribute = 'value']
 
+    //For Dynamic objects:
+    //Last four values will change, so you can do driver.FindElements.(By.cssSelector("tagname[attribute *= 'value']"));
+    /** To access child properities
+     * xpath Parent: //tagname[@attribute = 'value']
+     * xpath Child: //tagname[@attribute = 'value']/tagname[1]
+     */
 
     public static void instagramSignup(){
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
