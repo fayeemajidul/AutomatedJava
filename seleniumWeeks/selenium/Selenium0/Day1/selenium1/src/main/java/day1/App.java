@@ -7,6 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 
 /**
  * Types of Locators:
@@ -21,7 +22,8 @@ public final class App implements WebDriver {
     private App() {
     }
     public static void main(String[] args) {
-        instagramSignup();
+        //instagramSignup();
+        amazonSignup();
     }
 
 //Syntax for Css Selector:
@@ -36,6 +38,11 @@ public final class App implements WebDriver {
     ** driver.manage().timeouts().implicitlyWait(Duration.ofSeconds());
 
     To Check for Unique Elements on a webpage, you can do $('CssSelector') --> to check if the element is unique.
+
+    //Xpath to locate button:
+    // (//buttton[text() = 'Log Out'])
+    // (//*[text() = 'Log Out'])
+
 
  */
     public static void cssSelectorPath(){
@@ -109,9 +116,45 @@ public final class App implements WebDriver {
         driver.findElement(By.id("MaleButton")).click();
         driver.findElement(By.id("MonthDropdown")).click();
         driver.findElement(By.id("signup-button"));
-    }
+        
+        }
+        public static void amazonSignup(){
+            //Initialize Communication
+            System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
+            WebDriver driver = new FirefoxDriver();
+            // methods:
+            driver.get("https://www.amazon.com/");
+            driver.findElement(By.id("nav-link-accountList")).click();
+            //Sign up page:
+            driver.findElement(By.linkText("Create your Amazon account")).click();
+            driver.findElement(By.id("ap_customer_name")).sendKeys("Big Boss Miah");
+            driver.findElement(By.xpath("//input[@type = 'email']")).click();
+            driver.findElement(By.xpath("//input[@type = 'email']")).sendKeys("bigboss13234@gmail.com");
+            driver.findElement(By.cssSelector("input[type = 'password']")).click();
+            driver.findElement(By.cssSelector("input[type = 'password']")).sendKeys("King1234!");
+            driver.findElement(By.cssSelector("#ap_password_check")).click();
+            driver.findElement(By.cssSelector("#ap_password_check")).sendKeys("King1234!");
+            //Finalize:
+            System.out.println(driver.findElement(By.id("legalTextRow")).getText());
+            try {
+                Thread.sleep(2400);
+            } catch (InterruptedException e1) {
+                // TODO Auto-generated catch block
+                e1.printStackTrace();
+            }
+            //Assert.assertEquals(driver.findElement(By.id("legalTextRow")).getText(), "By creating an account, you agree to Amazon's Conditions of Use and Privacy Notice.");
+
+            
 
 
+            //Quit:
+            try {
+                Thread.sleep(2400);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+            driver.quit();
+        }
     @Override
     public void get(String url) {
         
@@ -142,7 +185,6 @@ public final class App implements WebDriver {
     }
     @Override
     public void quit() {
-        
     }
     @Override
     public Set<String> getWindowHandles() {
