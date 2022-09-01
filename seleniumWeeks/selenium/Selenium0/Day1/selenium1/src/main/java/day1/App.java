@@ -86,14 +86,31 @@ public final class App implements WebDriver {
         //driver.quit();
 
     }
+    //  (//option[@value='Sep'])[1]
+    //  option[value='Sep']
+
+
+
+
+
+
+    //  *** 3: Tagname[attribute = 'value']
+
 
     public static void instagramSignup(){
-
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
         WebDriver driver = new FirefoxDriver();
-        driver.get("https://www.instagram.com/accounts/emailsignup/");
-        driver.findElement(By.className("_2hvTZ")).click();
+        driver.get("https://www.roblox.com/");
+        driver.findElement(By.id("signup-username")).click();
+        driver.findElement(By.id("signup-username")).sendKeys("yeowhatsupman1");
+        driver.findElement(By.id("signup-password")).click();
+        driver.findElement(By.id("signup-password")).sendKeys("King1234!");
+        driver.findElement(By.className("icon-password-show-v2")).click();
+        driver.findElement(By.id("MaleButton")).click();
+        driver.findElement(By.id("MonthDropdown")).click();
+        driver.findElement(By.id("signup-button"));
     }
+
 
     @Override
     public void get(String url) {
