@@ -7,6 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 /**
  * Hello world!
  */
@@ -15,7 +18,9 @@ public final class App implements WebDriver {
     public static void main(String[] args) {
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
         WebDriver driver = new FirefoxDriver();
-        practiceXPathChild(driver);
+        // practiceXPathChild(driver);
+        demoApplication(driver);
+        disableCaptcha(driver);
     }
 
     public static void practiceXPathChild(WebDriver driver){
@@ -43,7 +48,36 @@ public final class App implements WebDriver {
         driver.findElement(By.xpath("//input[@id = 'customer_lastname'")).click();
         driver.findElement(By.xpath("//input[@id = 'customer_lastname'")).sendKeys("Zairah");
     }
+    public static void demoApplication(WebDriver driver){
+        driver.get("https://phptravels.com/demo/");
+        driver.findElement(By.xpath("//input[@placeholder='First Name']")).click();
+        driver.findElement(By.xpath("//input[@placeholder='First Name']")).sendKeys("fayetvl");
+        driver.findElement(By.xpath("//input[@placeholder='Last Name']")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Last Name']")).sendKeys("Z.");
+        driver.findElement(By.xpath("//input[@placeholder='Business Name']")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Business Name']")).sendKeys("Fayeevorite Corporation");
+        driver.findElement(By.xpath("//input[@placeholder='Email']")).click();
+        driver.findElement(By.xpath("//input[@placeholder='Email']")).sendKeys("fayeevorite@gmail.com");
 
+        
+    }
+    public static void disableCaptcha(WebDriver driver){
+        FirefoxOptions options = new FirefoxOptions();
+
+        options.addArguments("start-maximized");
+    
+        options.addArguments("disable-infobars");
+    
+        options.addArguments("--disable-extensions"); 
+    
+        driver = new FirefoxDriver(options);
+    
+        driver.get("https://phptravels.com/demo/"); 
+    
+        new WebDriverWait(driver, Duration.ofMillis(3000)).until(ExpectedConditions.frameToBeAvailableAndSwitchToIt(By.xpath("//div[@class = 'recaptcha-checkbox-border']")));
+    
+        new WebDriverWait(driver, Duration.ofMillis(3000)).until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.recaptcha-checkbox-border"))).click(); 
+    }
 
     /** Abstract Methods: */
     @Override
