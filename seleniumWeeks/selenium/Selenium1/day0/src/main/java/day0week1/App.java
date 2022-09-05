@@ -26,14 +26,49 @@ public final class App implements WebDriver{
     public static void main(String[] args) {
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
         WebDriver driver = new FirefoxDriver();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
-        driver.get("https://github.com/fayeemajidul");
-        driver.manage().window().maximize();
+        flightProgram(driver);
     }
 
-    public void staticDropdown(WebDriver driver){
-        WebElement selectDropDown = driver.findElement(By.xpath("//header[@body = 'value']"));
-        Select dropdown = new Select(selectDropDown);
+    public static void practice(WebDriver driver){
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(2));
+        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        driver.manage().window().maximize();
+        WebElement selectDropDown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
+        Select select = new Select(selectDropDown);
+        select.selectByValue("USD");
+        System.out.println(select.getFirstSelectedOption().getText());
+        select.selectByValue("INR");
+        System.out.println(select.getFirstSelectedOption().getText());
+        // System.out.println(driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency")).getText());
+    }
+    public static void flightProgram(WebDriver driver){
+        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        //Drop Down Config
+        WebElement element = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
+        Select dropdown = new Select(element);
+        driver.manage().window().maximize();
+        dropdown.selectByIndex(3);
+        try{
+            Thread.sleep(1200);
+        } catch (Exception e){
+            System.out.println("Error");
+        }
+        System.out.println(dropdown.getFirstSelectedOption().getText());
+
+        //* Moving on to Number of People */
+        driver.findElement(By.id("divpaxinfo")).click();
+        for(int i = 0; i < 5; i++){
+            driver.findElement(By.id("hrefIncAdt")).click();
+        }
+        driver.findElement(By.id("btnclosepaxoption")).click();
+        driver.findElement(By.id("ctl00_mainContent_chk_StudentDiscount")).click();
+
+        try{
+            Thread.sleep(2100);
+        } catch (Exception e){
+            System.out.println("Error");
+        }
+        driver.quit();
     }
 
     //WebDriver Abstract Methods:
