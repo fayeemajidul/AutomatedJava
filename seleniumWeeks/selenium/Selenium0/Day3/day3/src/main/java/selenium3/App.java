@@ -19,8 +19,9 @@ public final class App implements WebDriver {
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
         WebDriver driver = new FirefoxDriver();
         // practiceXPathChild(driver);
-        demoApplication(driver);
-        disableCaptcha(driver);
+        // demoApplication(driver);
+        // disableCaptcha(driver);
+        navigate(driver);
     }
 
     public static void practiceXPathChild(WebDriver driver){
@@ -78,7 +79,27 @@ public final class App implements WebDriver {
     
         new WebDriverWait(driver, Duration.ofMillis(3000)).until(ExpectedConditions.elementToBeClickable(By.cssSelector("div.recaptcha-checkbox-border"))).click(); 
     }
+    public static void homeDepotLogin(WebDriver driver){
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+        driver.get("https://www.homedepot.com/?mtc=SEM-BF-CDP-AMP-Multi-Multi-NA-NA-NA-MULTI-NA-NA-NA-NA-BT2-NA-NA-NA-Brand_Privacy&cm_mmc=SEM-BF-CDP-AMP-Multi-Multi-NA-NA-NA-MULTI-NA-NA-NA-NA-BT2-NA-NA-NA-Brand_Privacy_amp1662226755400800000&mfadid=adm");
+        driver.findElement(By.xpath("//a[@id = 'headerMyAccount']")).click();
+        driver.findElement(By.xpath("//span[normalize-space()='Sign in']")).click();
+        driver.findElement(By.xpath("//span[normalize-space() = 'Create an Account']")).click();
+        driver.findElement(By.xpath("//span[@class normalize-space() = 'Select & Continue'")).click();
+    }
+    public static void navigate(WebDriver driver){
+        /*Difference between get and navigate is:
+         * Nagivate doesn't wait for contents to load, get does.
+         * You need to use implicit wait times for these elements to load.
+        */
 
+        driver.get("https://google.com");
+        driver.navigate().to("http://www.tomatotimers.com/");
+        driver.navigate().back();
+        driver.navigate().refresh();
+    }
+//span[@class = 'bttn_content']
+//span[normalize-space()='Sign in']
     /** Abstract Methods: */
     @Override
     public void get(String url) {        
@@ -87,6 +108,7 @@ public final class App implements WebDriver {
     public String getCurrentUrl() {
         return null;
     }
+    ////a[@id='headerMyAccount']//div[@class='HeaderIcon__primary']//*[name()='svg']
     @Override
     public String getTitle() {
         return null;

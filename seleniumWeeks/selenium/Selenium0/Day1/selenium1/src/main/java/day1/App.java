@@ -100,6 +100,11 @@ public final class App implements WebDriver {
     /** To access child properities
      * xpath Parent: //tagname[@attribute = 'value']
      * xpath Child: //tagname[@attribute = 'value']/tagname[1]
+     * !FROM PARENT TO CHILD !: //header/div/button[1]/following-sibiling::button[1]
+     * !FROM CHILD TO PARENT !: //header/div/button[1]/parent::div
+     * 
+     * What are the different ways to access Parent / Child via xpath.
+
      */
 
     public static void instagramSignup(){
