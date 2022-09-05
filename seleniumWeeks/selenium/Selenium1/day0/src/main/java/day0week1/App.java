@@ -26,7 +26,9 @@ public final class App implements WebDriver{
     public static void main(String[] args) {
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
         WebDriver driver = new FirefoxDriver();
-        flightProgram(driver);
+        // flightProgram(driver);
+        //autoSuggestive(driver);
+        completeFlightCheckout(driver);
     }
 
     public static void practice(WebDriver driver){
@@ -63,12 +65,45 @@ public final class App implements WebDriver{
         driver.findElement(By.id("btnclosepaxoption")).click();
         driver.findElement(By.id("ctl00_mainContent_chk_StudentDiscount")).click();
 
-        try{
-            Thread.sleep(2100);
-        } catch (Exception e){
-            System.out.println("Error");
+        //Departing From.
+        //input[@id='ctl00_mainContent_ddl_originStation1_CTXT']
+        driver.findElement(By.xpath("//input[@id='ctl00_mainContent_ddl_originStation1_CTXT']")).click();
+        driver.findElement(By.xpath("//a[contains(text(),'Delhi (DEL)')]")).click();
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
         }
-        driver.quit();
+        driver.findElement(By.xpath("(//a[@value = 'MAA'])[2]")).click();
+        // driver.findElement(By.xpath("//input[@id='ctl00_mainContent_btn_FindFlights']")).click();
+        //You can do Parent to child Xpath to access elements.
+    }
+    public static void autoSuggestive(WebDriver driver){
+        /** Auto Suggestive Feature w/ Selenium */
+        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        driver.manage().window().maximize();
+        driver.findElement(By.id("autosuggest")).sendKeys("ind");
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        /*Select all options First for Dynamic Suggestion:
+         * Converting the options into a list: which you can then access by indexes:
+        */
+        List <WebElement> options = driver.findElements(By.cssSelector("li[class = 'ui-menu-item'] a"));
+
+        for(WebElement option : options){
+            if(option.getText().equals("India")){
+                option.click();
+                break;
+            }
+        }
+
+    }
+    public static void completeFlightCheckout(WebDriver driver){
+        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+
     }
 
     //WebDriver Abstract Methods:
