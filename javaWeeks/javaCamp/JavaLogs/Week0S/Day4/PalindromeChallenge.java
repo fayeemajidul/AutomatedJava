@@ -1,9 +1,9 @@
 public class PalindromeChallenge{
     public PalindromeChallenge(){}
     public static void palindromeRulez(int numEntered){
-        int numExtracted = 0;
+        int numExtracted = 0, lastDigit;
         while(numEntered > 0){
-            int lastDigit = (numEntered % 10);
+            lastDigit = (numEntered % 10);
             numExtracted  = numExtracted * 10 + lastDigit;
             numEntered /= 10;
         }
