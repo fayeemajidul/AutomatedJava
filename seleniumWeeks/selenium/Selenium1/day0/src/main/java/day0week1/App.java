@@ -28,7 +28,7 @@ public final class App implements WebDriver{
         WebDriver driver = new FirefoxDriver();
         // flightProgram(driver);
         //autoSuggestive(driver);
-        completeFlightCheckout(driver);
+        checkboxTexting(driver);
     }
 
     public static void practice(WebDriver driver){
@@ -142,6 +142,23 @@ public final class App implements WebDriver{
         }
         driver.quit();
     }
+    public static void checkboxTexting(WebDriver driver){
+        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+        driver.manage().window().maximize();
+        driver.findElement(By.xpath("//input[@id = 'ctl00_mainContent_chk_friendsandfamily']")).click();
+        System.out.println(driver.findElement(By.xpath("//input[@id = 'ctl00_mainContent_chk_friendsandfamily']")).isSelected());
+        try{
+            Thread.sleep(3000);
+        }catch(Exception e){
+            System.out.println("Error");
+        }
+        System.out.println(driver.findElements(By.xpath("//input[@type = 'checkbox']")).size());
+        driver.quit();
+        }
+
+
+
 
     //WebDriver Abstract Methods:
     @Override
