@@ -22,7 +22,10 @@ public static int romanRules(int number){
         if(compareNumber == number){
             System.out.println(number + " is not divisible by " + listOfRules.get(i));
         }else{
-            
+            while(compareNumber != 0){
+                compareNumber = listOfRules.get(i) % listOfRules.get(i-1);
+                System.out.println("Dividing " + listOfRules.get(i) + ":" + compareNumber);
+            }
             System.out.println("Element" + i + ": " + compareNumber);
         }
     }
