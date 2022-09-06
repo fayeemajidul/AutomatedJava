@@ -103,7 +103,44 @@ public final class App implements WebDriver{
     }
     public static void completeFlightCheckout(WebDriver driver){
         driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        driver.manage().window().maximize();
 
+        //Wait this number of seconds:
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1000));
+
+        WebElement dropdown = driver.findElement(By.id("ctl00_mainContent_DropDownListCurrency"));
+        Select element = new Select(dropdown);
+        element.selectByIndex(3);
+        System.out.println(element.getFirstSelectedOption().getText());
+        /* Select Who's going */
+        driver.findElement(By.id("divpaxinfo")).click();
+        for(int i = 0; i < 5; i++){
+            driver.findElement(By.id("hrefIncAdt")).click();
+        }
+        driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+        driver.findElement(By.xpath("//a[contains(text(), 'Delhi')]")).click();
+        driver.findElement(By.id("ctl00_mainContent_ddl_destinationStation1_CTXT")).click();
+        driver.findElement(By.xpath("//td[@class = 'mapbg'] //a [@value = 'MAA']")).click();
+        driver.findElement(By.id("autosuggest")).click();
+
+        /** Auto Suggestive Property */
+        driver.findElement(By.id("autosuggest")).sendKeys("ind");
+
+        try{
+            Thread.sleep(1000);
+        } catch (Exception e){
+            System.out.println("Error");
+        }
+
+        List <WebElement> options = driver.findElements(By.cssSelector("li[class  = 'ui-menu-item'] a"));
+
+        for (WebElement option:options){
+            if(option.getText().equals("India")){
+                option.click();
+                break;
+            }
+        }
+        driver.quit();
     }
 
     //WebDriver Abstract Methods:
