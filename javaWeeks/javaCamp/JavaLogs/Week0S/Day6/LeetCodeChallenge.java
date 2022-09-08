@@ -11,10 +11,6 @@ public class LeetCodeChallenge{
         }
         System.out.println(element);
 
-
-
-
-
         // for(int i = 0; i < words.length; i++){
         //     System.out.println(i + ":" + (words[i]));
         //     for(int j = 0; j < words[i].toCharArray().length; j++){
@@ -29,9 +25,14 @@ public class LeetCodeChallenge{
     public static void main(String[] args) {
         System.out.println("Wrongfully");
         String [] words = {"flower", "flow", "flight"};
-        words[0].toCharArray();
-        System.out.println(Arrays.toString(words[0].toCharArray()));
-        // commonChars(words);
+        for(int i = 0 ; i < words.length; i++){
+            words[i].toCharArray();
+            for(int j = 0; j < words[i].toCharArray().length; j++){
+                System.out.println(words[i].toCharArray()[i]);
+            }
 
+        }
+        // words[0].toCharArray();
+        // System.out.println(Arrays.toString(words[0].toCharArray()));
     }
 }
