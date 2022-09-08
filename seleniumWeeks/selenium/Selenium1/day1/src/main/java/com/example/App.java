@@ -1,4 +1,5 @@
-package selenium1;
+package com.example;
+
 /**
  * Hello world!
  */
