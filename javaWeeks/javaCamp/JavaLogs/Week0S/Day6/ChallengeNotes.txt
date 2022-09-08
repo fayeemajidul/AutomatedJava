@@ -1,0 +1,35 @@
+Write a function to find the longest common prefix string amongst an array of strings.
+
+If there is no common prefix, return an empty string "".
+
+ 
+
+Example 1:
+
+Input: strs = ["flower","flow","flight"]
+Output: "fl"
+
+Example 2:
+
+Input: strs = ["dog","racecar","car"]
+Output: ""
+Explanation: There is no common prefix among the input strings.
+
+ 
+
+Constraints:
+
+    1 <= strs.length <= 200
+    0 <= strs[i].length <= 200
+    strs[i] consists of only lowercase English letters.
+
+
+
+["flower", "Flow", "flight"]
+
+1 - get every element in the string
+2 - now that you grabbed the element, grab every char in the string
+3 - compare each word.char[i] with the word2.char[i]
+4 - if one case equals add that char to string.
+5 - then move onto the next element [i+1] for both words if they are the same add the word to the str
+6 - if not then terminate and traverse through the rest of the chars.
