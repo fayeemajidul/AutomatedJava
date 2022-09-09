@@ -1,0 +1,14 @@
+How can we properly and efficently apply what we have learned?
+
+1 - I think what we should do is first start off with a leet code Challenge
+
+2 - After we'll review concepts by tim, doing a challenge per section
+
+
+Leet Code Challenge:
+
+Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+
+You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+You can return the answer in any order.
