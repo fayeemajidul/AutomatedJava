@@ -11,10 +11,13 @@ public class DayOneTest implements WebDriver {
     public static void main(String[] args){
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
         WebDriver driver = new FirefoxDriver();
-        dayOneTEST(driver);
+        dayOneTEST();
     }
     @Test
-    public static void dayOneTEST(WebDriver driver){
+    public static void dayOneTEST(){
+        //Learned that you can't add parameters with TestNG :o
+        System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
+        WebDriver driver = new FirefoxDriver();
         driver.get("https://www.sephora.com/");
         try{
             //Wait for two seconds
@@ -23,6 +26,7 @@ public class DayOneTest implements WebDriver {
             System.out.println("Ran into an error");
         }
 
+        driver.quit();
         System.out.println("Successfully have ran Test One. TestNG synchronized. ");
     }
 
