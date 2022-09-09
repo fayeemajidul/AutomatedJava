@@ -2,7 +2,6 @@ public class JavaConceptualReview{
     //Two Methods:
     public static void arrayOne(int [] integers, int [] sum){
         int testSum;
-        int Sum;
         for(int i = 0; i < integers.length -1; i++){
             testSum = 0;
             testSum = integers[i] + integers[i+1];
@@ -21,5 +20,6 @@ public class JavaConceptualReview{
         int [] integers = {0, 1, 2, 3, 4, 5, 6, 7};
         int [] sum = {1,3, 13, 7, 5};
         arrayOne(integers, sum);
+    
     }
 }
