@@ -12,3 +12,10 @@ Given an array of integers nums and an integer target, return indices of the two
 You may assume that each input would have exactly one solution, and you may not use the same element twice.
 
 You can return the answer in any order.
+
+
+Write a method named getEvenDigitSum with one parameter of type int called number. 
+
+The method should return the sum of the even digits within the number. 
+
+If the number is negative, the method should return -1 to indicate an invalid value.
