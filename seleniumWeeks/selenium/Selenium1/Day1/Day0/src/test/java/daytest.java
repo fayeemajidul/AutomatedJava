@@ -87,11 +87,34 @@ public class daytest implements  WebDriver{
             Assert.assertFalse(false);
         }
         //System.out.println(driver.findElement(By.id("ctl00_mainContent_view_date2")).isEnabled());
+        try{
+            Thread.sleep(2000);
+        }catch(Exception e){
+            System.out.println("Error");
+        }
+        driver.findElement(By.id("ctl00_mainContent_btn_FindFlights")).click();
         driver.quit();
     }
 
+    @Test
+    /*Working With Alerts*/
+    public static void alertsFire(){
+        String text = "Fayeem";
+        System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(1200));
+        driver.get("https://rahulshettyacademy.com/AutomationPractice/");
+        driver.manage().window().maximize();
+        driver.findElement(By.id("name")).sendKeys(text);
+        //WebDriver switches to Alerts: Selenium Scans for Alerts.
+        driver.findElement(By.id("alertbtn")).click();
+        driver.switchTo().alert().accept();
+        System.out.println(driver.switchTo().alert().getText());
 
-
+        driver.findElement(By.id("confirmbtn")).click();
+        driver.switchTo().alert().dismiss();
+        System.out.println(driver.switchTo().alert().getText());
+    }
 
     @BeforeClass
     public void setUp() {
