@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e4e1157-75a7-4e41-b6e6-d65c008f44ec" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Selenium1/Day1/Day1/src/test/java/DayOneTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../Selenium1/Day1/Day1/src/test/java/DayOneTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +39,7 @@
       <workItem from="1662998968883" duration="43000" />
       <workItem from="1663015207672" duration="38000" />
       <workItem from="1663015271065" duration="58000" />
+      <workItem from="1663015810744" duration="30000" />
     </task>
     <servers />
   </component>
