@@ -56,8 +56,38 @@ public class daytest implements  WebDriver{
         dropdown.selectByIndex(3);
         System.out.println(dropdown.getFirstSelectedOption().getText());
         driver.findElement(By.id("ctl00_mainContent_rbtnl_Trip_1")).click();
-
-        //driver.quit();
+        driver.findElement(By.id("divpaxinfo")).click();
+        for(int i = 0; i < 4; i++){
+            driver.findElement(By.id("hrefIncAdt")).click();
+        }
+        driver.findElement(By.id("autosuggest")).click();
+        driver.findElement(By.id("autosuggest")).sendKeys("Ind");
+        List<WebElement> options = driver.findElements(By.cssSelector("li[class='ui-menu-item'] a"));
+        for(WebElement option : options){
+            if(option.getText().equals("India")){
+                option.click();
+            }
+            else{
+                System.out.println("The available option: " + option + "was found instead");
+            }
+        }
+        driver.findElement(By.id("ctl00_mainContent_ddl_originStation1_CTXT")).click();
+        driver.findElement(By.cssSelector("a[value = 'BHO']")).click();
+        driver.findElement(By.id("ctl00_mainContent_ddl_destinationStation1_CTXT")).click();
+        driver.findElement(By.xpath("//div[@class='dropdownDiv']//a[@value='MAA']")).click();
+        try{
+            Thread.sleep(2000);
+        }catch(Exception e){
+            System.out.println("Error");
+        }
+        driver.findElement(By.cssSelector(".ui-state-default.ui-state-highlight")).click();
+        if(driver.findElement(By.id("Div1")).getAttribute("style").contains("1")){
+            System.out.println("Its enabled");
+        }else{
+            Assert.assertFalse(false);
+        }
+        //System.out.println(driver.findElement(By.id("ctl00_mainContent_view_date2")).isEnabled());
+        driver.quit();
     }
 
 
