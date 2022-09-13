@@ -5,7 +5,6 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import java.util.List;
-import java.util.Scanner;
 import java.util.Set;
 
 public class SeleniumDay0 implements WebDriver {
@@ -16,15 +15,12 @@ public class SeleniumDay0 implements WebDriver {
     public static void amazonInterview(){
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
         WebDriver driver = new FirefoxDriver();
-        Scanner scan = new Scanner(System.in);
         driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
         driver.manage().window().maximize();
         List <WebElement> products = driver.findElements(By.cssSelector("h4.product-name"));
-        System.out.println("Please enter the product you wish to add to cart");
-        String expectedProduct = scan.next();
         for(int i = 0; i < products.size(); i++){
             String productText = products.get(i).getText();
-            if(productText.contains(expectedProduct)){
+            if(productText.contains("Cucumber")){
                 driver.findElements(By.xpath("//button[text() = 'ADD TO CART']")).get(i).click();
                 break;
             }
