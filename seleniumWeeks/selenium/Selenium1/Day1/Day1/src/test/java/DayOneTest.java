@@ -11,7 +11,6 @@ public class DayOneTest implements WebDriver {
     public static void main(String[] args){
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
         WebDriver driver = new FirefoxDriver();
-        dayOneTEST();
     }
     @Test
     public static void dayOneTEST(){
@@ -31,6 +30,12 @@ public class DayOneTest implements WebDriver {
     }
 
     /*Abstract Java methods: */
+    @Test
+    public static void amazonInterview(){
+        /* Never Mind We Lost Our Progress Lol*/
+
+    }
+
     @Override
     public void get(String url) {
 
