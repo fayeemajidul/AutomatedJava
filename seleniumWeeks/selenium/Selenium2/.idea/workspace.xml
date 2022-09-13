@@ -2,7 +2,21 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="354b45de-17f7-40b9-90ca-92d7a1fac398" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Day0/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Day0/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/src/test/java/DayOne.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Selenium1/Day1/DayOne/testng.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Day1/.idea/workspace.xml" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +49,8 @@
       <updated>1662998943893</updated>
       <workItem from="1662998946264" duration="7000" />
       <workItem from="1663015330344" duration="35000" />
+      <workItem from="1663087164484" duration="11000" />
+      <workItem from="1663087190457" duration="23000" />
     </task>
     <servers />
   </component>
