@@ -2,31 +2,56 @@ Describe the Text, review the text
 - Objects/Instance classes
 - Static Variables
 - Inheritance classes
-- Encapsulation Polymorphism
-- Composition
+- Encapsulation
+- Abstraction: 
+- Polymorphism
+
+
 
 - Answer some of these questions with code:
 
 1) what are static blocks and static initalizers in Java ?
+    -- Static blocks are intialized inside static fields, by using static, also statics are executed exactly once. 
 2) How to call one constructor from the other constructor ?
+    -- You'd be using the This() methods,which references the constructor
 3) What is method overriding in java ?
+    -- Method Overriding is the abiltiy for a methods to take the same method name but different method signature
 4) What is super keyword in java ?
+    -- superkey word refrences the parent class in Java
 5) Difference between method overloading and method overriding in java ?
+    -- the difference between overloading and overriding in java is, overloadding you are taking a function from parent class and adding a unique impelmentation, and bascially saying for that child class you'll be doing this behavior instead of the behavior in the parent class. Where as overriding as discussed before is the ability to have the same method signature but difference return types in the event for organizational purposes.
 6) Difference between abstract class and interface ?
+    -- Abstract classes are not able to have constructors and abstract classes aren't able to be extended from.
 7) Why java is platform independent?
 8) What is method overloading in java ? 
 9) What is difference between c++ and Java ?
 10) What is JIT compiler ?
 11) What is bytecode in java ?
+    -- When java compiles code it creates a .class file, and within this .class file it has something called bytecode. 
 12) Difference between this() and super() in java ?
+    -- this() references the current class constructor, whereas super() references the parent or super class itself to child classes.
+
 13) What is a class ?
+    -- a class is a blue print for the objects in making, in order to make an object you need to create a class. 
 14) What is an object ?
+    -- objects are unique instances in java that you are able to create and reference.
+    -- Every instance of a class has a state and behavior that all do certain things.
 15)What is method in java ?
+    -- Methods are your functions in Java, methods are commanding the object to what to do. They are the behaviors that the object implement.
 16) What is encapsulation ?
+    -- Encapusulation is when you are declaring parts of your code to be private to protect the security from other classes being able to interact with the instances of the encapsulated clas.
+
 17) Why main() method is public, static and void in java ?
+    -- Main is public so it can be access any other field, static because its executed once, void because the return type is of void.
+
 18) Explain about main() method in java ?
+    -- Main method is your driver code and calls every method.
+
 19)What is constructor in java ?
+    -- Constuctor instializes fields of your class.
+
 20) What is difference between length and length() method in java ?'
+    -- length() returns the size of the Array.
 21) What is ASCII Code?
 22) What is Unicode ? 
 23) Difference between Character Constant and String Constant in java ? 
@@ -36,6 +61,7 @@ Core java Interview questions on Coding Standards
 26) Explain Java Coding Standards for classes or Java coding conventions for
 classes?
 27) Explain Java Coding standards for interfaces?  
+
 28) Explain Java Coding standards for Methods?  
 29) Explain Java Coding Standards for variables ?
 30) Explain Java Coding Standards for Constants?  
