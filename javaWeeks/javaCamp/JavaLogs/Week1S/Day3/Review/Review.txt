@@ -1,0 +1,70 @@
+Describe the Text, review the text 
+- Objects/Instance classes
+- Static Variables
+- Inheritance classes
+- Encapsulation Polymorphism
+- Composition
+
+- Answer some of these questions with code:
+
+1) what are static blocks and static initalizers in Java ?
+2) How to call one constructor from the other constructor ?
+3) What is method overriding in java ?
+4) What is super keyword in java ?
+5) Difference between method overloading and method overriding in java ?
+6) Difference between abstract class and interface ?
+7) Why java is platform independent?
+8) What is method overloading in java ? 
+9) What is difference between c++ and Java ?
+10) What is JIT compiler ?
+11) What is bytecode in java ?
+12) Difference between this() and super() in java ?
+13) What is a class ?
+14) What is an object ?
+15)What is method in java ?
+16) What is encapsulation ?
+17) Why main() method is public, static and void in java ?
+18) Explain about main() method in java ?
+19)What is constructor in java ?
+20) What is difference between length and length() method in java ?'
+21) What is ASCII Code?
+22) What is Unicode ? 
+23) Difference between Character Constant and String Constant in java ? 
+24) What are constants and how to create constants in java?  
+25) Difference between ‘>>’ and ‘>>>’ operators in java?
+Core java Interview questions on Coding Standards 
+26) Explain Java Coding Standards for classes or Java coding conventions for
+classes?
+27) Explain Java Coding standards for interfaces?  
+28) Explain Java Coding standards for Methods?  
+29) Explain Java Coding Standards for variables ?
+30) Explain Java Coding Standards for Constants?  
+31) Difference between overriding and overloading in java? 
+32) What is ‘IS-A ‘ relationship in java? 
+33) What is ‘HAS A’’ relationship in java?  
+34) Difference between ‘IS-A’ and ‘HAS-A’ relationship in java?
+35) Explain about instanceof operator in java?  
+36) What does null mean in java? 
+37) Can we have multiple classes in single file ?
+38) What all access modifiers are allowed for top class ?
+39 ) What are packages in java?
+40) Can we have more than one package statement in source file ?
+41) Can we define package statement after import statement in java? 
+42) What are identifiers in java?
+43) What are access modifiers in java?
+44) What is the difference between access specifiers and access modifiers in java?
+45) What access modifiers can be used for class ?
+46) Explain what access modifiers can be used for methods?
+47) Explain what access modifiers can be used for variables?
+48) What is final access modifier in java?
+49) Explain about abstract classes in java?
+50) Can we create constructor in abstract class?
+51) What are abstract methods in java?
+Java Exception Handling Interview questions
+52) What is an exception in java?
+53) State some situations where exceptions may arise in java?
+54) What is Exception handling in java?
+55) What is an eror in Java?
+56) What are advantages of Exception handling in java?
+57) In how many ways we can do exception handling in java?
+58) List out five keywords related to Exception handling ?
