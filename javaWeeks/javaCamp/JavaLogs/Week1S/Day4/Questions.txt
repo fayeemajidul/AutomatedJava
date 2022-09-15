@@ -1,28 +1,46 @@
-32) What is ‘IS-A ‘ relationship in java? 
-33) What is ‘HAS A’’ relationship in java?  
-34) Difference between ‘IS-A’ and ‘HAS-A’ relationship in java?
 35) Explain about instanceof operator in java?  
+        *** Tells whether or not the object is an instance of that class.
 36) What does null mean in java? 
+        *** just like void its a place holder.
 37) Can we have multiple classes in single file ?
+        *** Yes we can have local classes, and other clases.
 38) What all access modifiers are allowed for top class ?
+        *** 
 39 ) What are packages in java?
+        ** Packages are folders
 40) Can we have more than one package statement in source file ?
+        ** No we can not
 41) Can we define package statement after import statement in java? 
+        *** No we can not
 42) What are identifiers in java?
+        *** Access modifiers tell us the scope of our methods
 43) What are access modifiers in java?
+        *** Access modifiers tell us the scope of our methods
 44) What is the difference between access specifiers and access modifiers in java?
+        *** access specific are keywords that encapsulate files like private instead of global
 45) What access modifiers can be used for class ?
+        *** Private, final
 46) Explain what access modifiers can be used for methods?
+        *** private 
 47) Explain what access modifiers can be used for variables?
+        *** private and fianl
 48) What is final access modifier in java?
+        *** final access modifier doesnt allow change to variable.
 49) Explain about abstract classes in java?
+        *** abstract classes are ability to use unimplemented methods.
 50) Can we create constructor in abstract class?
-51) What are abstract methods in java?
+        *** yes we can
 Java Exception Handling Interview questions
 52) What is an exception in java?
-53) State some situations where exceptions may arise in java?
+        *** exception is a catch of error in java
+53) State some situations where exceptions may arise in java? 
+        *** 0 arithmethic error when you divide by 0,
 54) What is Exception handling in java?
+        *** exception handlign is how we implement solutions to catch these errors and avoid thme.
 55) What is an eror in Java?
+        *** error is when you java runtime compiler fails.
 56) What are advantages of Exception handling in java?
+        *** advantages of exception handling is the ability to run tests without resulting in errors
 57) In how many ways we can do exception handling in java?
 58) List out five keywords related to Exception handling ?
+    *** Throw, catch, Exception, Try, NullPointerException
