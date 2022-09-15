@@ -1,0 +1,28 @@
+32) What is ‘IS-A ‘ relationship in java? 
+33) What is ‘HAS A’’ relationship in java?  
+34) Difference between ‘IS-A’ and ‘HAS-A’ relationship in java?
+35) Explain about instanceof operator in java?  
+36) What does null mean in java? 
+37) Can we have multiple classes in single file ?
+38) What all access modifiers are allowed for top class ?
+39 ) What are packages in java?
+40) Can we have more than one package statement in source file ?
+41) Can we define package statement after import statement in java? 
+42) What are identifiers in java?
+43) What are access modifiers in java?
+44) What is the difference between access specifiers and access modifiers in java?
+45) What access modifiers can be used for class ?
+46) Explain what access modifiers can be used for methods?
+47) Explain what access modifiers can be used for variables?
+48) What is final access modifier in java?
+49) Explain about abstract classes in java?
+50) Can we create constructor in abstract class?
+51) What are abstract methods in java?
+Java Exception Handling Interview questions
+52) What is an exception in java?
+53) State some situations where exceptions may arise in java?
+54) What is Exception handling in java?
+55) What is an eror in Java?
+56) What are advantages of Exception handling in java?
+57) In how many ways we can do exception handling in java?
+58) List out five keywords related to Exception handling ?
