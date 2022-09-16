@@ -1,0 +1,19 @@
+Difference between waits:
+
+There are four waits in selenium, need to render elements on to the page.
+
+-- Implicit Waits:
+    -- Tell the program p step to wait until  program loads for n seconds.
+        -- Each step has unique n seconds.
+        -- Apply globally.
+
+-- Explicit Waits:
+    -- unlike implicit, explicit is able to target a specific element to load a specific number of seconds.
+    -- applies locally.
+
+-- Thread Sleep Waits:
+    -- part of java, telling java to wait for n seconds. Does not listen to the DOM.
+
+-- Fluent Waits:
+
+each do different things.

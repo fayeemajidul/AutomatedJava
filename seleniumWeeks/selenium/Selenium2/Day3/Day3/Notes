@@ -1,0 +1,8 @@
+Fluent Waits:
+** Explicit and categorized under explicit waits:
+
+Explicit waits can be divided into two ways:
+    -- Fluent finds the web element until element appears.
+    -- Differences: Polling is two seconds.
+
+

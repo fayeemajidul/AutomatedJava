@@ -11,6 +11,13 @@ public class DayTwo implements WebDriver {
     public static void main(String[] args){
         System.out.println("Remember your value, Fayeem. Remember what makes you different and what puts you on the top. Remember all the sacrifices you have already been through");
     }
+
+    public static void implicitWaits() throws InterruptedException{
+        WebDriver driver = new FirefoxDriver();
+        driver.get("https://rahulshettyacademy.com/seleniumPractise/#/");
+        driver.manage().window().maximize();
+        Thread.sleep(1000);
+    }
     @Test
     public static void amazonPage() throws InterruptedException {
         // The Set-Up:
@@ -42,8 +49,8 @@ public class DayTwo implements WebDriver {
             }
         }
     }
-
     /*Abstract Methods: */
+
     @Override
     public void get(String url) {
 
