@@ -51,6 +51,7 @@ public class DayZero implements WebDriver {
         driver.findElement(By.id("ap_password_check")).sendKeys("Phobe123!");
         driver.findElement(By.id("continue")).click();
     }
+
     /* Import Abstract Methods: */
     @Override
     public void get(String url) {
