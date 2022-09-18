@@ -7,7 +7,6 @@ public class Keyboard{
         char[] wordChar = words.toString().toUpperCase().toCharArray();
         System.out.println("The Start of Iteration");
         for (char i : wordChar){
-            System.out.println(rowValidator.get(i));
         }
             
     }
