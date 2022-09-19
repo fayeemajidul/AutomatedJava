@@ -15,7 +15,6 @@ import java.util.Set;
 public class DayOne implements WebDriver {
     public static void main(String[] args){
     }
-
     @Test
     public static void webHandlePage(){
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
@@ -78,6 +77,33 @@ public class DayOne implements WebDriver {
         Actions drag = new Actions(driver);
         drag.dragAndDrop(source, target).build().perform();
         driver.switchTo().defaultContent();
+    }
+    @Test
+    public static void framesPractice(){
+        System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
+        driver.get("https://the-internet.herokuapp.com/nested_frames");
+        driver.manage().window().maximize();
+        driver.switchTo().frame("frame-top").switchTo().frame("frame-middle");
+        System.out.println(driver.findElement(By.id("content")).getText());
+    }
+    @Test
+    public static void calendarHandling() throws InterruptedException {
+        System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
+        driver.get("https://rahulshettyacademy.com/dropdownsPractise/");
+        driver.manage().window().maximize();
+        driver.findElement(By.id("ctl00_mainContent_view_date1")).click();
+        //Creating a List of Days:
+        List <WebElement> days = driver.findElements(By.className("ui-state-default"));
+        for(WebElement day:days){
+            if(day.getText().equals("29")){
+                day.click();
+                break;
+            }
+        }
     }
     /* Abstract Interface*/
     @Override
