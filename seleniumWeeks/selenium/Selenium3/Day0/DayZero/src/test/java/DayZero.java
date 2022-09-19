@@ -44,7 +44,10 @@ public class DayZero implements WebDriver {
 
         //Stores the Windows in the set.
         Set<String> windows = driver.getWindowHandles();
-        
+        Iterator <String> windowIterator = windows.iterator();
+        String parentWindow = windowIterator.next();
+        String childWindow = windowIterator.next();
+        /*Essentially why we do is because with driver.get, our immediate parent window is whatever we get. to then go to the next window we would have to access the child window, and we do this by using an iterator and a set.*/
 
     }
     @Test
