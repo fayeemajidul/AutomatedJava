@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -62,7 +63,21 @@ public class DayOne implements WebDriver {
         System.out.println(driver.findElement(By.xpath("//h3[normalize-space()='Opening a new window']")).getText());
 
 
-
+    }
+    @Test
+    public static void introToFrames(){
+        System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Downloads/geckodriver");
+        WebDriver driver = new FirefoxDriver();
+        driver.manage().timeouts().implicitlyWait(Duration.ofMillis(3000));
+        driver.get("https://jqueryui.com/droppable/");
+        //Frames are independent containers that contain outside
+        driver.manage().window().maximize();
+        driver.switchTo().frame(driver.findElement(By.cssSelector("iframe.demo-frame")));
+        WebElement source = driver.findElement(By.id("draggable"));
+        WebElement target = driver.findElement(By.id("droppable"));
+        Actions drag = new Actions(driver);
+        drag.dragAndDrop(source, target).build().perform();
+        driver.switchTo().defaultContent();
     }
     /* Abstract Interface*/
     @Override
