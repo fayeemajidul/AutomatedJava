@@ -19,8 +19,8 @@ public class OrderInsert{
         Collections.sort(accessOrder);
         System.out.println("order: " + accessOrder);
         System.out.println(target + ":" + accessOrder.get(target));
-        
 
+        //if array has target in index, then retrieve the element. Else compare the target to each element and see where it belongs.
 
     }
     public static void main(String[] args) {
