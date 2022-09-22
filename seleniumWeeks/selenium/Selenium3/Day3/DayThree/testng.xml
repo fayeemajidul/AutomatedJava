@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    --> Test 1:
+    <test name="highPriority">
+        <packages>
+            <package name="test.java"/>
+        </packages>
+    </test>
+    <test verbose="2" preserve-order="true"
+          name="/Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/Selenium3/Day3/DayThree">
+        <classes>
+            <class name="DayThree"/>
+            <class name="DayThree2"/>
+            <class name="DayThree3"/>
+        </classes>
+    </test>
+
+    --> Test 2:
+    <test name="Sign up Page">
+        <classes>
+            <class name="DayThree2"/>
+        </classes>
+    </test>
+
+    --> Test 3:
+
+    <test name="Car Loan Test">
+        <classes>
+            <class name="DayThree3">
+                <methods>
+                    <exclude name="Mobile.*"/>
+                </methods>
+            </class>
+
+        </classes>
+
+    </test>
+</suite>

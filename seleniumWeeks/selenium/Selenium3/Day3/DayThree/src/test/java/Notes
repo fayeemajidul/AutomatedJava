@@ -1,0 +1,11 @@
+Advantages of TestNG:
+-- Frame Work: Really convenient
+-- Annotations, parameters, etc.
+
+-- To separate Tests, do the test annotation you can group tests together with TestNG
+
+----------------------------------------
+
+Some syntax of methods and method name will start with a specific mobile,api or anything. In order to exclude that from our tests we can write a method
+
+Method: Exclude method and you put "Mobile .*" --> this will exclude any method from being tested that begins with Mobile.
