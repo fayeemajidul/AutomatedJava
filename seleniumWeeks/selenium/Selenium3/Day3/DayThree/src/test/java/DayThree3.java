@@ -1,3 +1,4 @@
+import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
 public class DayThree3 {
@@ -133,9 +134,11 @@ public class DayThree3 {
         System.out.println("MobileCarHome");
 
     }
+    @BeforeSuite
     @Test
     public void MobileLoginCarLoan19(){
         //Appium // We Want to skip Mobile testing using Testng.
+        System.out.println("Before Suite Printed");
         System.out.println("MobileCarHome");
 
     }

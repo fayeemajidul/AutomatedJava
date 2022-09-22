@@ -9,3 +9,29 @@ Advantages of TestNG:
 Some syntax of methods and method name will start with a specific mobile,api or anything. In order to exclude that from our tests we can write a method
 
 Method: Exclude method and you put "Mobile .*" --> this will exclude any method from being tested that begins with Mobile.
+
+
+
+Different TestNG annotations:
+ - BeforeMethod
+ - Before Test
+ - Before Suite
+ - Before Class
+
+ - AfterMethod -- After every test this test will be called
+ - After Test
+ - After Suite
+ - After Class
+
+--- Heirachy:
+XML, TEST, CLASS, METHOD
+
+
+Learn to understand the different types of test
+--> Smoke, Regression?
+
+--> Review TESTNG annotations, plus working with the XML files
+
+--> groups:
+    Have to put tags in the testTAgs annotation
+    in XML File before class tag, you have to access the groups.
