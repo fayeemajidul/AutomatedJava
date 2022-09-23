@@ -14,7 +14,7 @@ Method: Exclude method and you put "Mobile .*" --> this will exclude any method 
 
 Different TestNG annotations:
  - BeforeMethod
- - Before Test
+ - Before Test the entire test?
  - Before Suite
  - Before Class
 
@@ -35,3 +35,8 @@ Learn to understand the different types of test
 --> groups:
     Have to put tags in the testTAgs annotation
     in XML File before class tag, you have to access the groups.
+
+--> TestNG Methods:
+    TestNG executes based on alphabetical order,
+    in order to go around that you can say DependsOn method and proceed.
+    You can skip methods using, (enabled = false)

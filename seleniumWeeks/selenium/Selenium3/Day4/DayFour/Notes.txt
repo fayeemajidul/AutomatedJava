@@ -1,0 +1,10 @@
+Parameterization:
+
+* In the instance we want global variables to be used in XML file,
+we can create parameters.
+
+Specific Test Level/ Method Level annotations:
+--> Parameterizing with multiple data sets
+    --> Data Provider annotation:
+    @DataProvider
+

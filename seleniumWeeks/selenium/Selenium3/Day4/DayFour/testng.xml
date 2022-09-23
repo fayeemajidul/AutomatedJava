@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    --> Global variable applicable to all tests:
+<!--    <parameter name="numbers" value = "FayeemNumberGenerator.com"/>-->
+    --> Test 1:
+<!--    <test verbose="2" preserve-order="true"-->
+<!--          name="/Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/Selenium3/Day4/DayFour">-->
+<!--        <classes/>-->
+<!--    </test>-->
+
+    --> Test 2
+    <test name="Smoke Test">
+        <parameter name="URL" value="carLoan.com"/>
+        <parameter name="numbers" value="123456"/>
+        <classes>
+            <class name="Parameterization">
+            </class>
+        </classes>
+    </test>
+
+</suite>

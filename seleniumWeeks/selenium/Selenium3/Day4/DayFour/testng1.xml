@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    --> Test 1:
+
+    <test verbose="2" preserve-order="true"
+          name="/Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/Selenium3/Day4/DayFour">
+        <classes/>
+    </test>
+
+    --> Test 3 [Group Testing Practice]
+    <test name="Smoke test">
+        <groups>
+            <run>
+                <exclude name="smoke"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="DayFour"/>
+        </classes>
+    </test>
+</suite>
