@@ -14,7 +14,7 @@ Method: Exclude method and you put "Mobile .*" --> this will exclude any method 
 
 Different TestNG annotations:
  - BeforeMethod
- - Before Test the entire test?
+ - Before Test the entire test?e 
  - Before Suite
  - Before Class
 

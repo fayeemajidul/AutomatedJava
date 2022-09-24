@@ -18,6 +18,7 @@ public class FunctionalParameterTest implements WebDriver {
     public static void main(String[] args){}
 
     @Parameters ({"URL", "KEY", "VALUE"})
+    //Able to use URL, KEY and VALUE now without manually having to type it ! Cool.
     @Test
     public static void signUpPage(String URL, String setUpKey, String setUpValue){
         System.setProperty(setUpKey, setUpValue);

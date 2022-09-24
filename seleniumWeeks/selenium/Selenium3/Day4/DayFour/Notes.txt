@@ -8,3 +8,15 @@ Specific Test Level/ Method Level annotations:
     --> Data Provider annotation:
     @DataProvider
 
+
+
+So What Have we learned:
+
+The Heirachy of TESTNG
+    --> SUITE, TEST, CLASS, METHOD
+    --> BeforeMethod AfterMethod, Include, Exclude, REGEX include with regex
+    --> Prioritizing Test Cases
+    --> Parameterizing
+    --> DataProvider Annotation
+    --> Regression test: running mulitple test at once and smoke test to signal out.
+    --> Learned Grouping as well.

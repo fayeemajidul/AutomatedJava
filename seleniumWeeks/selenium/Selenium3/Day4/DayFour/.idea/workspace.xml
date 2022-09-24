@@ -5,31 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95180104-cdaa-4715-a931-8bd7b54e49f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/Day4.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/TestNG2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/DayFour.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/FunctionalParameterTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Parameterization.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/DayFour.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/FunctionalParameterTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/test-classes/Parameterization.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng1.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../../Day3/DayThree/src/test/java/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/DayThree/src/test/java/Notes" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FunctionalParameterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FunctionalParameterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +42,8 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm"
   }
 }]]></component>
   <component name="RunManager" selected="TestNG./Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/Selenium3/Day4/DayFour/TestNG2.xml">
@@ -139,7 +119,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663881272709</updated>
-      <workItem from="1663881273898" duration="8403000" />
+      <workItem from="1663881273898" duration="8985000" />
     </task>
     <servers />
   </component>
