@@ -1,0 +1,23 @@
+OOPS CONCEPTS:
+
+Encapsulation
+
+Protects data from being accessed from other classes and other methods, this establishes security.
+--> you establish them being private by using the private keyword accessor.
+--> Keep these methods private and they're unable to be accessed by other parts of the method..
+
+Abstraction
+
+Is the idea that you want to contain everything in one consolidated form and only expose important parts of the code while leaving redunant code out.
+
+Polymorphism
+Overriding and overloading:
+is the implementation of take the functionalities of already defined classes to then input new code.
+and the difference between the two is overriding takes the methods of the super class through inheritance, and it will define functions in it so the sub class won't perform the function given for the function in the super class.
+
+now overloading:
+over load is same method signature different return type but same method name different parameters.
+concision brevity.
+
+Inheritance:
+Inheritance is used with extended keyword, also defined as an is-a relationship, it is when the parent class has child classes where the child classes have exactly the same functions as the parent class due to the extends key word.
