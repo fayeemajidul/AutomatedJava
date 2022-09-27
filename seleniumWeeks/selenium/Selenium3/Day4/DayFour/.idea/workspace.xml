@@ -5,6 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="95180104-cdaa-4715-a931-8bd7b54e49f3" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/.idea/TestNG.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/.idea/Day0.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/src/test/java/DayZero.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/target/classes/org/example/Main.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/target/test-classes/DayZero.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../FrameWorks/TestNG/Day0/DayZero/testng.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Day3/DayThree/src/test/java/Notes" beforeDir="false" afterPath="$PROJECT_DIR$/../../Day3/DayThree/src/test/java/Notes" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -40,6 +64,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/Selenium3/Day4/DayFour",
     "nodejs_package_manager_path": "npm"
   }
 }]]></component>
@@ -116,7 +141,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1663881272709</updated>
-      <workItem from="1663881273898" duration="8985000" />
+      <workItem from="1663881273898" duration="9682000" />
     </task>
     <servers />
   </component>
