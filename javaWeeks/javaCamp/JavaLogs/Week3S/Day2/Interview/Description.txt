@@ -1,0 +1,5 @@
+The questions that were discussed in the Interview that we will be reviewing [Mostly Java Review].
+
+-- Questions 1. given a list of numbers in an array, extract the number 7 from the list.
+
+-- Question  2. given a list of various data, find the min and max in the list.
