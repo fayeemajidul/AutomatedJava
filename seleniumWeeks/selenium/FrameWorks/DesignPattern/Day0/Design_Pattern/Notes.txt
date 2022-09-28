@@ -1,0 +1,26 @@
+One of the Interview Question:
+
+--> We are directed to a page on Gmail:
+
+--> How would we be able to verify and extract, the username@gmail.com and verify that the domain that we extract is @gmail.com?
+
+___________________________________________________________________________________________
+
+@Test
+@Parameters({"URL"})
+
+public static void getDomainOfEmail(String URL){
+    driver.manage().gecko.setup()
+    Webdriver driver = new FireFoxDriver()
+    driver.manage().window().maximize;
+
+    WebElement email = driver.findElementBy(By.xpath(//class[@userEmail])).getText;
+    System.out.println("email");
+        ---> dummyemail@gmail.com:
+    String hasDomain = email.split("@")[1];
+    Assert.assertEquals("@gmail.com", hasDomain);
+
+}
+____________________________________________________________________________________________
+
+
