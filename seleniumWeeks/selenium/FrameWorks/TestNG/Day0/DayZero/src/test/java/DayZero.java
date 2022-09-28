@@ -2,6 +2,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -14,6 +15,13 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Set;
 
+/*We've learned
+* TESTNG listeners
+*  --> On test fail/success:
+*  --> Where the test fails
+*  --> using Assert.assertFails, to intentionally fail a test.
+*  --> DataValidations
+* */
 public class DayZero implements WebDriver, ITestListener {
     public static void main(String[] args){
     }
@@ -91,6 +99,12 @@ public class DayZero implements WebDriver, ITestListener {
         driver.get(URL);
 
     }
+
+    @Test
+    public static void testMethod(){
+        boolean basketballMan = true;
+        Assert.assertFalse(basketballMan);
+    }
     public void onTestStart(ITestResult result) {
         // not implemented
     }
@@ -114,6 +128,7 @@ public class DayZero implements WebDriver, ITestListener {
      */
     public void onTestFailure(ITestResult result) {
         // not implemented
+        System.out.println("Failed execution from" + result.getName());
     }
 
     /**
