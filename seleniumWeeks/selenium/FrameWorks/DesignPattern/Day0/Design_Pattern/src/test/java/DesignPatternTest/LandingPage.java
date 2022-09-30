@@ -29,7 +29,5 @@ public class LandingPage extends AbstractMethods{
         userEmail.sendKeys(email);
         userPassword.sendKeys(password);
         loginButton.click();
-
     }
-
 }

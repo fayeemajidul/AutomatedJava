@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
 
 import javax.swing.text.html.CSS;
 import java.util.List;
@@ -13,7 +14,9 @@ public class ProductPage extends AbstractMethods{
     public ProductPage(WebDriver driver){
         super(driver);
         this.driver = driver;
+        PageFactory.initElements(driver, this);
     }
+
     @FindBy(css = ".mb-3")
     List <WebElement> items;
     By productsBy = By.cssSelector(".mb-3");
@@ -22,31 +25,28 @@ public class ProductPage extends AbstractMethods{
 
     public List<WebElement> getShoppingItems(){;
         List<WebElement> items = driver.findElements(productsBy);
-        System.out.println(items);
         //Waits for Products to appear
         abstractWait(productsBy);
-        try{
-            Thread.sleep(3000);
-
-        }catch(Exception ignored){}
-        //Returns the list of items in the set:
         return items;
     }
     public WebElement getProductName(String productWeWant){
         List<WebElement> itemInCart = getShoppingItems();
-        WebElement foundElement = null;
         for(WebElement verifyItem : itemInCart){
             //Get the Product: [Get Text] + Add to cart.
             boolean productName = (verifyItem.getText().split(" ")[0].trim()).equalsIgnoreCase(productWeWant);
             if(productName){
-                foundElement = verifyItem;
+                return verifyItem;
             }
         }
-        return foundElement;
+        return null;
     }
     public void addProductToCart(String productWeWant){
         WebElement item = getProductName(productWeWant); //We Want to get into Product scope not driver scope.
         item.findElement(By.cssSelector(".card-body button:last-of-type")).click();
+        try{
+            Thread.sleep(560);
+        }catch(Exception ignored){}
         abstractWait(toastMessage);
     }
+
 }

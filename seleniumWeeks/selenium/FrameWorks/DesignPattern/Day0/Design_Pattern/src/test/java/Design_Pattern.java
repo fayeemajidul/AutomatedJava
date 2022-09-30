@@ -1,18 +1,13 @@
-import DesignPatternTest.LandingPage;
-import DesignPatternTest.ProductPage;
+import DesignPatternTest.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
-import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
@@ -20,8 +15,8 @@ public class Design_Pattern implements WebDriver, ITestListener {
     public static void main(String[] args){}
 
     @Test
-    @Parameters({"URL", "KEY", "VALUE"})
-    public static void domFrame(String URL, String KEY, String VALUE) throws InterruptedException {
+    @Parameters({"URL", "KEY", "VALUE", "USER", "PASSWORD", "productWeWant", "COUNTRY"})
+    public static void domFrame(String URL, String KEY, String VALUE, String USER, String PASSWORD, String productWeWant, String COUNTRY) throws InterruptedException {
         //Window Properties
         System.setProperty(KEY, VALUE);
         WebDriver driver = new FirefoxDriver();
@@ -30,47 +25,27 @@ public class Design_Pattern implements WebDriver, ITestListener {
 
         //Sign in Page Of Shopping
         LandingPage landingPage = new LandingPage(driver);
-        landingPage.actionMethod("fayeemajidul@gmail.com", "Password123");
+        landingPage.actionMethod(USER, PASSWORD);
 
-        //Install Waits:
+        //Shopping Page:
         ProductPage productPage = new ProductPage(driver);
         List<WebElement> items = productPage.getShoppingItems();
-
-        String productWeWant = "ZARA";
-        //Shopping Page:
         productPage.addProductToCart(productWeWant);
+        Thread.sleep(1000); //Maybe create a longer wait:
 
-//        //Install another wait, wait for the loading. [HERE]
-//        driver.findElement(By.xpath("(//li)[4]")).click();
-//
-//        Thread.sleep(3000);
-//        //Verify if our cart has the Item we searched for originally.
-//        List<WebElement> itemInCart = driver.findElements(By.xpath("//div[@class='cartSection']/h3"));
-//
-//        for(WebElement verifyItem : itemInCart){
-//            //Get the Product: [Get Text] + Add to cart.
-//            System.out.println("In here");
-//            boolean productName = (verifyItem.getText().split(" ")[0].trim()).equalsIgnoreCase(productWeWant);
-//            Assert.assertTrue(productName);
-//            driver.findElement(By.cssSelector(".totalRow button")).click();
-//        }
-//        //Checkout Page:
-//        driver.findElement(By.cssSelector("[placeholder = 'Select Country']")).click();
-//        driver.findElement(By.cssSelector("[placeholder = 'Select Country']")).sendKeys("india");
-//
-//        //WebDriver Wait:
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
-//
-//        //Click on Element
-//        driver.findElement(By.xpath("//span[normalize-space()='India']")).click();
-//
-//        driver.findElement(By.xpath("(//a[normalize-space()='Place Order'])[1]")).click();
-//
-//        //Order Confirm Place: Retrieve Text:
-//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("hero-primary")));
-//        String confirmMessage = driver.findElement(By.className("hero-primary")).getText().trim().toUpperCase();
-//        Assert.assertEquals(confirmMessage, "THANKYOU FOR THE ORDER.");
+        //Shopping Cart:
+        CartPage cartPage = new CartPage(driver);
+        cartPage.clickCartButton();
+        Thread.sleep(1000);
+        cartPage.getProductName(productWeWant);
 
+        //Checkout Page:
+        CheckOutPage checkOut = new CheckOutPage(driver);
+        checkOut.chooseCountry(COUNTRY);
+
+        //Order Confirm Place: Retrieve Text:
+        OrderConfirmPage confirmPage = new OrderConfirmPage(driver);
+        confirmPage.getConfirmMessage();
     }
 
     /*Abstract Methods:*/
@@ -151,7 +126,7 @@ public class Design_Pattern implements WebDriver, ITestListener {
 
     @Override
     public void onTestFailure(ITestResult result) {
-        ITestListener.super.onTestFailure(result);
+        System.out.println("Failed at " + result.getName());
     }
 
     @Override
@@ -177,5 +152,6 @@ public class Design_Pattern implements WebDriver, ITestListener {
     @Override
     public void onFinish(ITestContext context) {
         ITestListener.super.onFinish(context);
+        System.out.println("Test Ran Successfully");
     }
 }
