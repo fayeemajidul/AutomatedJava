@@ -9,6 +9,7 @@ import org.openqa.selenium.support.PageFactory;
 public class LandingPage extends AbstractMethods{
     WebDriver driver;
     public LandingPage(WebDriver driver){
+        super(driver); //Super allows to run instance in parent class, creating a child to parent connection.
         this.driver = driver;
         PageFactory.initElements(driver, this);
         //Initializes the elements in this Class.

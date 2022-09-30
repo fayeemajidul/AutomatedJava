@@ -1,10 +1,10 @@
 import DesignPatternTest.LandingPage;
+import DesignPatternTest.ProductPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.ITestContext;
@@ -33,56 +33,43 @@ public class Design_Pattern implements WebDriver, ITestListener {
         landingPage.actionMethod("fayeemajidul@gmail.com", "Password123");
 
         //Install Waits:
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        try{
-            wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
-        }catch(Exception e){
-            System.out.println("Loaded Page");
-        }
+        ProductPage productPage = new ProductPage(driver);
+        List<WebElement> items = productPage.getShoppingItems();
 
         String productWeWant = "ZARA";
-        String nastyString = "//div[@class='col-lg-4 col-md-6 col-sm-10 offset-md-0 offset-sm-1 mb-3 ng-star-inserted']//div[1]//div[1]//button[2]";
-
         //Shopping Page:
+        productPage.addProductToCart(productWeWant);
 
-        for(WebElement item : items){
-            //Get the Product: [Get Text] + Add to cart.
-            String productName = (item.findElement(By.cssSelector("b")).getText().split(" ")[0].trim());
-            if(productName.equalsIgnoreCase(productWeWant)){
-                item.findElement(By.xpath(nastyString)).click();
-            }
-        }
-        //Install another wait, wait for the loading.
-        wait.until(ExpectedConditions.invisibilityOf(driver.findElement(By.cssSelector("#toast-container"))));
-        Thread.sleep(3000);
-        driver.findElement(By.xpath("(//li)[4]")).click();
-        Thread.sleep(3000);
-        //Verify if our cart has the Item we searched for originally.
-        List<WebElement> itemInCart = driver.findElements(By.xpath("//div[@class='cartSection']/h3"));
-
-        for(WebElement verifyItem : itemInCart){
-            //Get the Product: [Get Text] + Add to cart.
-            System.out.println("In here");
-            boolean productName = (verifyItem.getText().split(" ")[0].trim()).equalsIgnoreCase(productWeWant);
-            Assert.assertTrue(productName);
-            driver.findElement(By.cssSelector(".totalRow button")).click();
-        }
-        //Checkout Page:
-        driver.findElement(By.cssSelector("[placeholder = 'Select Country']")).click();
-        driver.findElement(By.cssSelector("[placeholder = 'Select Country']")).sendKeys("india");
-
-        //WebDriver Wait:
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
-
-        //Click on Element
-        driver.findElement(By.xpath("//span[normalize-space()='India']")).click();
-
-        driver.findElement(By.xpath("(//a[normalize-space()='Place Order'])[1]")).click();
-
-        //Order Confirm Place: Retrieve Text:
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("hero-primary")));
-        String confirmMessage = driver.findElement(By.className("hero-primary")).getText().trim().toUpperCase();
-        Assert.assertEquals(confirmMessage, "THANKYOU FOR THE ORDER.");
+//        //Install another wait, wait for the loading. [HERE]
+//        driver.findElement(By.xpath("(//li)[4]")).click();
+//
+//        Thread.sleep(3000);
+//        //Verify if our cart has the Item we searched for originally.
+//        List<WebElement> itemInCart = driver.findElements(By.xpath("//div[@class='cartSection']/h3"));
+//
+//        for(WebElement verifyItem : itemInCart){
+//            //Get the Product: [Get Text] + Add to cart.
+//            System.out.println("In here");
+//            boolean productName = (verifyItem.getText().split(" ")[0].trim()).equalsIgnoreCase(productWeWant);
+//            Assert.assertTrue(productName);
+//            driver.findElement(By.cssSelector(".totalRow button")).click();
+//        }
+//        //Checkout Page:
+//        driver.findElement(By.cssSelector("[placeholder = 'Select Country']")).click();
+//        driver.findElement(By.cssSelector("[placeholder = 'Select Country']")).sendKeys("india");
+//
+//        //WebDriver Wait:
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".ta-results")));
+//
+//        //Click on Element
+//        driver.findElement(By.xpath("//span[normalize-space()='India']")).click();
+//
+//        driver.findElement(By.xpath("(//a[normalize-space()='Place Order'])[1]")).click();
+//
+//        //Order Confirm Place: Retrieve Text:
+//        wait.until(ExpectedConditions.visibilityOfElementLocated(By.className("hero-primary")));
+//        String confirmMessage = driver.findElement(By.className("hero-primary")).getText().trim().toUpperCase();
+//        Assert.assertEquals(confirmMessage, "THANKYOU FOR THE ORDER.");
 
     }
 
