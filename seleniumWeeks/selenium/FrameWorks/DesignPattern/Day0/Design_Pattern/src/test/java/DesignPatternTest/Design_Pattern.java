@@ -1,50 +1,40 @@
-import DesignPatternTest.*;
+package DesignPatternTest;
+
+import GlobalComponents.GlobalComponents;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
+
+import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
-public class Design_Pattern implements WebDriver, ITestListener {
+public class Design_Pattern extends GlobalComponents implements WebDriver, ITestListener {
     public static void main(String[] args){}
 
     @Test
     @Parameters({"URL", "KEY", "VALUE", "USER", "PASSWORD", "productWeWant", "COUNTRY"})
-    public static void domFrame(String URL, String KEY, String VALUE, String USER, String PASSWORD, String productWeWant, String COUNTRY) throws InterruptedException {
+    public void submitOrder(String URL, String KEY, String VALUE, String USER, String PASSWORD, String productWeWant, String COUNTRY) throws InterruptedException, IOException {
         //Window Properties
-        System.setProperty(KEY, VALUE);
-        WebDriver driver = new FirefoxDriver();
-        driver.get(URL);
-        driver.manage().window().maximize();
+        GlobalComponents globalComponents = new GlobalComponents();
+        LandingPage landingPage = globalComponents.launchApp(URL,  KEY, VALUE);
 
         //Sign in Page Of Shopping
-        LandingPage landingPage = new LandingPage(driver);
-        landingPage.actionMethod(USER, PASSWORD);
-
-        //Shopping Page:
-        ProductPage productPage = new ProductPage(driver);
+        ProductPage productPage = landingPage.actionMethod(USER, PASSWORD);
         List<WebElement> items = productPage.getShoppingItems();
-        productPage.addProductToCart(productWeWant);
+        CartPage cartPage = productPage.addProductToCart(productWeWant);
         Thread.sleep(1000); //Maybe create a longer wait:
-
-        //Shopping Cart:
-        CartPage cartPage = new CartPage(driver);
         cartPage.clickCartButton();
         Thread.sleep(1000);
         cartPage.getProductName(productWeWant);
-
         //Checkout Page:
-        CheckOutPage checkOut = new CheckOutPage(driver);
-        checkOut.chooseCountry(COUNTRY);
-
-        //Order Confirm Place: Retrieve Text:
-        OrderConfirmPage confirmPage = new OrderConfirmPage(driver);
+        CheckOutPage checkOut = cartPage.getProductName("productWeWant");
+        OrderConfirmPage confirmPage = checkOut.chooseCountry(COUNTRY); //instantiate a new object.
         confirmPage.getConfirmMessage();
     }
 

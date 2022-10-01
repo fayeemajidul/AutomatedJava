@@ -24,13 +24,13 @@ public class CartPage extends  AbstractMethods{
 
     @FindBy(css = ".totalRow button")
     WebElement rowButton;
-    public void getProductName(String productWeWant){
+    public CheckOutPage getProductName(String productWeWant){
         List<WebElement> itemInCart = elements;
         for(WebElement verifyItem : itemInCart){
             boolean productName = (verifyItem.getText().split(" ")[0].trim()).equalsIgnoreCase(productWeWant);
             Assert.assertTrue(productName);
             rowButton.click();
-
         }
+        return new CheckOutPage(driver);
     }
 }

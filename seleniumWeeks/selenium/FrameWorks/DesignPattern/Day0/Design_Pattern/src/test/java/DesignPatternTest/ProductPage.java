@@ -6,7 +6,6 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import javax.swing.text.html.CSS;
 import java.util.List;
 
 public class ProductPage extends AbstractMethods{
@@ -40,13 +39,14 @@ public class ProductPage extends AbstractMethods{
         }
         return null;
     }
-    public void addProductToCart(String productWeWant){
+    public CartPage addProductToCart(String productWeWant){
         WebElement item = getProductName(productWeWant); //We Want to get into Product scope not driver scope.
         item.findElement(By.cssSelector(".card-body button:last-of-type")).click();
         try{
             Thread.sleep(560);
         }catch(Exception ignored){}
         abstractWait(toastMessage);
+        return new CartPage(driver);
     }
 
 }

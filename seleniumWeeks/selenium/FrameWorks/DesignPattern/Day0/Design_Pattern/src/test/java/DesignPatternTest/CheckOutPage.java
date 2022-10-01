@@ -21,13 +21,14 @@ public class CheckOutPage extends  AbstractMethods{
     @FindBy(xpath = "(//a[normalize-space()='Place Order'])[1]")
     WebElement placeOrder;
 
-    public void chooseCountry(String chosenCountry){
+    public OrderConfirmPage chooseCountry(String chosenCountry){
         country.click();
         String formatCountry = chosenCountry.toLowerCase().substring(0,1).toUpperCase() + chosenCountry.substring(1).toLowerCase();
         country.sendKeys(formatCountry);
         abstractWait(By.cssSelector(".ta-results"));
         driver.findElement(By.xpath(String.format("//span[normalize-space()='%s']", formatCountry))).click();
         placeOrder.click();
+        return new OrderConfirmPage(driver);
 
     }
 }

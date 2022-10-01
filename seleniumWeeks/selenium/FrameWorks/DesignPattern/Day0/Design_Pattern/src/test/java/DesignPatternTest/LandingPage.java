@@ -1,6 +1,5 @@
 package DesignPatternTest;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -25,9 +24,11 @@ public class LandingPage extends AbstractMethods{
     @FindBy(id = "login")
     WebElement loginButton;
 
-    public void actionMethod(String email, String password){
+    public ProductPage actionMethod(String email, String password){
         userEmail.sendKeys(email);
         userPassword.sendKeys(password);
         loginButton.click();
+        ProductPage productPage = new ProductPage(driver);
+        return productPage;
     }
 }

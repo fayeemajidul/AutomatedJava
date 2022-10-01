@@ -2,7 +2,7 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
     <listeners>
-        <listener class-name="Design_Pattern"/>
+        <listener class-name="DesignPatternTest.Design_Pattern"/>
     </listeners>
 
     <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
@@ -14,11 +14,9 @@
     <parameter name="COUNTRY" value="india"/>
 
     <test name="Regression Test">
-        <classes>
-            <class name="Design_Pattern">
-                <methods>
-                </methods>
-            </class>
-        </classes>
+        <packages>
+            <package name="GlobalComponents"/>
+            <package name="DesignPatternTest"/>
+        </packages>
     </test>
 </suite>
