@@ -22,8 +22,6 @@ public class Design_Pattern extends GlobalComponents implements WebDriver, ITest
     public void submitOrder(String URL, String KEY, String VALUE, String USER, String PASSWORD, String productWeWant, String COUNTRY) throws InterruptedException, IOException {
         //Window Properties
         GlobalComponents globalComponents = new GlobalComponents();
-        LandingPage landingPage = globalComponents.launchApp(URL,  KEY, VALUE);
-
         //Sign in Page Of Shopping
         ProductPage productPage = landingPage.actionMethod(USER, PASSWORD);
         List<WebElement> items = productPage.getShoppingItems();

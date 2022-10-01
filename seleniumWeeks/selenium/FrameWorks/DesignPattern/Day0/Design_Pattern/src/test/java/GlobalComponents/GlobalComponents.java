@@ -3,6 +3,7 @@ package GlobalComponents;
 import DesignPatternTest.LandingPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 
 import java.io.FileInputStream;
@@ -12,6 +13,8 @@ import java.util.Properties;
 
 public class GlobalComponents {
     WebDriver driver = null;
+    public LandingPage landingPage;
+
 
     @Parameters({"URL", "KEY", "VALUE", "USER"})
     public WebDriver InitDrive(String URL, String KEY, String VALUE) throws IOException {
@@ -31,11 +34,12 @@ public class GlobalComponents {
 
         return driver;
     }
-
+    @BeforeMethod
     @Parameters({"URL", "KEY", "VALUE"})
     public LandingPage launchApp(String URL, String KEY, String VALUE) throws IOException {
         driver = InitDrive(URL,KEY,VALUE);
-        return new LandingPage(driver);
+        landingPage = new LandingPage(driver);
+        return landingPage;
 
     }
 }
