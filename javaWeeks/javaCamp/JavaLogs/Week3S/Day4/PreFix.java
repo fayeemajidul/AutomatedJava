@@ -11,7 +11,7 @@ public class PreFix{
         wordGenerator(words, "dinitrate");
         wordGenerator(words, "diphosphorous");
 
-        PreFixArray(words, "tri");
+        PreFixArray(words, "tr");
     }
     public static ArrayList<String> wordGenerator(ArrayList<String> words, String wordsToAdd){
         words.add(wordsToAdd);
@@ -21,7 +21,7 @@ public class PreFix{
     public static void PreFixArray(ArrayList <String> words, String prefix){
         ArrayList <String> hasPrefix = new ArrayList<>();
         for(int i = 0; i < words.size(); i++ ){
-            if(words.get(i).contains(prefix)){
+            if(words.get(i).substring(0).contains(prefix)){
                 hasPrefix.add(words.get(i));
             }
         }

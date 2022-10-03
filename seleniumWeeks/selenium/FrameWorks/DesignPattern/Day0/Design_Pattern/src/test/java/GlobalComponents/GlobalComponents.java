@@ -4,6 +4,7 @@ import DesignPatternTest.LandingPage;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 
 import java.io.FileInputStream;
@@ -42,4 +43,5 @@ public class GlobalComponents {
         return landingPage;
 
     }
+
 }

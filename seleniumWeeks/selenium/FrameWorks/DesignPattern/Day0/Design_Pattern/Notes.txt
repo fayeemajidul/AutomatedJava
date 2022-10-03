@@ -23,4 +23,24 @@ public static void getDomainOfEmail(String URL){
 }
 ____________________________________________________________________________________________
 
+Review of TestNG section: --> Parallel Testing, Thread Count: Error Validations, Centralized one driver globally
 
+- Parallel Testing is another way to just say open tests at once, methods, classes, etc.
+
+- Thread Count: Is the amount of methods to run at once at a time.
+
+- Dependency on a Method: If u need one method to execute before going to the next method while running parallel you do
+  @TestNG({Dependency = "MethodName"})
+
+- TestNG groups, able to run selective tests.
+
+- The Concept Behind Groups:
+    --> You run selective tests u call and run the group file in xml before test cases.
+    --> In the instance that you have before/after annotations it will fail bc TestNG listener is searching 4 it
+    --> To avoid compile errors u have to set the before after methods to @Before/After Method (alwaysRun = true)
+
+
+ --> Data Provider:
+    --- Some test cases need Data to run, you initialize data provider, and attach the data to the tests.
+    --- Whichever test needs dataprovider, you do @Test (dataProvider = "getData")
+        --> Data can be accessed from the dataProvider.

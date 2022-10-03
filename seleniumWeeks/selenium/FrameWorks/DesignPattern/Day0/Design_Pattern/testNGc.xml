@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="All Test Suite">
+    <listeners>
+        <listener class-name="DesignPatternTest.Design_Pattern"/>
+    </listeners>
+<!--    <test name="Running Group Test">-->
+<!--        <groups>-->
+<!--            <run>-->
+<!--                <include name="group1"/>-->
+<!--            </run>-->
+<!--        </groups>-->
+<!--    </test>-->
+
+    <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
+    <parameter name="KEY" value="webdriver.gecko.driver"/>
+    <parameter name="VALUE" value="/Users/fayeemmooktadeer/Downloads/geckodriver"/>
+    <parameter name="productWeWant" value="ZARA"/>
+    <parameter name="USER" value="fayeemajidul@gmail.com"/>
+    <parameter name="PASSWORD" value="Password123"/>
+    <parameter name="COUNTRY" value="india"/>
+
+    <test thread-count="5" name="Regression Test">
+        <classes>
+            <class name="DesignPatternTest.LandingPage">
+                <methods>
+                    <include name="testingTestNGAnnotation"/>
+                </methods>
+            </class>
+        </classes>
+
+    </test>
+</suite>
