@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e88eb7f0-b407-4a53-bdc8-aa2a6099ed64" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/Brevity.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/AbstractWaits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/InitializeDrive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/global.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebImplementation/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebImplementation/CheckOutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebImplementation/LandingPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebImplementation/OrderConfirmPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebImplementation/POMstructure.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebImplementation/ProductPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DesignPattern/.idea/DesignPattern.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../DesignPattern/Day0/Design_Pattern/DesignPatternTest.Design_Pattern.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DesignPattern/Day0/Design_Pattern/src/test/java/DesignPatternTest/DataReader.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DesignPattern/Day0/Design_Pattern/src/test/java/DesignPatternTest/Design_Pattern.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DesignPattern/Day0/Design_Pattern/src/test/java/DesignPatternTest/Design_Pattern.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DesignPattern/Day0/Design_Pattern/src/test/java/GlobalComponents/GlobalComponents.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../DesignPattern/Day0/Design_Pattern/src/test/java/DesignPatternTest/GlobalComponents.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../DesignPattern/Day0/Design_Pattern/testingP.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../DesignPattern/Day0/Design_Pattern/testingP.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/.idea/JsonPRAC.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/.idea/encodings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/src/main/java/org/example/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/src/test/java/DriverCode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/target/classes/org/example/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/target/test-classes/DriverCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../JsonPRAC/untitled/testng.xml" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeInsightWorkspaceSettings">
+    <option name="optimizeImportsOnTheFly" value="true" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2FgMtEFcNENUrZaLvH9uM77oHU8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "ASKED_SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.2"
+  }
+}]]></component>
+  <component name="RunManager" selected="TestNG./Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/testng.xml">
+    <configuration name="POMstructure" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Brevity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WebImplementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WebImplementation" />
+      <option name="MAIN_CLASS_NAME" value="WebImplementation.POMstructure" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="POMstructure.submitOrder" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Brevity" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="WebImplementation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="WebImplementation" />
+      <option name="MAIN_CLASS_NAME" value="WebImplementation.POMstructure" />
+      <option name="METHOD_NAME" value="submitOrder" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="/Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="Brevity" />
+      <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
+      <option name="TEST_OBJECT" value="SUITE" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG./Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/testng.xml" />
+        <item itemvalue="TestNG.POMstructure.submitOrder" />
+        <item itemvalue="TestNG.POMstructure" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e88eb7f0-b407-4a53-bdc8-aa2a6099ed64" name="Changes" comment="" />
+      <created>1664909490308</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1664909490308</updated>
+      <workItem from="1664909491601" duration="6244000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

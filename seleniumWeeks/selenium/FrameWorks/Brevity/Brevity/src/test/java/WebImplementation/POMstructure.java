@@ -1,5 +1,6 @@
-package DesignPatternTest;
+package WebImplementation;
 
+import Resources.InitializeDrive;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -13,29 +14,27 @@ import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
-public class Design_Pattern extends GlobalComponents implements WebDriver, ITestListener {
-    public static void main(String[] args){}
-
+public class POMstructure implements WebDriver, ITestListener {
     @Test
     @Parameters({"URL", "KEY", "VALUE", "USER", "PASSWORD", "productWeWant", "COUNTRY"})
-    public void submitOrder(String URL, String KEY, String VALUE, String USER, String PASSWORD, String productWeWant, String COUNTRY) throws InterruptedException, IOException {
+    public static void submitOrder(String URL, String KEY, String VALUE, String USER, String PASSWORD, String productWeWant, String COUNTRY) throws InterruptedException, IOException {
         //Window Properties
-        GlobalComponents
-        //Sign in Page Of Shopping
-        ProductPage productPage = landingPage.actionMethod(USER, PASSWORD);
+        InitializeDrive initDrive = new InitializeDrive();
+
+        LandingPage landingPage = initDrive.launchApp(URL,KEY,VALUE);
+
+        ProductPage productPage = landingPage.actionMethod(USER,PASSWORD);
+
         List<WebElement> items = productPage.getShoppingItems();
         CartPage cartPage = productPage.addProductToCart(productWeWant);
         Thread.sleep(1000); //Maybe create a longer wait:
         cartPage.clickCartButton();
-        Thread.sleep(1000);
         cartPage.getProductName(productWeWant);
         //Checkout Page:
         CheckOutPage checkOut = cartPage.getProductName("productWeWant");
         OrderConfirmPage confirmPage = checkOut.chooseCountry(COUNTRY); //instantiate a new object.
         confirmPage.getConfirmMessage();
     }
-
-    /*Abstract Methods:*/
     @Override
     public void get(String url) {
 
@@ -113,7 +112,7 @@ public class Design_Pattern extends GlobalComponents implements WebDriver, ITest
 
     @Override
     public void onTestFailure(ITestResult result) {
-        System.out.println("Failed at " + result.getName());
+        ITestListener.super.onTestFailure(result);
     }
 
     @Override
@@ -139,6 +138,5 @@ public class Design_Pattern extends GlobalComponents implements WebDriver, ITest
     @Override
     public void onFinish(ITestContext context) {
         ITestListener.super.onFinish(context);
-        System.out.println("Test Ran Successfully");
     }
 }
