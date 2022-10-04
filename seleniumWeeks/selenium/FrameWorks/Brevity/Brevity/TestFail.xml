@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="WebImplementation.POMstructure"/>
+    </listeners>
+
+    <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
+    <parameter name="KEY" value="webdriver.gecko.driver"/>
+    <parameter name="VALUE" value="/Users/fayeemmooktadeer/Downloads/geckodriver"/>
+    <parameter name="productWeWant" value="ZARA"/>
+    <parameter name="USER" value="fayeemajidul@gmail.com"/>
+    <parameter name="PASSWORD" value="Password123"/>
+    <parameter name="COUNTRY" value="india"/>
+
+    <test name="Regression Test #1">
+        <classes>
+            <class name="Resources.ScreenShot"/>
+        </classes>
+    </test>
+</suite>
