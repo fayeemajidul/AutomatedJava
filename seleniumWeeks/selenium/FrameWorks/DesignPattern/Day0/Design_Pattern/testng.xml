@@ -5,6 +5,8 @@
         <listener class-name="DesignPatternTest.Design_Pattern"/>
     </listeners>
 
+    //We Can Put This in JSON, and read from JSON.
+
     <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
     <parameter name="KEY" value="webdriver.gecko.driver"/>
     <parameter name="VALUE" value="/Users/fayeemmooktadeer/Downloads/geckodriver"/>

@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="02df7180-0e4e-4f25-8009-c4a4fbf2947b" name="Changes" comment="" />
+    <list default="true" id="1ff83b28-a37a-4a9e-8061-773ce17c8197" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ProjectId" id="2FbJqXuX8kUQqpENOjXUuUpjWxN" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="ProjectId" id="2FdsySnOpmxzPOZmh7xQXubz3ld" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -23,16 +26,27 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="02df7180-0e4e-4f25-8009-c4a4fbf2947b" name="Changes" comment="" />
-      <created>1664755043305</created>
+      <changelist id="1ff83b28-a37a-4a9e-8061-773ce17c8197" name="Changes" comment="" />
+      <created>1664833549448</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1664755043305</updated>
-      <workItem from="1664755045473" duration="47000" />
+      <updated>1664833549448</updated>
+      <workItem from="1664833550742" duration="5000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

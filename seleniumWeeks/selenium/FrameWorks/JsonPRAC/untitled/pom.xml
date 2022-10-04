@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
-    <artifactId>JSONpractice</artifactId>
+    <artifactId>untitled</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -24,7 +24,7 @@
             <artifactId>testng</artifactId>
             <version>7.6.1</version>
         </dependency>
-
     </dependencies>
+
 
 </project>
