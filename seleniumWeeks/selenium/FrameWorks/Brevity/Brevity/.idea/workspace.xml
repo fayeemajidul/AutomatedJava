@@ -5,13 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e88eb7f0-b407-4a53-bdc8-aa2a6099ed64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/TestFail.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/ScreenShot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Sources/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/ExtentReportValidator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/ScreenShot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/ScreenShot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebImplementation/POMstructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebImplementation/POMstructure.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -147,7 +145,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664909490308</updated>
-      <workItem from="1664909491601" duration="11176000" />
+      <workItem from="1664909491601" duration="15660000" />
     </task>
     <servers />
   </component>

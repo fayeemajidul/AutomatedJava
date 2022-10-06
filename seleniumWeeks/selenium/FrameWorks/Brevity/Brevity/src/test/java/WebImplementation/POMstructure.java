@@ -1,6 +1,8 @@
 package WebImplementation;
 
+import Resources.ExtentReportValidator;
 import Resources.InitializeDrive;
+import com.aventstack.extentreports.ExtentTest;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -15,6 +17,7 @@ import java.util.List;
 import java.util.Set;
 
 public class POMstructure implements WebDriver, ITestListener {
+    ExtentReportValidator extent = new ExtentReportValidator();
     @Test
     @Parameters({"URL", "KEY", "VALUE", "USER", "PASSWORD", "productWeWant", "COUNTRY"})
     public static void submitOrder(String URL, String KEY, String VALUE, String USER, String PASSWORD, String productWeWant, String COUNTRY) throws InterruptedException, IOException {
@@ -102,7 +105,9 @@ public class POMstructure implements WebDriver, ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
-        ITestListener.super.onTestStart(result);
+//        extent.createTest(result.getMethod().getMethodName())
+        ExtentTest report = extent.config().createTest(result.getMethod().getMethodName());
+        
     }
 
     @Override

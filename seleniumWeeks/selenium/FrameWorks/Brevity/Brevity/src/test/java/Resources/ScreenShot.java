@@ -3,10 +3,10 @@ package Resources;
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
-import org.apache.commons.io.FileUtils;
-import org.openqa.selenium.*;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.Assert;
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
@@ -14,7 +14,6 @@ import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
 import java.io.File;
-import java.io.IOException;
 import java.util.List;
 import java.util.Set;
 
@@ -46,22 +45,6 @@ public class ScreenShot implements WebDriver, ITestListener {
         uniqueObject.fail("Result does not match");
         extent.flush();
     }
-
-    public File takeScreen(String testCaseName) throws IOException {
-        TakesScreenshot screenShot = (TakesScreenshot) driver;
-        File source = screenShot.getScreenshotAs(OutputType.FILE);
-        File pngFile = new File("/Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Sources" + testCaseName + ".png");
-        FileUtils.copyFile(source, pngFile);
-        return pngFile;
-    }
-
-    public static void failTestOnPurpose(){
-        boolean poopman = true;
-        Assert.assertFalse(poopman, "false");
-
-    }
-
-
 
     /*ABSTRACT METHODS !*/
     @Override
