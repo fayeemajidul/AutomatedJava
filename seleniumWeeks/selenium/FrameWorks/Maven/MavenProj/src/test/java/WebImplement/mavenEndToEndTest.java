@@ -1,58 +1,35 @@
+package WebImplement;
+
+import Resources.ExtentReporterFile;
+import com.aventstack.extentreports.ExtentReports;
+import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.firefox.FirefoxDriver;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
-import java.sql.Driver;
-import java.time.Duration;
 import java.util.List;
 import java.util.Set;
 
-public class mavenEndToEnd implements WebDriver, ITestListener {
+public class mavenEndToEndTest implements WebDriver, ITestListener {
+    ExtentReports extent = ExtentReporterFile.configElements();
+    ExtentTest test;
     public static void main(String[] args){
         System.out.println("Code path");
     }
 
     @Test
-    @Parameters({"URL", "KEY", "VALUE"})
-    public static void mavenEndEnd(String URL, String KEY, String VALUE) throws InterruptedException {
-        System.setProperty(KEY, VALUE);
-        WebDriver driver = new FirefoxDriver();
-        driver.get(URL);
-        driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-
-        //___________________________________//
-        driver.findElement(By.id("userEmail")).click();
-        driver.findElement(By.id("userEmail")).sendKeys("fayeemajidul@gmail.com");
-        driver.findElement(By.id("userPassword")).click();
-        driver.findElement(By.id("userPassword")).sendKeys("Password123");
-        driver.findElement(By.id("login")).click();
-        Thread.sleep(3000);
-        //___________________________________// Add to cart:
-        //Limit The Scope:
-
-        List<WebElement> products = driver.findElements(By.cssSelector(".ng-star-inserted"));
-        for(WebElement product : products){
-            //limit the scope:
-//            System.out.println(product.findElement(By.xpath("//b[normalize-space()='zara coat 3']")).getText().split(" ")[0]);
-
-            if(product.findElement(By.xpath("//b[normalize-space()='zara coat 3']")).getText().split(" ")[0].equals("ZARA")){
-                driver.findElement(By.xpath("(//button[@class='btn w-10 rounded'][normalize-space()='Add To Cart'])")).click();;
-            }
-        }
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("#toast-container")));
-        wait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ng-animating")));
-
-
+    @Parameters({"URL", "KEY", "VALUE", "USER", "PASSWORD"})
+    public static void mavenEndEnd(String URL, String KEY, String VALUE, String USER, String PASSWORD) throws InterruptedException {
+        DriveInit driveInit = new DriveInit();
+        PageEntry pageEntry = driveInit.setUpPageEntry(URL, KEY, VALUE);
+        pageEntry.loginInfo(USER, PASSWORD);
 
     }
 
@@ -123,17 +100,18 @@ public class mavenEndToEnd implements WebDriver, ITestListener {
 
     @Override
     public void onTestStart(ITestResult result) {
+        test = extent.createTest(result.getMethod().getMethodName());
         ITestListener.super.onTestStart(result);
     }
 
     @Override
     public void onTestSuccess(ITestResult result) {
-        System.out.println("TestNG listener, success");
+        test.log(Status.PASS, result.getMethod().getMethodName() + ": working");
     }
 
     @Override
     public void onTestFailure(ITestResult result) {
-        ITestListener.super.onTestFailure(result);
+        test.log(Status.FAIL, "FAILED TEST AT" + result.getName());
     }
 
     @Override

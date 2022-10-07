@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [All Test Suite]" guice-stage="DEVELOPMENT" verbose="0">
+  <parameter name="PASSWORD" value="Password123"/>
+  <parameter name="VALUE" value="/Users/fayeemmooktadeer/Downloads/geckodriver"/>
+  <parameter name="USER" value="fayeemajidul@gmail.com"/>
+  <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
+  <parameter name="KEY" value="webdriver.gecko.driver"/>
+  <listeners>
+    <listener class-name="WebImplement.mavenEndToEndTest"/>
+  </listeners>
+  <test thread-count="5" name="Regression(failed)" verbose="0">
+    <classes>
+      <class name="WebImplement.mavenEndToEndTest">
+        <methods>
+          <include name="mavenEndEnd" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- WebImplement.mavenEndToEndTest -->
+    </classes>
+  </test> <!-- Regression(failed) -->
+</suite> <!-- Failed suite [All Test Suite] -->

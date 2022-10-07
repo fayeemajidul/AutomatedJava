@@ -107,7 +107,7 @@ public class POMstructure implements WebDriver, ITestListener {
     public void onTestStart(ITestResult result) {
 //        extent.createTest(result.getMethod().getMethodName())
         ExtentTest report = extent.config().createTest(result.getMethod().getMethodName());
-        
+
     }
 
     @Override

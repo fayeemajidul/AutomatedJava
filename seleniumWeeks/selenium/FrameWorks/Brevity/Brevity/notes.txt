@@ -5,3 +5,24 @@ What we mainly went over yesterday:
 
 2) Screenshot:
 
+
+_--------_
+
+Screen Shot + Extent report when test fails.
+
+Listeners are placed into the TESTNG.xml
+
+at start: configure extent report
+
+When test fails: take a screen shot
+
+when finished: flush the extent report class
+
+
+--------
+
+When writing two tests in //, they will overwrite before methods, so you have to do a method to safely tell testng not over write one method.
+
+use ThreadLocal, it protects each methods to not overwrite any methods. thread safe
+
+

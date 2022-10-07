@@ -5,11 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e88eb7f0-b407-4a53-bdc8-aa2a6099ed64" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/ExtentReportValidator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Sources/Retry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../javaWeeks/javaCamp/JavaLogs/Week4S/Day4/desc.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../javaWeeks/javaCamp/JavaLogs/Week4S/Day4/desc.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/ScreenShot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/ScreenShot.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/notes.txt" beforeDir="false" afterPath="$PROJECT_DIR$/notes.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/WebImplementation/POMstructure.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebImplementation/POMstructure.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Maven/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Maven/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,7 +53,8 @@
     "nodejs_package_manager_path": "npm",
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2"
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "MavenSettings"
   }
 }]]></component>
   <component name="RunManager" selected="TestNG.ScreenShot (1)">
@@ -145,7 +148,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1664909490308</updated>
-      <workItem from="1664909491601" duration="15660000" />
+      <workItem from="1664909491601" duration="18614000" />
     </task>
     <servers />
   </component>
