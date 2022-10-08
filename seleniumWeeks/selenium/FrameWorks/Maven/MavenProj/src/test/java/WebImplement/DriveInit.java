@@ -2,6 +2,7 @@ package WebImplement;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.firefox.FirefoxOptions;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
@@ -12,9 +13,10 @@ public class DriveInit {
     WebDriver driver;
     @Parameters({"URL", "KEY", "VALUE"})
     public WebDriver driveConfig(String URL, String KEY, String VALUE){
-
+        FirefoxOptions firefoxOptions = new FirefoxOptions();
         System.setProperty(KEY, VALUE);
-        WebDriver driver = new FirefoxDriver();
+        firefoxOptions.addArguments("headless");
+        WebDriver driver = new FirefoxDriver(firefoxOptions);
         driver.get(URL);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
