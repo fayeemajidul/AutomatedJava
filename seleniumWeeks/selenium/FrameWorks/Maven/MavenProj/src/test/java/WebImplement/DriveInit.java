@@ -13,10 +13,8 @@ public class DriveInit {
     WebDriver driver;
     @Parameters({"URL", "KEY", "VALUE"})
     public WebDriver driveConfig(String URL, String KEY, String VALUE){
-        FirefoxOptions firefoxOptions = new FirefoxOptions();
         System.setProperty(KEY, VALUE);
-        firefoxOptions.addArguments("headless");
-        WebDriver driver = new FirefoxDriver(firefoxOptions);
+        WebDriver driver = new FirefoxDriver();
         driver.get(URL);
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));

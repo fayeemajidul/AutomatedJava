@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d698acb1-b004-4dc5-b749-6f0c8d66b790" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/src/test/java/WebImplement/DriveInit.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/src/test/java/WebImplement/DriveInit.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/All Test Suite/Regression.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/All Test Suite/Regression.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/All Test Suite/Regression.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/All Test Suite/Regression.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/junitreports/TEST-WebImplement.mavenEndToEndTest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/junitreports/TEST-WebImplement.mavenEndToEndTest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/old/All Test Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Maven/MavenProj/target/surefire-reports/testng-results.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2FpnIEfFg96vqL8HIj68ANVY1c4" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d698acb1-b004-4dc5-b749-6f0c8d66b790" name="Changes" comment="" />
+      <created>1665197812412</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665197812412</updated>
+      <workItem from="1665197815151" duration="39000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
