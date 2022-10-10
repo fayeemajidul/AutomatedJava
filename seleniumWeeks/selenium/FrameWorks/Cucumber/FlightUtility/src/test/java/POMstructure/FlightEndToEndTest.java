@@ -33,6 +33,7 @@ public class FlightEndToEndTest implements ITestListener, WebDriver{
 
         //SIGN IN BROWSER NOW:
         NavigateToItem navigate = initialLoginPage.signIn(USER,PASSWORD);
+        navigate.navigateToItems();
 
         //Going Over to ITEM PAGE:
 
