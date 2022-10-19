@@ -20,5 +20,7 @@ public class Palgram{
         //Check to compare each letter to the alphabet array
     }
 
+    //Research
+
 
 }
