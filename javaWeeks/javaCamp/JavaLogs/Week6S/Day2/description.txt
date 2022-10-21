@@ -13,3 +13,22 @@ Output: 2
 Explanation:
 Only two moves are needed (remember each move increments or decrements one element):
 [1,2,3]  =>  [2,2,3]  =>  [2,2,2]
+
+
+
+
+____________________
+
+For Project:
+
+--> Utilize all aspects of the Java OOPS, review all conceps and implement in Project.java file.
+
+
+OOPS:
+- Encapsulation
+- Polymorphism
+- Inheritence
+- Abstraction
+
+-->
+
