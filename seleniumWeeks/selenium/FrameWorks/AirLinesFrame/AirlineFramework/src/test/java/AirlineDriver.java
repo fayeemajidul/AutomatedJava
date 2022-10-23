@@ -3,6 +3,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.interactions.Actions;
+
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -27,6 +28,10 @@ public class AirlineDriver implements ITestListener, WebDriver {
         mouseAction.click(driver.findElement(By.id("email"))).sendKeys("shiestybadussi@gmail.com").click(driver.findElement(By.id("pass"))).sendKeys("Fayeem123").click(driver.findElement(By.xpath("//button[@id = 'send2']"))).build().perform();
 
         //Inside Store Page
+        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(3));
+        explicitWait.until(ExpectedConditions.titleIs("My Account Magento Commerce - website to practice selenium | demo website for automation testing | selenium practice sites"));
+        driver.findElement(By.cssSelector(".level-top.ui-corner-all")).click();
+
 
         //Sign In Page:
 
