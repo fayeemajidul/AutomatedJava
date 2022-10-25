@@ -39,7 +39,7 @@ public class SubArraySum{
             System.out.println("Sum of subset 1 = " + sum1 + "\nSum of subset 2 = " + sum2);
 
         }else{
-            System.out.println("Sum of subset 1 has the same suma s subset 2");
+            System.out.println("Sum of subset 1 has the same sum as subset 2");
             System.out.println("Sum of subset 1 = " + sum1 + "\nSum of subset 2 = " + sum2);
         }
     }

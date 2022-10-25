@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <listeners>
+        <listener class-name="EndToEndFrameWork.ShoppingDriver"/>
+    </listeners>
+
+    <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
+    <parameter name="KEY" value="webdriver.gecko.driver"/>
+    <parameter name="VALUE" value="/Users/fayeemmooktadeer/Downloads/geckodriver"/>
+    <parameter name="productWeWant" value="ZARA"/>
+    <parameter name="USER" value="fayeemf@gmail.com"/>
+    <parameter name="PASSWORD" value="Fayeem123456!"/>
+
+    <test name="Regression Test">
+        <classes>
+            <class name="EndToEndFrameWork.ShoppingDriver"/>
+        </classes>
+    </test>
+</suite>

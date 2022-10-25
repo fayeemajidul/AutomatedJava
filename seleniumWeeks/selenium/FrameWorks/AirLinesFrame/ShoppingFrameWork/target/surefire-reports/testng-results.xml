@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-10-23T16:46:36 EDT" name="All Test Suite" finished-at="2022-10-23T16:46:47 EDT" duration-ms="10978">
+    <groups>
+    </groups>
+    <test started-at="2022-10-23T16:46:36 EDT" name="Regression test" finished-at="2022-10-23T16:46:47 EDT" duration-ms="10978">
+      <class name="ShoppingDriver">
+        <test-method signature="shoppingFrameWork()[pri:0, instance:ShoppingDriver@4c1d9d4b]" started-at="2022-10-23T16:46:36 EDT" name="shoppingFrameWork" finished-at="2022-10-23T16:46:47 EDT" duration-ms="10956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shoppingFrameWork -->
+      </class> <!-- ShoppingDriver -->
+    </test> <!-- Regression test -->
+  </suite> <!-- All Test Suite -->
+</testng-results>
