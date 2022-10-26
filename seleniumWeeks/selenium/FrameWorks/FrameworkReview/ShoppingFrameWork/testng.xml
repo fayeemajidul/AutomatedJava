@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+
+    <!--We Need ot Figure out how to implement variables from terminal-->
+
+    <parameter name="URL" value="https://rahulshettyacademy.com/client/"/>
+    <parameter name="KEY" value="webdriver.gecko.driver"/>
+    <parameter name="VALUE" value="/Users/fayeemmooktadeer/Downloads/geckodriver"/>
+    <parameter name="DesiredProduct" value="Zara"/>
+    <parameter name="COUNTRY" value="Bangladesh"/>
+    <parameter name="USER" value="fayeemajidul@gmail.com"/>
+    <parameter name="PASSWORD" value="Password123"/>
+
+    <test name="Regression Test">
+        <classes>
+            <class name="WebPages.ShoppingDriver"/>
+        </classes>
+    </test>
+
+</suite>
