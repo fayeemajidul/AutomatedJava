@@ -38,7 +38,7 @@ public class AbstractWaits {
 
     /* -- Reliability -- */
     @FindBy(css = "[routerlink *= 'cart']")
-    WebElement cartButton;
+    public WebElement cartButton;
     public void clickCartButton(){
         cartButton.click();
     }

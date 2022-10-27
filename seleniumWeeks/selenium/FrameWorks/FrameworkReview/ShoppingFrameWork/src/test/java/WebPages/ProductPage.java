@@ -1,29 +1,43 @@
 package WebPages;
 
+import Resources.AbstractWaits;
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class ProductPage {
+import java.util.List;
+
+public class ProductPage extends AbstractWaits {
     WebDriver driver;
+    CartPage cartPage;
     public ProductPage(WebDriver driver) {
+        super(driver);
         this.driver = driver;
         PageFactory.initElements(driver,this);
     }
 
-}
+    @FindBy(css = ".mb-3")
+    List<WebElement> items;
 
-//        //Create a Explicit Wait:
-//        WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(4));
-//        explicitWait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector(".mb-3")));
-//
-//        //Based of Selected Product, Add to cart:
-//        List <WebElement> items = driver.findElements(By.cssSelector(".mb-3"));
-//        for(WebElement item: items){
-//            String productName = item.getText().split(" ")[0].trim();
-//            if(productName.equalsIgnoreCase(desiredProduct)){
-//                //Click Add to Cart button:
-//                item.findElement(By.cssSelector(".card-body button:last-of-type")).click();
-//            }
-//        }
-//        explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector(".ng-tns-c31-1.ng-star-inserted")));
-//
+    By toastMessage = By.cssSelector("#toast-container");
+
+    public WebElement getProductName(String DesiredProduct) {
+        List<WebElement> itemInCart = items;
+        for (WebElement verifyItem : itemInCart) {
+            //Get the Product: [Get Text] + Add to cart.
+            boolean productName = (verifyItem.getText().split(" ")[0].trim()).equalsIgnoreCase(DesiredProduct);
+            if (productName) {
+                return verifyItem;
+            }
+        }
+        return null;
+    }
+    public CartPage addProductToCart(String DesiredProduct) {
+        WebElement item = getProductName(DesiredProduct);
+        item.findElement(By.cssSelector(".card-body button:last-of-type")).click();
+        abstractWait(toastMessage);
+        return new CartPage(driver);
+    }
+}

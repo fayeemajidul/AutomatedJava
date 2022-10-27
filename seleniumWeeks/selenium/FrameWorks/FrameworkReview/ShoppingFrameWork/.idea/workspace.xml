@@ -5,21 +5,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5da93e3e-9476-4667-8710-5ab5b689fc7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../.idea/FrameworkReview.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/AbstractWaits.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/InitDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/property.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/LoginPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/ProductPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/ShoppingDriver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Brevity/Brevity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Brevity/Brevity/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/ExtentReportListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/ScreenShot.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Sources/Index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Sources/Retry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/CartPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/CheckOutPage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/OrderConfirmPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Brevity/Brevity/src/test/java/Sources/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Brevity/Brevity/src/test/java/Sources/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/AbstractWaits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/AbstractWaits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/InitDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/InitDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebPages/ProductPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/ShoppingDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebPages/ShoppingDriver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/AbstractWaits.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/AbstractWaits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/InitDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/InitDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/ProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/ProductPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/ShoppingDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/ShoppingDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +43,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/src/test/java/WebPages/ShoppingDriver.java" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -54,7 +65,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -63,6 +78,24 @@
     </key>
   </component>
   <component name="RunManager" selected="TestNG./Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/testng.xml">
+    <configuration name="ScreenShot.initDrive" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ShoppingFrameWork" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Resources.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Resources" />
+      <option name="MAIN_CLASS_NAME" value="Resources.ScreenShot" />
+      <option name="METHOD_NAME" value="initDrive" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ShoppingDriver.ShoppingFrameWorkImplementation" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="ShoppingFrameWork" />
       <option name="PACKAGE_NAME" value="" />
@@ -88,6 +121,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG./Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/testng.xml" />
+        <item itemvalue="TestNG.ScreenShot.initDrive" />
         <item itemvalue="TestNG.ShoppingDriver.ShoppingFrameWorkImplementation" />
       </list>
     </recent_temporary>
@@ -104,7 +138,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666721509239</updated>
-      <workItem from="1666721510476" duration="11692000" />
+      <workItem from="1666721510476" duration="27572000" />
     </task>
     <servers />
   </component>
@@ -124,5 +158,16 @@
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/WebPages/ShoppingDriver.java</url>
+          <line>65</line>
+          <option name="timeStamp" value="2" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

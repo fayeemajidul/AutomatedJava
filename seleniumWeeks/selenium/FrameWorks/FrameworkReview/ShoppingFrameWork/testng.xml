@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite name="All Test Suite">
-
+    <listeners>
+        <listener class-name="WebPages.ShoppingDriver"/>
+    </listeners>
     <!--We Need ot Figure out how to implement variables from terminal-->
 
     <parameter name="URL" value="https://rahulshettyacademy.com/client/"/>
