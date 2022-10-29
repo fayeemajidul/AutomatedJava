@@ -1,11 +1,13 @@
 package Resources;
 import WebPages.LoginPage;
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
-import org.testng.annotations.AfterTest;
+import org.openqa.selenium.firefox.FirefoxOptions;
+
 import org.testng.annotations.Parameters;
 
 import java.io.File;
@@ -25,11 +27,14 @@ public class InitDriver {
         String browserName = property.getProperty("browser"); //Getting the Variable from property class.
 
         if(browserName.equalsIgnoreCase("firefox")){
+            FirefoxOptions options = new FirefoxOptions();
             System.setProperty(KEY, VALUE);
-            driver = new FirefoxDriver();
+            options.addArguments("--headless");
+            driver = new FirefoxDriver(options);
+            driver.manage().window().setSize(new Dimension(1440, 900));
+
         }
         driver.get(URL);
-        driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(4));
         return driver;
     }

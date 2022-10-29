@@ -5,28 +5,25 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5da93e3e-9476-4667-8710-5ab5b689fc7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/ExtentReportListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Resources/ScreenShot.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Sources/Index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Sources/Retry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/CartPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/CheckOutPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/WebPages/OrderConfirmPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Brevity/Brevity/src/test/java/Sources/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../../Brevity/Brevity/src/test/java/Sources/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fayeemmooktadeer.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Cucumber/ShoppingDriver.feature" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Cucumber/StepImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/Cucumber/Testing.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/AbstractWaits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/AbstractWaits.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/Resources/InitDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/InitDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/ProductPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebPages/ProductPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/ShoppingDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebPages/ShoppingDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/org/example/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/AbstractWaits.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/AbstractWaits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/Sources/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Sources/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/ShoppingFrameWork-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/target/ShoppingFrameWork-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/Regression Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/Regression Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/Regression Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/All Test Suite/Regression Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-WebPages.ShoppingDriver.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/junitreports/TEST-WebPages.ShoppingDriver.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/old/All Test Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/surefire-reports/testng-results.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/InitDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/InitDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/ProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/ProductPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/ShoppingDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/ShoppingDriver.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -67,9 +64,9 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Project",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.2"
   }
 }]]></component>
   <component name="RecentsManager">
@@ -138,7 +135,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666721509239</updated>
-      <workItem from="1666721510476" duration="27572000" />
+      <workItem from="1666721510476" duration="34460000" />
     </task>
     <servers />
   </component>
