@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="ccb5aae0-71a6-400a-b35e-7c87819c7d87" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/DriveTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/StepImplementation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShoppingFrameWork/src/test/java/Cucumber/TestNGCucumberRunner.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ShoppingFrameWork/src/test/java/Sources/Cucumber.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SeleniumTest/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SeleniumTest/.idea/SeleniumTest.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SeleniumTest/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SeleniumTest/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SeleniumTest/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../SeleniumTest/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/src/test/java/Cucumber/StepImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/src/test/java/Cucumber/StepImplementation.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/src/test/java/Cucumber/Testing.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/driveTest.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/src/test/java/Sources/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/src/test/java/Sources/Index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/ShoppingFrameWork-1.0-SNAPSHOT.jar" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/ShoppingFrameWork-1.0-SNAPSHOT.jar" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/classes/org/example/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/classes/org/example/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/All Test Suite/Regression Test.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/All Test Suite/Regression Test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/All Test Suite/Regression Test.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/All Test Suite/Regression Test.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/TEST-TestSuite.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/TEST-TestSuite.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/TestSuite.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/TestSuite.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/emailable-report.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/emailable-report.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/junitreports/TEST-WebPages.ShoppingDriver.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/junitreports/TEST-WebPages.ShoppingDriver.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/old/All Test Suite/methods-alphabetical.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/old/All Test Suite/methods.html" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/old/All Test Suite/methods.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/testng-results.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/surefire-reports/testng-results.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/Resources/AbstractWaits.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/Resources/AbstractWaits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/Resources/ExtentReportListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/Resources/ExtentReportListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/Resources/ScreenShot.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/Resources/ScreenShot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/Sources/Retry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/Sources/Retry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/CartPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/CheckOutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/CheckOutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/OrderConfirmPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/OrderConfirmPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/ProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/ProductPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/ShoppingDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../ShoppingFrameWork/target/test-classes/WebPages/ShoppingDriver.class" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GscFfTlFxWb7N0UgIeI7fcaVe0" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/test/java" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="ccb5aae0-71a6-400a-b35e-7c87819c7d87" name="Changes" comment="" />
+      <created>1667180632603</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1667180632603</updated>
+      <workItem from="1667180633986" duration="900000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
+</project>

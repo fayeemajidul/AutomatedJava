@@ -29,8 +29,8 @@ public class InitDriver {
         if(browserName.equalsIgnoreCase("firefox")){
             FirefoxOptions options = new FirefoxOptions();
             System.setProperty(KEY, VALUE);
-            options.addArguments("--headless");
-            driver = new FirefoxDriver(options);
+//            options.addArguments("--headless");
+            driver = new FirefoxDriver();
             driver.manage().window().setSize(new Dimension(1440, 900));
 
         }

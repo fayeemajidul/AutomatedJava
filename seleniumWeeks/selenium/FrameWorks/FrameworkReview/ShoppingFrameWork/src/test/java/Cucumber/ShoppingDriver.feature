@@ -17,4 +17,3 @@
       Examples:
         | username               | password     | productName | Country    |
         | fayeemajidul@gmail.com | Password123! | Zara        | Bangladesh |
-        |                        |              |             |            |
