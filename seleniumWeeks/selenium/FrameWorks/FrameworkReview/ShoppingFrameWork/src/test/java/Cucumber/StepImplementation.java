@@ -13,7 +13,7 @@ public class StepImplementation extends InitDriver {
     LoginPage loginPage;
     ProductPage productPage;
     CartPage cartPage;
-    CheckOutPage checkOutPage;
+    CheckOutPage checkOut;
     OrderConfirmPage orderConfirm;
 
     @Given("I landed on Ecommerce Page")
@@ -32,20 +32,19 @@ public class StepImplementation extends InitDriver {
         //this step adds product to the cart
     }
 
-    @When("^Checkout (.+)and verify$")
-    public void Check_Out_Product(String productName){
-        checkOutPage = cartPage.verifyItemInCart(productName);
+    @When("^Checkout (.+) and verify$")
+    public void Check_Out_Product(String productName) throws InterruptedException {
+        checkOut = cartPage.verifyItemInCart(productName);
         //This step will verify if the item is in the cart
     }
     @When("^Enter in (.+) then click check submit$")
     public void Customer_Info_Check_Out_Page(String country){
-        orderConfirm = checkOutPage.chooseCountry(country);
+        orderConfirm = checkOut.chooseCountry(country);
         //All User Data is in this step then order is placed
     }
     @Then("{string} message is displayed on ConfirmationPage")
     public void ConfirmationPage(String confirm){
         orderConfirm.grabConfirmMessage();
-        System.out.println("Printed from Cucumber: " + confirm);
         //Confirmation message printout
     }
 

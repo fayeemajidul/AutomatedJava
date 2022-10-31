@@ -31,7 +31,7 @@ public class InitDriver {
             System.setProperty(KEY, VALUE);
 //            options.addArguments("--headless");
             driver = new FirefoxDriver();
-            driver.manage().window().setSize(new Dimension(1440, 900));
+            driver.manage().window().fullscreen();
 
         }
         driver.get(URL);

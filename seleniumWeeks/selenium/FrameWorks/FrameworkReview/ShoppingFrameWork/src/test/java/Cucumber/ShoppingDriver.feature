@@ -11,9 +11,9 @@
       Given Logged in with username <username> and password <password>
       When I add the product <productName> to the cart
       When Checkout <productName> and verify
-      And Enter in <Country> then click check submit
+      When Enter in <Country> then click check submit
       Then "THANKYOU FOR THE ORDER." message is displayed on ConfirmationPage
 
       Examples:
-        | username               | password     | productName | Country    |
-        | fayeemajidul@gmail.com | Password123! | Zara        | Bangladesh |
+        | username               | password    | productName | Country    |
+        | fayeemajidul@gmail.com | Password123 | Zara        | Bangladesh |

@@ -34,7 +34,9 @@ public class CartPage extends AbstractWaits {
         //Create explicit wait only when NG-Start is invisible.
         invisibleWait(invisibleStar);
         clickCartButton();
+
         abstractWait(productInCart);
+        System.out.println(elements);
         for(WebElement verifyItem : elements){
             boolean productName = (verifyItem.getText().split(" ")[0].trim()).equalsIgnoreCase(DesiredProduct);
             Assert.assertTrue(productName);
