@@ -6,14 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5da93e3e-9476-4667-8710-5ab5b689fc7b" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Cucumber/ShoppingDriver.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Cucumber/ShoppingDriver.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Cucumber/StepImplementation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Cucumber/StepImplementation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Resources/InitDriver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Resources/InitDriver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/Sources/Index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/Sources/Index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/WebPages/CartPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/WebPages/CartPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Cucumber/StepImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Cucumber/StepImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/InitDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/InitDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/CartPage.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +164,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1666721509239</updated>
-      <workItem from="1666721510476" duration="40962000" />
+      <workItem from="1666721510476" duration="41394000" />
     </task>
     <servers />
   </component>
