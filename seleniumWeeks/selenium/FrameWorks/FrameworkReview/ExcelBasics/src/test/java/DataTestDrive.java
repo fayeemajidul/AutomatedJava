@@ -31,7 +31,7 @@ public class DataTestDrive {
                 Iterator <Row> rows = indexSheet.iterator();
                 Row firstRow = rows.next();
 
-                Iterator <Cell> indivCell =  firstRow.cellIterator();
+                Iterator <Cell> indivCell = firstRow.cellIterator();
                 int whileCounter = 0;
                 int columnNum = 0;
                 int rowCounter = 0;
@@ -49,9 +49,13 @@ public class DataTestDrive {
                 while(rows.hasNext()){
                     Row presentRow = rows.next();
                     String rowContents = presentRow.getCell(columnNum).getStringCellValue();
+                    System.out.println(rowContents);
                     if(rowContents.equalsIgnoreCase(rowName)){
                         //Grab all Cell Contents:
-
+                        Iterator <Cell> cellContents = presentRow.cellIterator();
+                        while(cellContents.hasNext()){
+                            System.out.println(cellContents.next()); //Saving Cell Value into CellContents.
+                        }
 
                     }
                 }
