@@ -1,65 +1,96 @@
 import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.Iterator;
 
+
 public class DataTestDrive {
+    @Parameters({"columnHeader" , "firstName"})
+    public ArrayList<String> grabData(String columnHeader, String firstName) throws IOException {
+        File excelFile = new File("/Users/fayeemmooktadeer/Desktop/DataDrivenTest.xlsx");
+        FileInputStream file = new FileInputStream(excelFile);
+        XSSFWorkbook excelWorkBook = new XSSFWorkbook(file);
+        DataFormatter formatter = new DataFormatter();
+        ArrayList<String> rowVALUES = new ArrayList<>();
 
-    @Test
-    @Parameters({"columnHeader", "rowName"})
-    public static void dataDrive(String columnHeader, String rowName) throws IOException {
-        //Reads Data in File, FileInputStream.
-        File pathOfExcel = new File("/Users/fayeemmooktadeer/Desktop/DataDrivenTest.xlsx");
-        FileInputStream file = new FileInputStream(pathOfExcel);
+        //Now that we have initialed our WorkBook, we need to grab the sheets present.
 
-        //Object of XSSF Class:
-        XSSFWorkbook excelSheet = new XSSFWorkbook(file);
+        int numberOfSheets = excelWorkBook.getNumberOfSheets();
+        for(int i = 0; i < numberOfSheets; i++){
+            if(excelWorkBook.getSheetName(i).equalsIgnoreCase("Roster")){
+                //We have gone into our Sheet.
+                XSSFSheet excelSheet = excelWorkBook.getSheetAt(i);
 
-        //Navigate to Sheet.
-        int numOfSheets = excelSheet.getNumberOfSheets();
-        for(int i = 0; i < numOfSheets; i++){
-            if(excelSheet.getSheetName(i).equalsIgnoreCase("Roster")){
-                XSSFSheet indexSheet = excelSheet.getSheetAt(i);
+                //Now we must go through our rows.
+                Iterator <Row> rowsInExcelSheet = excelSheet.iterator();
+                Row firstRow = rowsInExcelSheet.next(); //Grabbed First Row.
 
-                Iterator <Row> rows = indexSheet.iterator();
-                Row firstRow = rows.next();
+                Iterator <Cell> cellInExcelRow = firstRow.iterator(); //Each Individual Element;
 
-                Iterator <Cell> indivCell = firstRow.cellIterator();
-                int whileCounter = 0;
-                int columnNum = 0;
+                int columnNumber = 0;
                 int rowCounter = 0;
-                while(indivCell.hasNext()){
-                    Cell presentCell = indivCell.next();
-                    String cellData = presentCell.getStringCellValue();
 
-                    if(cellData.equalsIgnoreCase(columnHeader)){
-                        columnNum = whileCounter;
-                        //System.out.println("Cell Data: "  + cellData);
+                while(cellInExcelRow.hasNext()){
+                    Cell presentCell = cellInExcelRow.next();
+                    String cellContents = presentCell.getStringCellValue();
+                    if(cellContents.equalsIgnoreCase(columnHeader)){
+                        columnNumber = rowCounter;
                     }
-                    whileCounter++;
+                    rowCounter++;
                 }
 
-                while(rows.hasNext()){
-                    Row presentRow = rows.next();
-                    String rowContents = presentRow.getCell(columnNum).getStringCellValue();
-                    System.out.println(rowContents);
-                    if(rowContents.equalsIgnoreCase(rowName)){
+                //Now That We have our Column Number, we need to access each individual cell element.
+
+                while(rowsInExcelSheet.hasNext()){
+                    Row presentRow = rowsInExcelSheet.next();
+                    String valueInPresentRow = presentRow.getCell(columnNumber).getStringCellValue();
+                    if(valueInPresentRow.equalsIgnoreCase(firstName)){
                         //Grab all Cell Contents:
                         Iterator <Cell> cellContents = presentRow.cellIterator();
                         while(cellContents.hasNext()){
-                            System.out.println(cellContents.next()); //Saving Cell Value into CellContents.
+                            Cell presentCell = cellContents.next();
+                            String formattedElement = formatter.formatCellValue(presentCell);
+                            rowVALUES.add(formattedElement); //Saving Cell Value into CellContents.
                         }
-
                     }
                 }
             }
-        } //Limits Scope to Sheet.
+        }
+        System.out.println(rowVALUES);
+        return rowVALUES;
+    }
+    @Parameters({"columnHeader" , "firstName"})
+    public void grabDataAgain(String columnHeader, String firstName) throws IOException {
+        ArrayList <String> rows = grabData(columnHeader, firstName);
+    }
+
+    @Test(dataProvider = "createData")
+    public void retrieveData(String firstName, String lastName){
+        System.out.println("\nFirst Name: " + firstName + "\nLast Name: " + lastName);
+    }
+    @DataProvider(name = "createData")
+    public Object [][] dataCollection(){
+
+        ArrayList <String> rows = null;
+        try {
+            rows = grabData("Preferred", "Yisel");
+        } catch (IOException e) {
+            throw new RuntimeException(e);
+        }
+        //First Name:
+        String firstNameFromExcel = rows.get(0);
+        String lastNameFromExcel = rows.get(1);
+
+        return new Object[][]{{firstNameFromExcel, lastNameFromExcel}};
     }
 }

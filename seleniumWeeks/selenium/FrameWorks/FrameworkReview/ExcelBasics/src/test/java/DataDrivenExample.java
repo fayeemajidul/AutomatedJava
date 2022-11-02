@@ -3,6 +3,8 @@ import org.apache.poi.ss.usermodel.DataFormatter;
 import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -12,6 +14,8 @@ import java.util.Iterator;
 
 
 public class DataDrivenExample {
+    @Test
+    @Parameters({"columnHeader" , "firstName"})
     public ArrayList<String> grabData(String columnHeader, String firstName) throws IOException {
         File excelFile = new File("/Users/fayeemmooktadeer/Desktop/DataDrivenTest.xlsx");
         FileInputStream file = new FileInputStream(excelFile);
@@ -62,6 +66,7 @@ public class DataDrivenExample {
                 }
             }
         }
+        System.out.println(rowVALUES);
         return rowVALUES;
     }
 }
