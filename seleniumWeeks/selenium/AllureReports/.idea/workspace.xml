@@ -5,39 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2dab55d1-07ad-46b7-96a2-ff0b894df378" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/0fdd2b04-0cdc-414a-b128-21332c565577-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/1344a931-ffd5-4ac0-a26c-17b0cfcc9af1-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/1f7920f3-3a6c-45fa-a6df-787e0b5e19e5-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/229f6de4-ae82-4450-90b4-a403f0d0e07c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/23eadcd5-a4cf-4e83-8aa5-696d8a99d473-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/2a2537bd-a925-401f-92ae-a6676e34a47a-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/541d5b4b-0f7a-4d76-902d-51fc1e834aeb-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/60d4d3b8-40a5-4919-b7fe-1a492e8b0a36-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/6f13d28a-bf5e-491c-afe0-ca91a92d8d53-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/74e8a025-61f2-47e9-889b-2d7afca4ca14-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/7fce4a8d-062a-445e-bb3f-def43c14ae59-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/80223670-2d3d-4932-b106-68cb1b180172-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8422321a-9b05-4a45-b2b6-3c729e018f11-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/8ef97739-0351-419f-8300-61f662a6068b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9260e260-99f4-4b0d-9752-492eec936e8c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9c0cd876-b2f3-4d49-a812-1d347c629854-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/9f696134-50b6-463f-8d8f-47d4d0e1325b-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/a7a352c2-ac40-4c3c-99a5-35a4714b57e6-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/b17ca986-a8f0-447a-a47a-17d5825f4541-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/bd74e7db-4e12-4e69-8832-eb6bf451493c-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/c8e66ce5-1095-485e-ba03-cf71a430bbab-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/dd915a8e-3648-4fb9-9395-886a58b4f784-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/ecee1f9d-bda8-46bd-8b9e-612d6f9c8645-container.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/allure-results/f57311ce-4786-4499-a06f-904e6be63917-result.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/AllureFramework.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../FrameWorks/AllureFramework/.idea/AllureFramework.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,7 +39,11 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
 }]]></component>
   <component name="RunManager" selected="TestNG./Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/AllureReports/testng.xml">
@@ -112,7 +84,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1667861684941</updated>
-      <workItem from="1667861686227" duration="1349000" />
+      <workItem from="1667861686227" duration="2062000" />
     </task>
     <servers />
   </component>
