@@ -42,6 +42,7 @@ public class NumOfCards{
 
         System.out.println(firstHalf);
         System.out.println(cardDeck);
+        System.out.println("Good Job today, lets come back stronger tomorrow");
 
     }
 
