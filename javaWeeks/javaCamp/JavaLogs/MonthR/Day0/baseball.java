@@ -9,11 +9,7 @@ public class baseball{
 
         HashMap <Object, Object> legend = new HashMap<Object, Object>();
         ArrayList <Integer> scores = new ArrayList<Integer>();
-        createMap(scores, legend);
-
-
-        
-
+        createMap(scores, legend);        
     }
 
     public static ArrayList<Integer> createList(ArrayList <Integer> scores){
