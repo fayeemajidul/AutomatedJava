@@ -14,7 +14,5 @@ public class IP{
         for(int i = 0; i < charIPArray.length; i++){
             IPS.add(charIPArray[i] + ".");
         }  
-
-        List <
     }
 }
