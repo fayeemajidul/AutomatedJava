@@ -1,0 +1,12 @@
+There is a biker going on a road trip. The road trip consists of n + 1 points at different altitudes. The biker starts his trip on point 0 with altitude equal 0.
+
+You are given an integer array gain of length n where gain[i] is the net gain in altitude between points i​​​​​​ and i + 1 for all (0 <= i < n). Return the highest altitude of a poin
+
+
+----
+Steps of Logic:
+
+1 -- Create an Array that generates of all ranges.
+2 -- Order and sort the array.
+3 -- reiterate through the array from i = 0 ;  i < arraylist.size()-1; i++ 
+4 -- check if i , is the same as arraylist.size()-1, if it is then it is the largest number
