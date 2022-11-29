@@ -1,0 +1,10 @@
+Exercise some knowledge of OOPS concepts using Object-orientated code.
+
+1) Encapsulation
+--> Review Concepts: Via reading.
+2) Abstraction
+--> Review Concepts: Via reading.
+3) Inheritance
+--> Review Concepts: Via reading.
+4) Polymorphism
+--> Review Concepts: Via reading.

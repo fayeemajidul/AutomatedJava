@@ -39,6 +39,7 @@ public class ReviewIntegration {
         }
         explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#toast-container")));
         driver.findElement(By.xpath("//button[@routerlink='/dashboard/cart']")).click();
+        driver.findElement(By.cssSelector("btn.btn-primary")).click();
 
     }
 }

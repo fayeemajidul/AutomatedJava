@@ -1,0 +1,11 @@
+JAVA CORE CONCEPTS:
+
+--> OOPS
+Encapsulation, Polymorphism, Abstraction, Inheritance.
+
+Encapsulation?
+    How does it work?
+        Encapsulation allows features witihn the function to stay protected within it's own class so it will not be able to be altered or accesed.
+
+    Why does it work?
+        When you put private, 
