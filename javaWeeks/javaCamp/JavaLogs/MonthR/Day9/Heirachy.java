@@ -1,5 +1,6 @@
 public class Heirachy{
     public static void main(String[] args){
-        PokemonWorld pokemon = new PokemonWorld("Fayeem", 100 , "Fire");
+        PokemonWorld pokemonWorld = new PokemonWorld("Fayeem", 100);
+        pokemonWorld.returnUserPortfolio();
     }
 }

@@ -5,6 +5,7 @@ public class PokemonWorld {
     private int stamina;
     private String elementType;
     private int health;
+    Pokemon pokemon = new Pokemon();
 
     public PokemonWorld(String userName, int stamina){
         this.health = 100;
@@ -58,8 +59,10 @@ public class PokemonWorld {
 
     public void returnUserPortfolio(){
         health = getHealth();
+        determineElementType();
         elementType = getElementType();
         userName = getUserName();
-        System.out.println("Name : " + userName + "\nElement: " + elementType + "\nHealth: " + health);
+        System.out.println("Name : " + userName + "\nElement: " + elementType +"\nStamina: " + stamina + "\nHealth: " + health);
     }
+
 }
