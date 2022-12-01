@@ -1,13 +1,15 @@
-import java.util.ArrayList;
 
 public class Fibonacchi{
-    public static void CreateFibonacchiSequence(){
-        ArrayList <Integer> numInList = new ArrayList<>();
-        numInList.add(0);
-        numInList.add(1);
-        int precedingValue = 0;
-        for(int i = 0; i < 10; i++ ){
-            precedingValue = i;
+    public static void main(String[] args){
+        int num1 = 0, num2 = 1, num3 ,count = 40;
+        System.out.println(" " + num1);
+        System.out.println(" " + num2);
+
+        for(int i = 0; i < count; i++){
+            num3 = num1 + num2;
+            System.out.println(" " + num3);
+            num1 = num2;
+            num2 = num3;
         }
-     }
+    }
 }
