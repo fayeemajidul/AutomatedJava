@@ -1,0 +1,2 @@
+Fibonacchi Sequence:
+The Next number is the sum of the preceding number:

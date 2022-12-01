@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="988736f3-e56b-44b2-83c1-5099ffa6a644" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../../javaWeeks/javaCamp/JavaLogs/MonthR/Day9/Heirachy.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../javaWeeks/javaCamp/JavaLogs/MonthR/Day9/Heirachy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../javaWeeks/javaCamp/JavaLogs/MonthR/Day9/PokemonWorld.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../javaWeeks/javaCamp/JavaLogs/MonthR/Day9/PokemonWorld.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ReviewIntegration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ReviewIntegration.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/ReviewIntegration.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/ReviewIntegration.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,6 +47,17 @@
   }
 }</component>
   <component name="RunManager" selected="TestNG.ReviewIntegration.pageStructure">
+    <configuration name="ReviewIntegration" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="SeleniumReview" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ReviewIntegration" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ReviewIntegration.pageStructure" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="SeleniumReview" />
       <option name="PACKAGE_NAME" value="" />
@@ -71,6 +83,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="TestNG.ReviewIntegration.pageStructure" />
+        <item itemvalue="TestNG.ReviewIntegration" />
         <item itemvalue="TestNG./Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/SeleniumReview/SeleniumReview/testng.xml" />
       </list>
     </recent_temporary>
@@ -84,7 +97,7 @@
       <option name="presentableId" value="Default" />
       <updated>1669168058857</updated>
       <workItem from="1669168060253" duration="2836000" />
-      <workItem from="1669223737371" duration="2398000" />
+      <workItem from="1669223737371" duration="3793000" />
     </task>
     <servers />
   </component>

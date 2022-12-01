@@ -1,8 +1,10 @@
+import io.cucumber.java.eo.Se;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.Test;
 
@@ -37,9 +39,12 @@ public class ReviewIntegration {
                 item.findElement(By.cssSelector(".card-body button:last-of-type")).click();
             }
         }
-        explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(By.cssSelector("#toast-container")));
-        driver.findElement(By.xpath("//button[@routerlink='/dashboard/cart']")).click();
-        driver.findElement(By.cssSelector("btn.btn-primary")).click();
+        explicitWait.until(ExpectedConditions.invisibilityOfElementLocated(By.xpath("//ngx-spinner[@class='ng-tns-c31-1 ng-star-inserted']")));
+        driver.findElement(By.cssSelector("[routerlink *= 'cart']")).click();
+        driver.findElement(By.cssSelector(".totalRow button")).click();
+        Select select = new Select(driver.findElement(By.xpath("(//select[@class='input ddl'])[1]")));
+        select.selectByValue("03");
+
 
     }
 }
