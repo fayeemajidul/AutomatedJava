@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="f6418715-aa2d-4077-894e-c4871d783e6a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/AutomatedApply/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/AutomatedApply/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/AutomatedApply/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/AutomatedApply/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/AutomatedApply/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/AutomatedApply/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/AutomatedApply/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/AutomatedApply/src/main/java/ApplyFramework.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/WebSources.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/src/test/java/Resources/GlobalProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/src/test/java/Resources/Properties.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/src/main/java/org/example/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Testing/src/test/java/TestInterview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/src/test/java/SeleniumReview.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/src/test/java/WebSources/SeleniumReview.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/target/test-classes/SeleniumReview.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/target/test-classes/SeleniumReview.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../seleniumWeeks/selenium/SeleniumReview/Seleniumz/testng.xml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+  </component>
+  <component name="ProjectId" id="2INlVfgUES0fogHQNmlmYcuvo7d" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="f6418715-aa2d-4077-894e-c4871d783e6a" name="Changes" comment="" />
+      <created>1670029949617</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1670029949617</updated>
+      <workItem from="1670029951645" duration="13000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

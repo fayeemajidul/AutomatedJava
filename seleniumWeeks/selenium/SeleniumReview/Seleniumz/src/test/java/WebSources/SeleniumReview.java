@@ -1,3 +1,5 @@
+package WebSources;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -17,13 +19,13 @@ public class SeleniumReview implements WebDriver {
     @Test
     @Parameters({"Items"})
     public static void createRobustFramework(String Items){
-        //Window Properties:
-        // To tweak for better performance: Import IofileReader and set to global properties.
+        //Window Properties
+        //Global Properties Class:
         System.setProperty("webdriver.gecko.driver", "/Users/fayeemmooktadeer/Desktop/Grid/geckodriver");
         WebDriver driver = new FirefoxDriver();
         driver.get("https://rahulshettyacademy.com/seleniumPractise/");
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(3));
+        driver.manage().timeouts().implicitlyWait( .ofSeconds(3));
 
         //Landing Page: Make sure to separate then parse with POM structure, and Abstract Modules:
         WebDriverWait explicitWait = new WebDriverWait(driver, Duration.ofSeconds(5));
@@ -58,6 +60,8 @@ public class SeleniumReview implements WebDriver {
         select.selectByVisibleText("United States");
         driver.findElement(By.className("chkAgree")).click();
         driver.findElement(By.xpath("//button[normalize-space() = 'Proceed']")).click();
+    }
+    public class PetWiki {
     }
     @Override
     public void get(String url) {
