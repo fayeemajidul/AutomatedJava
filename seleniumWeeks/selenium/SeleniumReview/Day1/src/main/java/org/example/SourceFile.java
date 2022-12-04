@@ -1,5 +1,7 @@
 package org.example;
 
+import io.restassured.path.json.JsonPath;
+
 public class SourceFile {
     public String apiPostBody(){
         return"""
@@ -21,4 +23,65 @@ public class SourceFile {
                 }
                 """;
     }
+    public String apiPutBody(){
+        return """
+                {
+                "place_id":"c3d6756f83599c4f716e1c32f43db8b7",
+                "address":"10102 Wakefield Road, USA",
+                "key":"qaclick123"
+                }
+                """;
+    }
+    public JsonPath rawToJSON(String response){
+        return new JsonPath(response);
+    }
+    public static String apiContract(){
+        return """
+                {
+
+                "dashboard": {
+
+                "purchaseAmount": 910,
+
+                "website": "rahulshettyacademy.com"
+
+                },
+
+                "courses": [
+
+                {
+
+                "title": "Selenium Python",
+
+                "price": 50,
+
+                "copies": 6
+
+                },
+
+                {
+
+                "title": "Cypress",
+
+                "price": 40,
+
+                "copies": 4
+
+                },
+
+                {
+
+                "title": "RPA",
+
+                "price": 45,
+
+                "copies": 10
+
+                }
+
+                ]
+
+                }""";
+    }
+
 }
