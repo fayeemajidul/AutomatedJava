@@ -8,6 +8,8 @@ import io.restassured.path.json.JsonPath;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
+import java.io.File;
+
 public class DynamicUtilization {
     RestAssured restAssured = new RestAssured();
     static String uniqueId;
@@ -23,6 +25,16 @@ public class DynamicUtilization {
         JsonPath extractJSON = new JsonPath(statusResponse);
         String grabID = extractJSON.get("ID");
         System.out.println(grabID);
+
+        //Logic for parsing Json and Looping Json
+        int sizeOfBookList = extractJSON.getInt("books.size()");
+        for(int i = 0; i < sizeOfBookList; i++){
+            String getTitleOfBook = extractJSON.getString("[" + i + "].bookName"); //Grabs title for book.
+            if(getTitleOfBook.equalsIgnoreCase("Harry Potter")){
+                String getAisleNum = extractJSON.getString("Aisle");
+                break;
+            }
+        }
     }
     @DataProvider(name = "bookData")
     public Object[][] getData(){
@@ -50,5 +62,31 @@ public class DynamicUtilization {
                         "value": "Administrators"
                     }
                 }""").filter(session).when().post("/rest/api/2/issue/{key}/comment").then().log().all().assertThat().statusCode(201);
+
+    }
+    @Test
+    public static void addAttachmentJIRA(){
+        File file = new File("//dummy_path.txt");
+        baseURI = "http://localhost:8080";
+        given().log().all().header("X-Atlassian-Token", "no-check").filter(session).header("Content-Type","multipart/form-data").pathParam("key", "10101").multiPart(file).when().post("/rest/api/2/issue/{key}/attachments").then().log().all().assertThat().statusCode(200);
+    }
+    @Test
+    public static void getIssuesValue(){
+        baseURI = "http://localhost:8080";
+        //Getting the Issue
+
+        //Path gives entire JSON details, we boiled it down using filtration of QueryParameters
+        String issueDetails = given().filter(session).pathParam("key", "1010").queryParam("fields", "comment").when().get("/rest/api/2/issue/{key}").then().log().all().extract().response().asString();
+
+    }
+
+    @Test(dataProvider = "ProvideData")
+    public static void runDataProvider(String nameOfArray, String valueOfArray){
+        System.out.println(nameOfArray + valueOfArray);
+
+    }
+    @DataProvider(name = "ProvideData")
+    public static Object[][] provideDataSample(){
+        return new Object[][]{{"Array1", "Values"},{"Array2", "Values"}};
     }
 }
