@@ -1,0 +1,16 @@
+Today is December 6TH:
+
+--> Demand for a Mobile Test Engineer is prevalent:
+
+-- we will need to hold ourselves accountable every single day to not waste a single minute mainly because we have interviews to prepare for with the addition of a very haste deadline.
+-- We need to provide and remember our values and why we had started this in the first place. This is mainly temporary, but you have to try your hardest.
+
+
+Future course work to have a better edge in the market:
+---> Cypress
+---> JavaScript, C#
+---> SOAPui: API backend services.
+---> Better hands on approach with SQL querying.
+
+
+Remember to review everything that you learn so you integrate everything and not forget.
