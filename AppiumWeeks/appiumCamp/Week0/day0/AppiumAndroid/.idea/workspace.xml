@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="0c8d95d7-ccf8-48a0-bd64-67c510d2533d" name="Changes" comment="" />
+    <list default="true" id="0c8d95d7-ccf8-48a0-bd64-67c510d2533d" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/.idea/dbnavigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/src/test/java/Sources/Cucumber.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Cucumber/StepImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Cucumber/StepImplementation.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Cucumber/TestNGCucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Cucumber/TestNGCucumberRunner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Resources/AbstractWaits.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Resources/AbstractWaits.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Resources/ExtentReportListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Resources/ExtentReportListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Resources/InitDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Resources/InitDriver.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Resources/ScreenShot.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Resources/ScreenShot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Sources/Retry.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/Sources/Retry.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/CartPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/CheckOutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/CheckOutPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/OrderConfirmPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/OrderConfirmPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/ProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/ProductPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/ShoppingDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/FrameworkReview/ShoppingFrameWork/target/test-classes/WebPages/ShoppingDriver.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -41,7 +59,7 @@
       <option name="presentableId" value="Default" />
       <updated>1670364883520</updated>
       <workItem from="1670364884894" duration="483000" />
-      <workItem from="1670385083570" duration="57000" />
+      <workItem from="1670385083570" duration="824000" />
     </task>
     <servers />
   </component>
