@@ -4,27 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5da93e3e-9476-4667-8710-5ab5b689fc7b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dbnavigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/Sources/Cucumber.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../AppiumWeeks/appiumCamp/Week0/day0/AppiumAndroid/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../AppiumWeeks/appiumCamp/Week0/day0/AppiumAndroid/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../../../AppiumWeeks/appiumCamp/Week0/day0/AppiumAndroid/src/main/java/org/example/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../Brevity/Brevity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../Brevity/Brevity/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Cucumber/StepImplementation.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Cucumber/StepImplementation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Cucumber/TestNGCucumberRunner.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Cucumber/TestNGCucumberRunner.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/AbstractWaits.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/AbstractWaits.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/ExtentReportListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/ExtentReportListener.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/InitDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/InitDriver.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Resources/ScreenShot.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Resources/ScreenShot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/Sources/Retry.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/Sources/Retry.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/CartPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/CartPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/CheckOutPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/CheckOutPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/OrderConfirmPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/OrderConfirmPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/ProductPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/ProductPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/WebPages/ShoppingDriver.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/WebPages/ShoppingDriver.class" afterDir="false" />
-    </list>
+    <list default="true" id="5da93e3e-9476-4667-8710-5ab5b689fc7b" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -183,7 +163,7 @@
       <option name="presentableId" value="Default" />
       <updated>1666721509239</updated>
       <workItem from="1666721510476" duration="42965000" />
-      <workItem from="1670462005133" duration="1018000" />
+      <workItem from="1670462005133" duration="1173000" />
     </task>
     <servers />
   </component>
