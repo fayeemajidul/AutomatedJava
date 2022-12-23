@@ -28,6 +28,7 @@ public class BaseTest {
         UiAutomator2Options androidOptions = new UiAutomator2Options();
         androidOptions.setDeviceName("Fayeem");
         androidOptions.setApp("/Users/fayeemmooktadeer/Desktop/LearningJava/appiumWeeks/appiumCamp/Week0/day1/AppiumEnvironmentConfig/src/main/resources/General-Store.apk");
+        androidOptions.setChromedriverExecutable("//Path4ChromeDriver");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"),androidOptions);
     }
 

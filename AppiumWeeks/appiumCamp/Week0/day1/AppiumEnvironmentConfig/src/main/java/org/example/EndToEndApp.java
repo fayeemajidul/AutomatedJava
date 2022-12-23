@@ -1,12 +1,15 @@
 package org.example;
 
 import io.appium.java_client.AppiumBy;
+import io.appium.java_client.android.nativekey.AndroidKey;
+import io.appium.java_client.android.nativekey.KeyEvent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import java.util.List;
+import java.util.Set;
 
 public class EndToEndApp extends BaseTest {
     @Test
@@ -55,10 +58,17 @@ public class EndToEndApp extends BaseTest {
         Thread.sleep(3000);
 
         //Hybrid Application: [Shift Scope to Web View from native application]
-        driver.getContextHandles();
-        driver.context("Webview"); // Sets the scope from native to Web application.
-
-
+        Set<String> context = driver.getContextHandles();
+        for(String contextName : context){
+            System.out.println(contextName);
+        }
+        driver.context("WEBVIEW_com.androidsample.generalstore"); // Sets the scope from native to Web application.
+        //Must switch back to native:
+        driver.context("NATIVE_APP");
+    }
+    public void KeyEventsForAppium(){
+        //To go back on on android
+        driver.pressKey(new KeyEvent(AndroidKey.BACK));
     }
 
 }
