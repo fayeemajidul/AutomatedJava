@@ -27,4 +27,6 @@ public class APIReqUSPOP {
             System.out.println(getPopulation);
         }
     }
+    @Test
+    public void RestAndTest
 }
