@@ -1,0 +1,4 @@
+Creating a Factorial Program:
+
+-- Create a Scanner Class:
+-- Create a Loop, that sums and accumulates the Inputs.
