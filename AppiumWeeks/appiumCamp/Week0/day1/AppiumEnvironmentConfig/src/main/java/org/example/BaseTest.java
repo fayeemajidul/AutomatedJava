@@ -26,12 +26,10 @@ public class BaseTest {
         service.start(); //Starts Service, programmatically.
 
         UiAutomator2Options androidOptions = new UiAutomator2Options();
-        androidOptions.setDeviceName("Fayeem");
-        androidOptions.setApp("/Users/fayeemmooktadeer/Desktop/LearningJava/appiumWeeks/appiumCamp/Week0/day1/AppiumEnvironmentConfig/src/main/resources/General-Store.apk");
-        androidOptions.setChromedriverExecutable("//Path4ChromeDriver");
+        androidOptions.setDeviceName("FayeemPhone");
+        androidOptions.setApp("/Users/fayeemmooktadeer/Desktop/AutomatedJava/AppiumWeeks/appiumCamp/Week0/day1/AppiumEnvironmentConfig/src/main/resources/General-Store.apk");
         driver = new AndroidDriver(new URL("http://127.0.0.1:4723"),androidOptions);
     }
-
     public void longPress(WebElement element){
         ((JavascriptExecutor) driver).executeScript("mobile: longClickGesture", ImmutableMap.of("elementId", ((RemoteWebElement) element).getId(),"duration", 2000));
     }

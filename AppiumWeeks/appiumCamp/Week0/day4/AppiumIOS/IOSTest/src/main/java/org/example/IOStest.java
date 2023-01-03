@@ -17,7 +17,6 @@ public class IOStest extends BaseTest{
         driver.findElement(AppiumBy.iOSNsPredicateString("label == 'OK'")).click();
 
 //        driver.findElement(AppiumBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND value == 'Confirm / Cancel'")).click();
-yessir
         /*Regular Expression*/
 //        driver.findElement(AppiumBy.iOSNsPredicateString("type == 'XCUIElementTypeStaticText' AND value BEGINSWITH[c] == 'Confirm'")).click();
 

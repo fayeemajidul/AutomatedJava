@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="f6933b7d-1aac-43a2-8cb5-cc8d4921ebdf" name="Changes" comment="" />
+    <list default="true" id="f6933b7d-1aac-43a2-8cb5-cc8d4921ebdf" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/.profile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/hs_err_pid3348.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/replay_pid3348.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/src/main/java/org/example/AppiumEnvironment.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/src/main/java/org/example/AppiumEnvironment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/src/main/java/org/example/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/src/main/java/org/example/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/target/classes/org/example/AppiumEnvironment.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/target/classes/org/example/AppiumEnvironment.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/target/classes/org/example/BaseTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/target/classes/org/example/BaseTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/target/classes/org/example/EndToEndApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../day1/AppiumEnvironmentConfig/target/classes/org/example/EndToEndApp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/InitializeDrive.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/InitializeDrive.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/global.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/global.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/Resources/InitializeDrive.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/Resources/InitializeDrive.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/Resources/ScreenShot.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/Resources/ScreenShot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/WebImplementation/POMstructure.class" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/target/test-classes/WebImplementation/POMstructure.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../../../seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/testng.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../../.." />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="2" />
   </component>
   <component name="ProjectId" id="2JQo82FLaFSvEiC3gplliZWprYr" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -20,7 +47,8 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false"
+    "WebServerToolWindowFactoryState": "false",
+    "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -32,6 +60,7 @@
       <option name="presentableId" value="Default" />
       <updated>1672019506972</updated>
       <workItem from="1672019508676" duration="144000" />
+      <workItem from="1672688457827" duration="31000" />
     </task>
     <servers />
   </component>

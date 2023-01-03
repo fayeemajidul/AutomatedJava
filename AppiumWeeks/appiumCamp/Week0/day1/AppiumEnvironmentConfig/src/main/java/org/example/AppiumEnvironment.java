@@ -11,7 +11,8 @@ import java.net.URL;
 
 public class AppiumEnvironment extends BaseTest {
     @Test
-    public void AppiumBasics() throws MalformedURLException {
+    public void AppiumBasics() throws MalformedURLException, InterruptedException {
+        Thread.sleep(5000);
         driver.findElement(AppiumBy.accessibilityId("Preference")).click();
         driver.findElement(By.xpath("//android.widget.TextView[@content-desc='3. Preference dependencies']")).click();
         driver.findElement(By.id("android:id/checkbox")).click();

@@ -7,7 +7,7 @@
 
     <parameter name="URL" value="https://rahulshettyacademy.com/client"/>
     <parameter name="KEY" value="webdriver.gecko.driver"/>
-    <parameter name="VALUE" value="/Users/fayeemmooktadeer/Downloads/geckodriver"/>
+    <parameter name="VALUE" value="/Users/fayeemmooktadeer/Desktop/Grid/geckodriver"/>
     <parameter name="productWeWant" value="ZARA"/>
     <parameter name="USER" value="fayeemajidul@gmail.com"/>
     <parameter name="PASSWORD" value="Password123"/>

@@ -24,6 +24,7 @@ public class BaseTest {
         service.start(); //Starts Service Programmatically.
 
         XCUITestOptions options = new XCUITestOptions();
+        options.setPlatformName("iOS");
         options.setDeviceName("iPhone 14 Pro");
         options.setApp("/Users/fayeemmooktadeer/Library/Developer/Xcode/DerivedData/UIKitCatalog-ddyutxeztokwzkebynrekjpdxdga/Build/Products/Debug-iphonesimulator/UIKitCatalog.app");
         options.setPlatformVersion("16.2");

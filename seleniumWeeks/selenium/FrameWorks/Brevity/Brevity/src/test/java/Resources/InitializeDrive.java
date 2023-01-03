@@ -20,7 +20,7 @@ public class InitializeDrive {
     public WebDriver InitDrive(String URL, String KEY, String VALUE) throws IOException {
         //Global Properties Class
         Properties property = new Properties();
-        FileInputStream file = new FileInputStream("/Users/fayeemmooktadeer/Desktop/LearningJava/seleniumWeeks/selenium/FrameWorks/DesignPattern/Day0/Design_Pattern/src/test/java/Resources/GlobalData.properties");
+        FileInputStream file = new FileInputStream("/Users/fayeemmooktadeer/Desktop/AutomatedJava/seleniumWeeks/selenium/FrameWorks/Brevity/Brevity/src/test/java/Resources/global.properties");
         property.load(file);
         String browserName = property.getProperty("browser");
         if(browserName.equalsIgnoreCase("firefox")){
