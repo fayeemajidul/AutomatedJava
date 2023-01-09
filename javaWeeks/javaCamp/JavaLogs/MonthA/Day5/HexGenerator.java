@@ -8,5 +8,6 @@ public class HexGenerator{
         Random rand = new Random();
         int randomNum = rand.nextInt(0,100);
         System.out.println(randomNum);
+        System.out.println("Light it up");
     }
 }
