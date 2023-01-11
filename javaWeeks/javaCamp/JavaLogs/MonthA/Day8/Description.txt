@@ -1,0 +1,1 @@
+Converting a Bits array to LogBase10, instead of Binary, and then maybe Hexa.
