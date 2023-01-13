@@ -32,5 +32,7 @@ public class Bits{
     public static void main(String[] args){
         ArrayList <Integer> bits = new ArrayList<>();
         System.out.println(translateBit(bits));
+        System.out.println(translateBit(bits));
+        
     }
 }
