@@ -1,0 +1,6 @@
+Palindrome:
+
+Given a random sentence, check if this is palindrome.
+
+-- Logic is that you must accept the phrase
+    ** Scanner class to convert the word into maybe char, and remove all non-alphabets.
