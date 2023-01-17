@@ -1,0 +1,2 @@
+* Given an ArrayList of values, from a random assortment of numbers generated remove that element from the List.
+
