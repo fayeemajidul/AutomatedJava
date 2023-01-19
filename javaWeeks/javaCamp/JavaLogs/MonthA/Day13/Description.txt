@@ -1,0 +1,2 @@
+First create an array of random values and different inputs.
+
