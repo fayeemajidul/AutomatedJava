@@ -3,6 +3,7 @@ package org.example;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -11,7 +12,9 @@ import java.util.Set;
 public class InterviewStuff implements WebDriver {
     @Test
     public static void intStuff(){
-        WebDriver driver = new
+        System.setProperty("webdriver.gecko.driver","//pathtoFireFox");
+        WebDriver driver = new FirefoxDriver();
+        driver.findElement(By.xpath("//Path[@new = 'Attritubte']"));
     }
     public static void main(String[] args) {
     }
