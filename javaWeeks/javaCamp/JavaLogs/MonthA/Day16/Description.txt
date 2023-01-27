@@ -1,0 +1,2 @@
+The Logic Behind this code is to, reverse the order and add up in preceding order.
+
