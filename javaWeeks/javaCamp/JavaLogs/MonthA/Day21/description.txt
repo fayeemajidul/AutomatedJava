@@ -1,0 +1,6 @@
+Create an array of random numbers, add one to it as if it where an entire concatenation of numbers:
+
+
+1) create an array of random values
+
+2) append this value to a string 
