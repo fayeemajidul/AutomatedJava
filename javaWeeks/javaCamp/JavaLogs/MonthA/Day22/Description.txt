@@ -1,0 +1,12 @@
+Palindrome Number
+Ex:
+
+451
+Palindrome : 154, just reversed.
+
+
+Logic:
+
+Create a random generator of nums,  return this int.
+
+Logic:  Loop through every number and add it + * 10, for place value.
