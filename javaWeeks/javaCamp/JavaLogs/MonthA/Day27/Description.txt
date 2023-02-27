@@ -1,0 +1,10 @@
+Create a Calculator application that is able to be used
+
+Operations that should be included:
+
+    *Addition
+    *Subtraction
+    *Multiplication
+    *Division
+
+Implement OOPS concepts into this.
