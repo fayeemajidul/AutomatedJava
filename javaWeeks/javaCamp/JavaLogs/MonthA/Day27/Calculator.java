@@ -6,5 +6,7 @@ public class Calculator{
         Subtraction subtractionObject = new Subtraction(1, 2);
         System.out.println(subtractionObject.subtractionOperation());
 
+        Multiplication multiplicationObject = new Multiplication(34, 1);
+        System.out.println(multiplicationObject.mutiplyOperation());
     }
 }
