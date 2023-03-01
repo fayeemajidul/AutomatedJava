@@ -8,5 +8,6 @@ public class Calculator{
 
         Multiplication multiplicationObject = new Multiplication(34, 1);
         System.out.println(multiplicationObject.mutiplyOperation());
+        System.out.println("Testing the Environment");
     }
 }
