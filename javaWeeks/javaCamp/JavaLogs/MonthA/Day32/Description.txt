@@ -1,0 +1,5 @@
+Create a calculator program with the following operations
+:Addition
+:Subtraction
+:Division
+:Multiplication
