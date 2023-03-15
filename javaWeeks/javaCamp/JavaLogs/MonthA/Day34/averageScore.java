@@ -26,4 +26,9 @@ public class averageScore{
         System.out.println((double)(accumulator/ nums));
         return (double)(accumulator/ nums);
     }
+    public static void ConquerTheNation(){
+        for(int i =0; i < 3; i++){
+            System.out.println("Rationalize with the sense of perception");
+        }
+    }
 }
