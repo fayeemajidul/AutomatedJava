@@ -6,6 +6,7 @@ public class averageScore{
         System.out.println("testing the environment");
         ArrayList<Integer> listOfNumbers=  new ArrayList<>();
         averageCreation(listOfNumbers);
+        computingLogic();
     }
     public static ArrayList <Integer> numberList(ArrayList <Integer> listOfNumbers){
         Random rand = new Random();
@@ -30,5 +31,8 @@ public class averageScore{
         for(int i =0; i < 3; i++){
             System.out.println("Rationalize with the sense of perception");
         }
+    }
+    public static void computingLogic(){
+        System.out.println("Great Job Today, keep it up mentally and physically push yourself");
     }
 }
