@@ -9,6 +9,7 @@ public class averageScore{
         computingLogic();
         System.out.println("Lots of testing");
         System.out.println("One heck of a weekend");
+        System.out.println("code . not idea .");
     }
     public static ArrayList <Integer> numberList(ArrayList <Integer> listOfNumbers){
         Random rand = new Random();
