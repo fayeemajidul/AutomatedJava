@@ -24,5 +24,10 @@ public class Convention{
         for(int i = 0 ; i < 4; i++){
             System.out.println("Loopty loop");
         }
+        int count  = 0;
+        do{
+            System.out.println("Testing the environment");
+            count++;
+        }while(count != 5);
     }
 }
