@@ -24,7 +24,9 @@ public class Main implements WebDriver {
         Thread.sleep(3000);
 
     }
-
+    public static void main(String[] args){
+        System.out.println("Testing the environment");
+    }
     @Override
     public void get(String url) {
 
