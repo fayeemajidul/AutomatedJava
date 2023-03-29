@@ -4,6 +4,7 @@ public class Convention{
     public static void main(String[] args){
         System.out.println("Naming conventions");
         createRandomString();
+        System.out.println("Reverse");
     }
     public static void createRandomString(){
         Random rand = new Random();
