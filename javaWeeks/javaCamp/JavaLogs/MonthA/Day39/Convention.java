@@ -8,6 +8,7 @@ public class Convention{
         System.out.println("Will it break?");
         System.out.println("Even more break?");
         System.out.println("Testing the environment");
+        System.out.println("Anotha one");
 
     }
     public static void createRandomString(){
