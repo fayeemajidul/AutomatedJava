@@ -9,6 +9,7 @@ public class Convention{
         System.out.println("Even more break?");
         System.out.println("Testing the environment");
         System.out.println("Anotha one");
+        System.out.println("Getting back to the flow");
 
     }
     public static void createRandomString(){
