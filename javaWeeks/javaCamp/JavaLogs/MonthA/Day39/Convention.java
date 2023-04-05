@@ -12,6 +12,7 @@ public class Convention{
         System.out.println("Getting back to the flow");
         System.out.println("Creation of flow");
         System.out.println("Creation of Automation framework");
+        System.out.println("Degree when?");
     }
     public static void createRandomString(){
         Random rand = new Random();
