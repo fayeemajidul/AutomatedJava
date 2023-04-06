@@ -13,6 +13,7 @@ public class Convention{
         System.out.println("Creation of flow");
         System.out.println("Creation of Automation framework");
         System.out.println("Degree when?");
+        System.out.println("Cycle of continial momentum");
     }
     public static void createRandomString(){
         Random rand = new Random();
