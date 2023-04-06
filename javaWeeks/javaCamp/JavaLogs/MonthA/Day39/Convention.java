@@ -15,6 +15,7 @@ public class Convention{
         System.out.println("Degree when?");
         System.out.println("Cycle of continial momentum");
         System.out.println("Cycle of continial momentum");
+        System.out.println("Creation");
 
     }
     public static void createRandomString(){
