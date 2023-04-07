@@ -5,19 +5,6 @@ public class Convention{
         System.out.println("Naming conventions");
         createRandomString();
         System.out.println("Reverse");
-        System.out.println("Will it break?");
-        System.out.println("Even more break?");
-        System.out.println("Testing the environment");
-        System.out.println("Anotha one");
-        System.out.println("Getting back to the flow");
-        System.out.println("Creation of flow");
-        System.out.println("Creation of Automation framework");
-        System.out.println("Degree when?");
-        System.out.println("Cycle of continial momentum");
-        System.out.println("Cycle of continial momentum");
-        System.out.println("Creation");
-        System.out.println("Creation");
-
 
     }
     public static void createRandomString(){
